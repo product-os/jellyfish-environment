@@ -23,6 +23,7 @@ A module that sets up the Jellyfish system configuration using environment varia
 
 * [environment](#module_environment)
     * [.setNumber(rawValue, fallback)](#module_environment.setNumber) ⇒ <code>Number</code>
+    * [.cleanString(original)](#module_environment.cleanString) ⇒ <code>String</code>
     * [.isProduction()](#module_environment.isProduction) ⇒ <code>Boolean</code>
 
 <a name="module_environment.setNumber"></a>
@@ -40,6 +41,21 @@ A module that sets up the Jellyfish system configuration using environment varia
 **Example**  
 ```js
 const val = setNumber(process.env.MY_VAR, 10)
+```
+<a name="module_environment.cleanString"></a>
+
+### environment.cleanString(original) ⇒ <code>String</code>
+**Kind**: static method of [<code>environment</code>](#module_environment)  
+**Summary**: Clean up an environment variable string, remove whitespace and quotes  
+**Returns**: <code>String</code> - cleaned up string  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| original | <code>String</code> | original string |
+
+**Example**  
+```js
+const result = exports.cleanString(process.env.MY_STRING_VAR)
 ```
 <a name="module_environment.isProduction"></a>
 
