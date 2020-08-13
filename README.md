@@ -24,7 +24,9 @@ A module that sets up the Jellyfish system configuration using environment varia
 * [environment](#module_environment)
     * [.setNumber(rawValue, fallback)](#module_environment.setNumber) ⇒ <code>Number</code>
     * [.cleanString(original)](#module_environment.cleanString) ⇒ <code>String</code>
-    * [.isProduction()](#module_environment.isProduction) ⇒ <code>Boolean</code>
+    * [.isProduction(env)](#module_environment.isProduction) ⇒ <code>Boolean</code>
+    * [.isDevelopment(env)](#module_environment.isDevelopment) ⇒ <code>Boolean</code>
+    * [.isCI(env)](#module_environment.isCI) ⇒ <code>Boolean</code>
 
 <a name="module_environment.setNumber"></a>
 
@@ -59,14 +61,55 @@ const result = exports.cleanString(process.env.MY_STRING_VAR)
 ```
 <a name="module_environment.isProduction"></a>
 
-### environment.isProduction() ⇒ <code>Boolean</code>
+### environment.isProduction(env) ⇒ <code>Boolean</code>
 **Kind**: static method of [<code>environment</code>](#module_environment)  
 **Summary**: Check if the code is running in a production environment  
 **Returns**: <code>Boolean</code> - Whether the environment is production  
 **Access**: public  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| env | <code>Object</code> | only use if you want to override `process.env` for testing purposes. |
+
 **Example**  
 ```js
 if (environment.isProduction()) {
   console.log('Production!')
+}
+```
+<a name="module_environment.isDevelopment"></a>
+
+### environment.isDevelopment(env) ⇒ <code>Boolean</code>
+**Kind**: static method of [<code>environment</code>](#module_environment)  
+**Summary**: Check if the code is running in a development environment  
+**Returns**: <code>Boolean</code> - Whether the environment is development  
+**Access**: public  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| env | <code>Object</code> | only use if you want to override `process.env` for testing purposes. |
+
+**Example**  
+```js
+if (environment.isDevelopment()) {
+  console.log('Development!')
+}
+```
+<a name="module_environment.isCI"></a>
+
+### environment.isCI(env) ⇒ <code>Boolean</code>
+**Kind**: static method of [<code>environment</code>](#module_environment)  
+**Summary**: Check if the code is running in a CI environment  
+**Returns**: <code>Boolean</code> - Whether the environment is a CI system  
+**Access**: public  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| env | <code>Object</code> | only use if you want to override `process.env` for testing purposes. |
+
+**Example**  
+```js
+if (environment.isCI()) {
+  console.log('CI!')
 }
 ```
