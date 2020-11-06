@@ -31,7 +31,7 @@
     "lodash": "^4.17.20"
   },
   "devDependencies": {
-    "@balena/jellycheck": "^0.0.7",
+    "@balena/jellycheck": "^0.0.8",
     "ava": "^3.13.0",
     "catch-uncommitted": "^1.6.2",
     "depcheck": "^1.2.0",
@@ -39,7 +39,7 @@
     "eslint": "^7.12.1",
     "eslint-config-standard": "^16.0.1",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsdoc": "^30.7.6",
+    "eslint-plugin-jsdoc": "^30.7.7",
     "eslint-plugin-lodash": "^7.1.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
