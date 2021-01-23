@@ -1,6 +1,6 @@
 {
   "name": "@balena/jellyfish-environment",
-  "version": "2.3.26",
+  "version": "2.3.27",
   "repository": {
     "type": "git",
     "url": "https://github.com/product-os/jellyfish-environment.git"
