@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update dependency husky to ^5.1.1'
+      hash: 59f22ca06e56f4a484c7e402438c81dca6c10bfe
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 2.4.17
+  date: 2021-02-22T16:41:40.602Z
+- commits:
     - subject: 'patch: Update dependency husky to ^5.1.0'
       hash: 4736eb8692a8886d527021c414dfe5a41403fcf5
       body: ''
