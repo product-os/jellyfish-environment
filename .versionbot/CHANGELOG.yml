@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update dependency husky to ^5.1.2'
+      hash: 6e7a6436ec2d83e67b0e8bc2bd7353375f606cce
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 2.4.22
+  date: 2021-03-01T03:09:08.882Z
+- commits:
     - subject: 'patch: Update dependency jsdoc-to-markdown to v7'
       hash: 5b52c5419404dfd4aae527376e60c1372bd95b23
       body: ''
