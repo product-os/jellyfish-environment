@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update dependency eslint-plugin-lodash to ^7.2.0'
+      hash: e3dd21eab26f3f9353dff324d0bdc3ec0baf703b
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 2.4.24
+  date: 2021-03-10T23:26:46.706Z
+- commits:
     - subject: 'patch: Update dependency husky to ^5.1.3'
       hash: 285e6dbb78ef4c28b3a5a74e4402f63679c62e70
       body: ''
