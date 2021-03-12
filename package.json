@@ -29,6 +29,7 @@
   "author": "Balena.io. <hello@balena.io>",
   "license": "UNLICENSED",
   "dependencies": {
+    "@humanwhocodes/env": "^2.1.4",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
