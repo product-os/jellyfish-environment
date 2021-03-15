@@ -29,7 +29,6 @@ A module that sets up the Jellyfish system configuration using environment varia
         * [.isCI()](#module_environment..Environment+isCI) ⇒ <code>Boolean</code>
         * [.getString(name, fallback)](#module_environment..Environment+getString) ⇒ <code>String</code>
         * [.getNumber(name, fallback)](#module_environment..Environment+getNumber) ⇒ <code>Number</code>
-        * [.variables()](#module_environment..Environment+variables) ⇒ <code>Object</code>
     * [~init(env)](#module_environment..init) ⇒ <code>Object</code>
 
 <a name="module_environment..Environment"></a>
@@ -47,7 +46,6 @@ Can dependency inject environment in constructor, falls back to process.env.
     * [.isCI()](#module_environment..Environment+isCI) ⇒ <code>Boolean</code>
     * [.getString(name, fallback)](#module_environment..Environment+getString) ⇒ <code>String</code>
     * [.getNumber(name, fallback)](#module_environment..Environment+getNumber) ⇒ <code>Number</code>
-    * [.variables()](#module_environment..Environment+variables) ⇒ <code>Object</code>
 
 <a name="new_module_environment..Environment_new"></a>
 
@@ -124,13 +122,6 @@ if (environment.isCI()) {
 | name | <code>String</code> |  | environment variable name |
 | fallback | <code>Number</code> | <code>0</code> | fallback value |
 
-<a name="module_environment..Environment+variables"></a>
-
-#### environment.variables() ⇒ <code>Object</code>
-**Kind**: instance method of [<code>Environment</code>](#module_environment..Environment)  
-**Summary**: Read and return environment variables  
-**Returns**: <code>Object</code> - Full set of environment variable names and values  
-**Access**: public  
 <a name="module_environment..init"></a>
 
 ### environment~init(env) ⇒ <code>Object</code>
