@@ -22,94 +22,115 @@ A module that sets up the Jellyfish system configuration using environment varia
 
 
 * [environment](#module_environment)
-    * [.setNumber(rawValue, fallback)](#module_environment.setNumber) ⇒ <code>Number</code>
-    * [.cleanString(original)](#module_environment.cleanString) ⇒ <code>String</code>
-    * [.isProduction(env)](#module_environment.isProduction) ⇒ <code>Boolean</code>
-    * [.isDevelopment(env)](#module_environment.isDevelopment) ⇒ <code>Boolean</code>
-    * [.isCI(env)](#module_environment.isCI) ⇒ <code>Boolean</code>
+    * [~Environment](#module_environment..Environment)
+        * [new Environment(environment)](#new_module_environment..Environment_new)
+        * [.isProduction()](#module_environment..Environment+isProduction) ⇒ <code>Boolean</code>
+        * [.isDevelopment()](#module_environment..Environment+isDevelopment) ⇒ <code>Boolean</code>
+        * [.isCI()](#module_environment..Environment+isCI) ⇒ <code>Boolean</code>
+        * [.getString(name, fallback)](#module_environment..Environment+getString) ⇒ <code>String</code>
+        * [.getNumber(name, fallback)](#module_environment..Environment+getNumber) ⇒ <code>Number</code>
+    * [~init(env)](#module_environment..init) ⇒ <code>Object</code>
 
-<a name="module_environment.setNumber"></a>
+<a name="module_environment..Environment"></a>
 
-### environment.setNumber(rawValue, fallback) ⇒ <code>Number</code>
-**Kind**: static method of [<code>environment</code>](#module_environment)  
-**Summary**: Set environment variable as integer, using fallback if necessary  
-**Returns**: <code>Number</code> - parsed value or fallback  
+### environment~Environment
+Read and return values for a subset of environment variables.
+Can dependency inject environment in constructor, falls back to process.env.
+
+**Kind**: inner class of [<code>environment</code>](#module_environment)  
+
+* [~Environment](#module_environment..Environment)
+    * [new Environment(environment)](#new_module_environment..Environment_new)
+    * [.isProduction()](#module_environment..Environment+isProduction) ⇒ <code>Boolean</code>
+    * [.isDevelopment()](#module_environment..Environment+isDevelopment) ⇒ <code>Boolean</code>
+    * [.isCI()](#module_environment..Environment+isCI) ⇒ <code>Boolean</code>
+    * [.getString(name, fallback)](#module_environment..Environment+getString) ⇒ <code>String</code>
+    * [.getNumber(name, fallback)](#module_environment..Environment+getNumber) ⇒ <code>Number</code>
+
+<a name="new_module_environment..Environment_new"></a>
+
+#### new Environment(environment)
+Constructor.
+
 
 | Param | Type | Description |
 | --- | --- | --- |
-| rawValue | <code>String</code> | raw value as gotten by process.env |
-| fallback | <code>Number</code> | number to fallback to |
+| environment | <code>Object</code> | environment variable object, defaults to process.env |
 
-**Example**  
-```js
-const val = setNumber(process.env.MY_VAR, 10)
-```
-<a name="module_environment.cleanString"></a>
+<a name="module_environment..Environment+isProduction"></a>
 
-### environment.cleanString(original) ⇒ <code>String</code>
-**Kind**: static method of [<code>environment</code>](#module_environment)  
-**Summary**: Clean up an environment variable string, remove whitespace and quotes  
-**Returns**: <code>String</code> - cleaned up string  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| original | <code>String</code> | original string |
-
-**Example**  
-```js
-const result = exports.cleanString(process.env.MY_STRING_VAR)
-```
-<a name="module_environment.isProduction"></a>
-
-### environment.isProduction(env) ⇒ <code>Boolean</code>
-**Kind**: static method of [<code>environment</code>](#module_environment)  
+#### environment.isProduction() ⇒ <code>Boolean</code>
+**Kind**: instance method of [<code>Environment</code>](#module_environment..Environment)  
 **Summary**: Check if the code is running in a production environment  
 **Returns**: <code>Boolean</code> - Whether the environment is production  
 **Access**: public  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| env | <code>Object</code> | only use if you want to override `process.env` for testing purposes. |
-
 **Example**  
 ```js
 if (environment.isProduction()) {
-  console.log('Production!')
+  console.log('production environment')
 }
 ```
-<a name="module_environment.isDevelopment"></a>
+<a name="module_environment..Environment+isDevelopment"></a>
 
-### environment.isDevelopment(env) ⇒ <code>Boolean</code>
-**Kind**: static method of [<code>environment</code>](#module_environment)  
+#### environment.isDevelopment() ⇒ <code>Boolean</code>
+**Kind**: instance method of [<code>Environment</code>](#module_environment..Environment)  
 **Summary**: Check if the code is running in a development environment  
 **Returns**: <code>Boolean</code> - Whether the environment is development  
 **Access**: public  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| env | <code>Object</code> | only use if you want to override `process.env` for testing purposes. |
-
 **Example**  
 ```js
 if (environment.isDevelopment()) {
-  console.log('Development!')
+  console.log('development environment')
 }
 ```
-<a name="module_environment.isCI"></a>
+<a name="module_environment..Environment+isCI"></a>
 
-### environment.isCI(env) ⇒ <code>Boolean</code>
-**Kind**: static method of [<code>environment</code>](#module_environment)  
+#### environment.isCI() ⇒ <code>Boolean</code>
+**Kind**: instance method of [<code>Environment</code>](#module_environment..Environment)  
 **Summary**: Check if the code is running in a CI environment  
 **Returns**: <code>Boolean</code> - Whether the environment is a CI system  
+**Access**: public  
+**Example**  
+```js
+if (environment.isCI()) {
+  console.log('running in CI')
+}
+```
+<a name="module_environment..Environment+getString"></a>
+
+#### environment.getString(name, fallback) ⇒ <code>String</code>
+**Kind**: instance method of [<code>Environment</code>](#module_environment..Environment)  
+**Summary**: Get and return the string value of an environment variable.  
+**Returns**: <code>String</code> - environment variable value  
 **Access**: public  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| env | <code>Object</code> | only use if you want to override `process.env` for testing purposes. |
+| name | <code>String</code> | environment variable name |
+| fallback | <code>String</code> | fallback value |
 
-**Example**  
-```js
-if (environment.isCI()) {
-  console.log('CI!')
-}
-```
+<a name="module_environment..Environment+getNumber"></a>
+
+#### environment.getNumber(name, fallback) ⇒ <code>Number</code>
+**Kind**: instance method of [<code>Environment</code>](#module_environment..Environment)  
+**Summary**: Get and return the number value of an environment variable.  
+**Returns**: <code>Number</code> - environment variable value  
+**Access**: public  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| name | <code>String</code> |  | environment variable name |
+| fallback | <code>Number</code> | <code>0</code> | fallback value |
+
+<a name="module_environment..init"></a>
+
+### environment~init(env) ⇒ <code>Object</code>
+**Kind**: inner method of [<code>environment</code>](#module_environment)  
+**Summary**: Create Environment instance and return variables and public functions  
+**Returns**: <code>Object</code> - list of environment variables and public functions  
+**Access**: public  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| env | <code>Object</code> | environment object, defaults to process.env |
+
