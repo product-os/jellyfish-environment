@@ -1,4 +1,97 @@
 - commits:
+    - subject: Add missing queue concurrency default value
+      hash: b7ed20428860fd0529eee6892dff41c005b8ad10
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+    - subject: Return queue concurrency as number not string
+      hash: 35c18fce3fc89bae2469dfd8e3ea7bf24d00a2ba
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+    - subject: 'Add test, simplify variable read call'
+      hash: fa0e7dde18424f89526dc18de96aa362d40cf9c6
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+    - subject: Use get accessor and private member naming convention
+      hash: 9a24d5f2418f0f609829e4b88ede272b74806d08
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+    - subject: Move function declarations out of constructor
+      hash: 46bc9f2a0f0841b74d67ef61850667565db0f74a
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+    - subject: 'Fix docs, lazy-load variables'
+      hash: f0bf07066688bd95ef6439eddd0c71cb50179113
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+    - subject: 'Fix linting errors, update docs'
+      hash: f7b6d11030d948bdeae16c1b446d387661ff968d
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+    - subject: 'Fix tests, add ability to set defaults'
+      hash: d4ea3b4b8198cf072fa84b1f37416a5fe001deb4
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+    - subject: 'Use env, add variable value tests'
+      hash: 7beb93a102cbb6fcc3ca3271605825c90472c993
+      body: ''
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 3.0.0
+  date: 2021-03-16T09:52:27.429Z
+- commits:
     - subject: 'patch: Update dependency eslint-plugin-jsdoc to ^32.3.0'
       hash: a5d25ead7b1ec64661e7b5425310fa7788257e0e
       body: ''
