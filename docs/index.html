@@ -1,0 +1,414 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>@balena/jellyfish-environment</title>
+	<meta name="description" content="Documentation for @balena/jellyfish-environment">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">@balena/jellyfish-environment</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>@balena/jellyfish-environment</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#jellyfish-environment" id="jellyfish-environment" style="color: inherit; text-decoration: none;">
+					<h1>Jellyfish environment</h1>
+				</a>
+				<p>Environment variable library for Jellyfish.</p>
+				<p>This module aims to be the startup system configuration hub and exposes any
+					runtime settings to the rest of the system. Its the only place in the
+				codebase that should ever read environment variables.</p>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h1>Usage</h1>
+				</a>
+				<p>Below is an example how to use this library:</p>
+				<pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">environment</span><span style="color: #000000"> = </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;@balena/jellyfish-environment&#039;</span><span style="color: #000000">)</span>
+
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">`Metrics Token: </span><span style="color: #0000FF">${</span><span style="color: #001080">environment</span><span style="color: #000000FF">.</span><span style="color: #001080">metrics</span><span style="color: #000000FF">.</span><span style="color: #001080">token</span><span style="color: #0000FF">}</span><span style="color: #A31515">`</span><span style="color: #000000">)</span>
+</code></pre>
+				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
+					<h1>Documentation</h1>
+				</a>
+				<p>A module that sets up the Jellyfish system configuration using environment variables.</p>
+				<ul>
+					<li><a href="#module_environment">environment</a><ul>
+							<li><a href="#module_environment..Environment">~Environment</a><ul>
+									<li><a href="#new_module_environment..Environment_new">new Environment(environment)</a></li>
+									<li><a href="#module_environment..Environment+isProduction">.isProduction()</a> ⇒ <code>Boolean</code></li>
+									<li><a href="#module_environment..Environment+isDevelopment">.isDevelopment()</a> ⇒ <code>Boolean</code></li>
+									<li><a href="#module_environment..Environment+isCI">.isCI()</a> ⇒ <code>Boolean</code></li>
+									<li><a href="#module_environment..Environment+getString">.getString(name, fallback)</a> ⇒ <code>String</code></li>
+									<li><a href="#module_environment..Environment+getNumber">.getNumber(name, fallback)</a> ⇒ <code>Number</code></li>
+								</ul>
+							</li>
+							<li><a href="#module_environment..init">~init(env)</a> ⇒ <code>Object</code></li>
+						</ul>
+					</li>
+				</ul>
+				<p><a name="module_environment..Environment"></a></p>
+				<a href="#environmentenvironment" id="environmentenvironment" style="color: inherit; text-decoration: none;">
+					<h3>environment~Environment</h3>
+				</a>
+				<p>Read and return values for a subset of environment variables.
+				Can dependency inject environment in constructor, falls back to process.env.</p>
+				<p><strong>Kind</strong>: inner class of <a href="#module_environment"><code>environment</code></a>  </p>
+				<ul>
+					<li><a href="#module_environment..Environment">~Environment</a><ul>
+							<li><a href="#new_module_environment..Environment_new">new Environment(environment)</a></li>
+							<li><a href="#module_environment..Environment+isProduction">.isProduction()</a> ⇒ <code>Boolean</code></li>
+							<li><a href="#module_environment..Environment+isDevelopment">.isDevelopment()</a> ⇒ <code>Boolean</code></li>
+							<li><a href="#module_environment..Environment+isCI">.isCI()</a> ⇒ <code>Boolean</code></li>
+							<li><a href="#module_environment..Environment+getString">.getString(name, fallback)</a> ⇒ <code>String</code></li>
+							<li><a href="#module_environment..Environment+getNumber">.getNumber(name, fallback)</a> ⇒ <code>Number</code></li>
+						</ul>
+					</li>
+				</ul>
+				<p><a name="new_module_environment..Environment_new"></a></p>
+				<a href="#new-environmentenvironment" id="new-environmentenvironment" style="color: inherit; text-decoration: none;">
+					<h4>new Environment(environment)</h4>
+				</a>
+				<p>Constructor.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Param</th>
+							<th>Type</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>environment</td>
+							<td><code>Object</code></td>
+							<td>environment variable object, defaults to process.env</td>
+						</tr>
+				</tbody></table>
+				<p><a name="module_environment..Environment+isProduction"></a></p>
+				<a href="#environmentisproduction-⇒-boolean" id="environmentisproduction-⇒-boolean" style="color: inherit; text-decoration: none;">
+					<h4>environment.isProduction() ⇒ <code>Boolean</code></h4>
+				</a>
+				<p><strong>Kind</strong>: instance method of <a href="#module_environment..Environment"><code>Environment</code></a><br><strong>Summary</strong>: Check if the code is running in a production environment<br><strong>Returns</strong>: <code>Boolean</code> - Whether the environment is production<br><strong>Access</strong>: public<br><strong>Example</strong>  </p>
+				<pre><code class="language-js"><span style="color: #AF00DB">if</span><span style="color: #000000"> (</span><span style="color: #001080">environment</span><span style="color: #000000">.</span><span style="color: #795E26">isProduction</span><span style="color: #000000">()) {</span>
+<span style="color: #000000">  </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;production environment&#039;</span><span style="color: #000000">)</span>
+<span style="color: #000000">}</span>
+</code></pre>
+				<p><a name="module_environment..Environment+isDevelopment"></a></p>
+				<a href="#environmentisdevelopment-⇒-boolean" id="environmentisdevelopment-⇒-boolean" style="color: inherit; text-decoration: none;">
+					<h4>environment.isDevelopment() ⇒ <code>Boolean</code></h4>
+				</a>
+				<p><strong>Kind</strong>: instance method of <a href="#module_environment..Environment"><code>Environment</code></a><br><strong>Summary</strong>: Check if the code is running in a development environment<br><strong>Returns</strong>: <code>Boolean</code> - Whether the environment is development<br><strong>Access</strong>: public<br><strong>Example</strong>  </p>
+				<pre><code class="language-js"><span style="color: #AF00DB">if</span><span style="color: #000000"> (</span><span style="color: #001080">environment</span><span style="color: #000000">.</span><span style="color: #795E26">isDevelopment</span><span style="color: #000000">()) {</span>
+<span style="color: #000000">  </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;development environment&#039;</span><span style="color: #000000">)</span>
+<span style="color: #000000">}</span>
+</code></pre>
+				<p><a name="module_environment..Environment+isCI"></a></p>
+				<a href="#environmentisci-⇒-boolean" id="environmentisci-⇒-boolean" style="color: inherit; text-decoration: none;">
+					<h4>environment.isCI() ⇒ <code>Boolean</code></h4>
+				</a>
+				<p><strong>Kind</strong>: instance method of <a href="#module_environment..Environment"><code>Environment</code></a><br><strong>Summary</strong>: Check if the code is running in a CI environment<br><strong>Returns</strong>: <code>Boolean</code> - Whether the environment is a CI system<br><strong>Access</strong>: public<br><strong>Example</strong>  </p>
+				<pre><code class="language-js"><span style="color: #AF00DB">if</span><span style="color: #000000"> (</span><span style="color: #001080">environment</span><span style="color: #000000">.</span><span style="color: #795E26">isCI</span><span style="color: #000000">()) {</span>
+<span style="color: #000000">  </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;running in CI&#039;</span><span style="color: #000000">)</span>
+<span style="color: #000000">}</span>
+</code></pre>
+				<p><a name="module_environment..Environment+getString"></a></p>
+				<a href="#environmentgetstringname-fallback-⇒-string" id="environmentgetstringname-fallback-⇒-string" style="color: inherit; text-decoration: none;">
+					<h4>environment.getString(name, fallback) ⇒ <code>String</code></h4>
+				</a>
+				<p><strong>Kind</strong>: instance method of <a href="#module_environment..Environment"><code>Environment</code></a><br><strong>Summary</strong>: Get and return the string value of an environment variable.<br><strong>Returns</strong>: <code>String</code> - environment variable value<br><strong>Access</strong>: public  </p>
+				<table>
+					<thead>
+						<tr>
+							<th>Param</th>
+							<th>Type</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>name</td>
+							<td><code>String</code></td>
+							<td>environment variable name</td>
+						</tr>
+						<tr>
+							<td>fallback</td>
+							<td><code>String</code></td>
+							<td>fallback value</td>
+						</tr>
+				</tbody></table>
+				<p><a name="module_environment..Environment+getNumber"></a></p>
+				<a href="#environmentgetnumbername-fallback-⇒-number" id="environmentgetnumbername-fallback-⇒-number" style="color: inherit; text-decoration: none;">
+					<h4>environment.getNumber(name, fallback) ⇒ <code>Number</code></h4>
+				</a>
+				<p><strong>Kind</strong>: instance method of <a href="#module_environment..Environment"><code>Environment</code></a><br><strong>Summary</strong>: Get and return the number value of an environment variable.<br><strong>Returns</strong>: <code>Number</code> - environment variable value<br><strong>Access</strong>: public  </p>
+				<table>
+					<thead>
+						<tr>
+							<th>Param</th>
+							<th>Type</th>
+							<th>Default</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>name</td>
+							<td><code>String</code></td>
+							<td></td>
+							<td>environment variable name</td>
+						</tr>
+						<tr>
+							<td>fallback</td>
+							<td><code>Number</code></td>
+							<td><code>0</code></td>
+							<td>fallback value</td>
+						</tr>
+				</tbody></table>
+				<p><a name="module_environment..init"></a></p>
+				<a href="#environmentinitenv-⇒-object" id="environmentinitenv-⇒-object" style="color: inherit; text-decoration: none;">
+					<h3>environment~init(env) ⇒ <code>Object</code></h3>
+				</a>
+				<p><strong>Kind</strong>: inner method of <a href="#module_environment"><code>environment</code></a><br><strong>Summary</strong>: Create Environment instance and return variables and public functions<br><strong>Returns</strong>: <code>Object</code> - list of environment variables and public functions<br><strong>Access</strong>: public  </p>
+				<table>
+					<thead>
+						<tr>
+							<th>Param</th>
+							<th>Type</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>env</td>
+							<td><code>Object</code></td>
+							<td>environment object, defaults to process.env</td>
+						</tr>
+				</tbody></table>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/index.html">index</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/index_spec.html">index.spec</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/types.html">types</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/utils.html">utils</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/utils_spec.html">utils.spec</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables.html">variables</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_actions.html">variables/actions</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_actions_index_spec.html">variables/actions/index.spec</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_aws.html">variables/aws</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_aws_index_spec.html">variables/aws/index.spec</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_database.html">variables/database</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_database_defaults.html">variables/database/defaults</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_database_index_spec.html">variables/database/index.spec</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_filestorage.html">variables/filestorage</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_filestorage_index_spec.html">variables/filestorage/index.spec</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_flags.html">variables/flags</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_flags_index_spec.html">variables/flags/index.spec</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_http.html">variables/http</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_http_index_spec.html">variables/http/index.spec</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_integration.html">variables/integration</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_integration_index_spec.html">variables/integration/index.spec</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_livechat.html">variables/livechat</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_livechat_index_spec.html">variables/livechat/index.spec</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_logentries.html">variables/logentries</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_logentries_index_spec.html">variables/logentries/index.spec</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_logger.html">variables/logger</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_logger_index_spec.html">variables/logger/index.spec</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_mail.html">variables/mail</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_mail_defaults.html">variables/mail/defaults</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_mail_index_spec.html">variables/mail/index.spec</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_mailgun.html">variables/mailgun</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_metrics.html">variables/metrics</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_metrics_defaults.html">variables/metrics/defaults</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_metrics_index_spec.html">variables/metrics/index.spec</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_oauth.html">variables/oauth</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_oauth_index_spec.html">variables/oauth/index.spec</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_pod.html">variables/pod</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_pod_index_spec.html">variables/pod/index.spec</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_postgres.html">variables/postgres</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_queue.html">variables/queue</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_queue_defaults.html">variables/queue/defaults</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_queue_index_spec.html">variables/queue/index.spec</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_redis.html">variables/redis</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_redis_index_spec.html">variables/redis/index.spec</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_sentry.html">variables/sentry</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_sentry_index_spec.html">variables/sentry/index.spec</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_test.html">variables/test</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_test_index_spec.html">variables/test/index.spec</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_ui.html">variables/ui</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/variables_ui_index_spec.html">variables/ui/index.spec</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
