@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update dependency husky to ^5.2.0'
+      hash: 78b78a5fe4bb3e205969143bc8665542420d83ce
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 3.0.1
+  date: 2021-03-21T20:42:20.201Z
+- commits:
     - subject: Add missing queue concurrency default value
       hash: b7ed20428860fd0529eee6892dff41c005b8ad10
       body: ''
