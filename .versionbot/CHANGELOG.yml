@@ -1,4 +1,17 @@
 - commits:
+    - subject: Convert to TypeScript
+      hash: 7e64dc6120aeb771480a9f88e26770a6ba981c8d
+      body: ''
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 4.0.0
+  date: 2021-03-22T23:16:15.169Z
+- commits:
     - subject: 'patch: Update dependency husky to ^5.2.0'
       hash: 78b78a5fe4bb3e205969143bc8665542420d83ce
       body: ''
