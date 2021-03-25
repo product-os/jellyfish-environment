@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update dependency typedoc to ^0.20.34'
+      hash: 43c055f8af73ed6e60943aa292176b6377c71656
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 4.0.4
+  date: 2021-03-25T06:24:37.831Z
+- commits:
     - subject: Switch from husky to simple-git-hooks
       hash: b864d00d8f56e5751cd2c430bbef7accaf0cae9f
       body: ''
