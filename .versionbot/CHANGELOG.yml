@@ -1,4 +1,17 @@
 - commits:
+    - subject: Switch from husky to simple-git-hooks
+      hash: b864d00d8f56e5751cd2c430bbef7accaf0cae9f
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 4.0.3
+  date: 2021-03-25T03:32:40.626Z
+- commits:
     - subject: Publish docs with GitHub action
       hash: ede7f69a6850213158b9882f4c293e7ff832da7a
       body: ''
