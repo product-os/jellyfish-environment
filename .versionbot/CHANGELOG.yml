@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update dependency simple-git-hooks to ^2.3.1'
+      hash: 6fa269f79b7cf72af46e718dd415656b47b3a5f9
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 4.0.7
+  date: 2021-04-02T20:06:26.501Z
+- commits:
     - subject: Split up tsconfig
       hash: 26ba4bde06f78a36220f07fe9531fd17a4423134
       body: ''
