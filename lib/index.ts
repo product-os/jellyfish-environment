@@ -6,8 +6,8 @@
 
 import { Env } from '@humanwhocodes/env';
 
-import * as utils from './utils';
 import { EnvironmentBuilder, EnvironmentVariables } from './types';
+import * as utils from './utils';
 import { getVariables } from './variables';
 
 /**

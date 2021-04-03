@@ -28,6 +28,8 @@ import { GetTest } from './test';
 import { GetUI } from './ui';
 
 export function getVariables(env: EnvironmentBuilder): EnvironmentVariables {
+	const integration = GetIntegration(env);
+
 	return {
 		actions: GetActions(env),
 		aws: GetAWS(env),
@@ -35,7 +37,7 @@ export function getVariables(env: EnvironmentBuilder): EnvironmentVariables {
 		fileStorage: GetFileStorage(env),
 		flags: GetFlags(env),
 		http: GetHTTP(env),
-		integration: GetIntegration(env),
+		integration,
 		livechat: GetLivechat(env),
 		logentries: GetLogEntries(env),
 		logger: GetLogger(env),
@@ -58,6 +60,16 @@ export function getVariables(env: EnvironmentBuilder): EnvironmentVariables {
 		},
 		isCI: () => {
 			return env.isCI;
+		},
+		getIntegration: (name: string) => {
+			for (const [key, value] of Object.entries(integration)) {
+				if (name === key) {
+					return value;
+				}
+			}
+			throw new Error(
+				`Environment variables not found for integration "${name}"`,
+			);
 		},
 	};
 }
