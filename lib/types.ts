@@ -88,6 +88,18 @@ export interface EnvironmentVariables {
 	 * ```
 	 */
 	isCI: () => boolean;
+
+	/**
+	 * Get environment variables for an integration
+	 *
+	 * @returns Environment variables for specified integration
+	 *
+	 * @example
+	 * ```typescript
+	 * const frontEnvVars = environment.getIntegration('front');
+	 * ```
+	 */
+	getIntegration: (name: string) => any;
 }
 
 export interface EnvironmentBuilder {

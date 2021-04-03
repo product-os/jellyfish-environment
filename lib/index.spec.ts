@@ -4,6 +4,8 @@
  * Proprietary and confidential.
  */
 
+import isEmpty from 'lodash/isEmpty';
+import isPlainObject from 'lodash/isPlainObject';
 import { getEnvironment } from './index';
 
 describe('isProduction()', () => {
@@ -52,6 +54,31 @@ describe('isCI()', () => {
 	});
 });
 
+describe('getIntegration()', () => {
+	test('should return valid data on valid integration name', () => {
+		const environment = getEnvironment({
+			INTEGRATION_GITHUB_APP_ID: '1234',
+		});
+		const github = environment.getIntegration('github');
+		expect(isPlainObject(github)).toBeTruthy();
+		expect(isEmpty(github)).toBeFalsy();
+		expect(github.appId).toBe('1234');
+	});
+
+	test('should throw an error on invalid integration name', () => {
+		const environment = getEnvironment({});
+		expect.assertions(1);
+		const name = 'foobar';
+		try {
+			environment.getIntegration(name);
+		} catch (error) {
+			expect(error).toEqual(
+				new Error(`Environment variables not found for integration "${name}"`),
+			);
+		}
+	});
+});
+
 describe('returned object', () => {
 	test('has all expected keys', () => {
 		const environment = getEnvironment({});
@@ -80,6 +107,7 @@ describe('returned object', () => {
 			'isProduction',
 			'isDevelopment',
 			'isCI',
+			'getIntegration',
 		]);
 	});
 });
