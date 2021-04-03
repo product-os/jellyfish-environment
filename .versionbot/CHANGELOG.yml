@@ -1,4 +1,17 @@
 - commits:
+    - subject: Add integration env var getter
+      hash: 1007582c6e3a72122730beb7ff33bc226d7927f2
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 4.1.0
+  date: 2021-04-03T08:47:20.945Z
+- commits:
     - subject: 'patch: Update dependency simple-git-hooks to ^2.3.1'
       hash: 6fa269f79b7cf72af46e718dd415656b47b3a5f9
       body: ''
