@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update readme to reflect current usage
+      hash: 7b2dc0248f0653a0fe63e13ca74fd47d22e0f0b9
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 4.1.3
+  date: 2021-04-14T00:43:50.089Z
+- commits:
     - subject: 'patch: Update dependency typescript to ^4.2.4'
       hash: 9a3aeab6097a67b95343a59c76d9362ccdc25bb1
       body: ''
