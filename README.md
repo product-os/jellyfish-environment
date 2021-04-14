@@ -8,12 +8,24 @@ codebase that should ever read environment variables.
 
 # Usage
 
-Below is an example how to use this library:
+Use exported environment variables:
+```js
+import { defaultEnvironment } from '@balena/jellyfish-environment';
+console.log('Metrics Port:', defaultEnvironment.metrics.ports.app);
+```
 
 ```js
-const environment = require('@balena/jellyfish-environment')
+const environment = require('@balena/jellyfish-environment').defaultEnvironment
+console.log('Metrics Port:', environment.metrics.ports.app)
+```
 
-console.log(`Metrics Token: ${environment.metrics.token}`)
+Inject your own environment:
+```js
+import { getEnvironment } from '@balena/jellyfish-environment';
+const environment = getEnvironment({
+    METRICS_PORT: 1234,
+});
+console.log('Metrics Port:', environment.metrics.ports.app);
 ```
 
 # Documentation
