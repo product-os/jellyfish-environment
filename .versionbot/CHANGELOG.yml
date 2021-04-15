@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update non-major'
+      hash: abe27d327a4d82fbd7b5c1791516c93e38c5a0dd
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 4.1.4
+  date: 2021-04-15T19:52:56.317Z
+- commits:
     - subject: Update readme to reflect current usage
       hash: 7b2dc0248f0653a0fe63e13ca74fd47d22e0f0b9
       body: ''
