@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update dependency @types/jest to ^26.0.23'
+      hash: d86721abf79d30eda8a8323440cab26c65e42f6e
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 4.1.7
+  date: 2021-04-26T11:35:10.881Z
+- commits:
     - subject: 'patch: Update dependency simple-git-hooks to ^2.4.1'
       hash: 250e5617246139535856a007a4ed460cfe7703bf
       body: ''
