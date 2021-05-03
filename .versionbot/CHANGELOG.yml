@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update dependency @balena/lint to ^5.4.2'
+      hash: c28a86adb53f50ef977de3a42a4f733b2ecff830
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 4.1.8
+  date: 2021-05-03T09:59:55.983Z
+- commits:
     - subject: 'patch: Update dependency @types/jest to ^26.0.23'
       hash: d86721abf79d30eda8a8323440cab26c65e42f6e
       body: ''
