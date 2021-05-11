@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update dependency depcheck to ^1.4.1'
+      hash: 83caef8714373fdd0120ab031fb21e8d1f5ea6cb
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 4.1.13
+  date: 2021-05-11T07:55:51.830Z
+- commits:
     - subject: 'build(deps): bump hosted-git-info from 2.8.8 to 2.8.9'
       hash: 3039f3c4165cc43846bdd4f607f5ac42516c9238
       body: >
