@@ -1,4 +1,17 @@
 - commits:
+    - subject: Use jellyfish-config
+      hash: a88c8fc36c1be605a156621aea709c78cec73451
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 4.1.14
+  date: 2021-05-23T01:06:50.239Z
+- commits:
     - subject: 'patch: Update dependency depcheck to ^1.4.1'
       hash: 83caef8714373fdd0120ab031fb21e8d1f5ea6cb
       body: ''
