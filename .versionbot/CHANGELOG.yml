@@ -1,4 +1,26 @@
 - commits:
+    - subject: Update lint command
+      hash: dde9bdba09c188501db445d58a4933a4c409b832
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+    - subject: 'patch: Update dependency @balena/lint to v6'
+      hash: 010e41d441bdc675ee44f7e4b6f7c3ba85df18fe
+      body: |
+        Update @balena/lint from 5.4.2 to 6.0.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 4.1.17
+  date: 2021-05-24T05:22:40.498Z
+- commits:
     - subject: 'patch: Update dependency @balena/jellyfish-config to ^1.0.6'
       hash: e8d98f39816cf0f1c6045d25887acf1329859a5d
       body: ''
