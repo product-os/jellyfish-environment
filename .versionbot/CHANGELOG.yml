@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update dependency jest to ^27.0.2'
+      hash: 869a188121d29ab6496c07d66fed71aae5c350f5
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 4.1.28
+  date: 2021-05-29T12:46:36.551Z
+- commits:
     - subject: 'patch: Update external-major to v27'
       hash: 74a8a7224c0a126b26214e9cf3fd0e1d6909e38b
       body: ''
