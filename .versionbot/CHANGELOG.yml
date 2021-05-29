@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update external-major to v27'
+      hash: 74a8a7224c0a126b26214e9cf3fd0e1d6909e38b
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 4.1.27
+  date: 2021-05-29T06:29:00.377Z
+- commits:
     - subject: 'build(deps): bump ws from 7.4.4 to 7.4.6'
       hash: e1b10f35b1b56871d5ffbcf60777fe853d9e7bf5
       body: |
