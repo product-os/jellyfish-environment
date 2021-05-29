@@ -1,4 +1,20 @@
 - commits:
+    - subject: 'build(deps): bump ws from 7.4.4 to 7.4.6'
+      hash: e1b10f35b1b56871d5ffbcf60777fe853d9e7bf5
+      body: |
+        Bumps [ws](https://github.com/websockets/ws) from 7.4.4 to 7.4.6.
+        - [Release notes](https://github.com/websockets/ws/releases)
+        - [Commits](https://github.com/websockets/ws/compare/7.4.4...7.4.6)
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: 'dependabot[bot] <support@github.com>'
+        signed-off-by: 'dependabot[bot] <support@github.com>'
+      author: 'dependabot[bot]'
+      nested: []
+  version: 4.1.26
+  date: 2021-05-29T06:16:51.453Z
+- commits:
     - subject: 'patch: Update dependency typescript to ^4.3.2'
       hash: 122ef784e6c05123353a67b288ea4d43ada39ddb
       body: ''
