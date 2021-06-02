@@ -1,4 +1,17 @@
 - commits:
+    - subject: Remove unnecessary catch-uncommitted
+      hash: c59457a6f472116848c5eb0b37a91e23c35b399f
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 4.1.32
+  date: 2021-06-02T07:22:27.122Z
+- commits:
     - subject: 'patch: Update dependency @balena/jellyfish-config to ^1.2.7'
       hash: 9b822df1649fb892d3e22f9c7018720246f0dbe8
       body: ''
