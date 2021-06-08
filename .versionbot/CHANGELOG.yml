@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update dependency @balena/jellyfish-config to ^1.2.8'
+      hash: c492189113fd971291e6a20bc8edb6377430f9c0
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 4.2.1
+  date: 2021-06-08T02:51:07.530Z
+- commits:
     - subject: Add HTTP ports for tick and worker instances
       hash: 025dd5df0391c0e2c9768b27c1d3573d88608cd8
       body: ''
