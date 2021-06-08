@@ -5,6 +5,7 @@
  */
 
 import { Env } from '@humanwhocodes/env';
+import isBase64 from 'is-base64';
 
 import { EnvironmentBuilder, EnvironmentVariables } from './types';
 import * as utils from './utils';
@@ -51,10 +52,13 @@ class Environment implements EnvironmentBuilder {
 	}
 
 	public getBase64(name: string, fallback?: string): string {
-		return Buffer.from(
+		const rawValue = utils.cleanString(
 			this._env.get(name, fallback || '') || '',
-			'base64',
-		).toString();
+		);
+		if (isBase64(rawValue, { allowEmpty: false })) {
+			return Buffer.from(rawValue, 'base64').toString();
+		}
+		return rawValue;
 	}
 }
 
