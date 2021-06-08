@@ -1,4 +1,16 @@
 - commits:
+    - subject: 'patch: Update dependency @balena/jellyfish-config to ^1.3.0'
+      hash: 9ba0381da77f852254a6558b64addeaf66887f6e
+      body: |
+        Update @balena/jellyfish-config from 1.2.8 to 1.3.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 4.2.2
+  date: 2021-06-08T04:41:41.928Z
+- commits:
     - subject: 'patch: Update dependency @balena/jellyfish-config to ^1.2.8'
       hash: c492189113fd971291e6a20bc8edb6377430f9c0
       body: ''
