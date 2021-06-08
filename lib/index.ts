@@ -49,6 +49,13 @@ class Environment implements EnvironmentBuilder {
 	public getBoolean(name: string, fallback?: boolean): boolean {
 		return utils.setBoolean(this._env.get(name) || '', fallback || false);
 	}
+
+	public getBase64(name: string, fallback?: string): string {
+		return Buffer.from(
+			this._env.get(name, fallback || '') || '',
+			'base64',
+		).toString();
+	}
 }
 
 /**

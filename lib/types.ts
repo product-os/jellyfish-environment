@@ -149,6 +149,20 @@ export interface EnvironmentBuilder {
 	 * ```
 	 */
 	getBoolean: (name: string, fallback?: boolean) => boolean;
+
+	/**
+	 * Get cleaned and parsed environment variable base64 string
+	 *
+	 * @param name - environment variable name
+	 * @param fallback - string to fallback to
+	 * @returns parsed value of fallback
+	 *
+	 * @example
+	 * ```typescript
+	 * const value = environment.getBase64('MY_STRING', 'eyJ0eXBlIjoic2VydmljZV9hY2NvdW50In0=');
+	 * ```
+	 */
+	getBase64: (name: string, fallback?: string) => string;
 }
 
 export {

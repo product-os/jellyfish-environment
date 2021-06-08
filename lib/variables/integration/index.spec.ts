@@ -29,7 +29,7 @@ const variables = {
 	INTEGRATION_FLOWDOCK_TOKEN: 'token-5',
 	INTEGRATION_FLOWDOCK_SIGNATURE_KEY: 'key-8',
 	INTEGRATION_TYPEFORM_SIGNATURE_KEY: 'key-9',
-	INTEGRATION_GOOGLE_MEET_CREDENTIALS: 'cred-1',
+	INTEGRATION_GOOGLE_MEET_CREDENTIALS: 'eyJ0eXBlIjoic2VydmljZV9hY2NvdW50In0=',
 };
 
 describe('Integration', () => {
@@ -79,7 +79,10 @@ describe('Integration', () => {
 				signature: variables.INTEGRATION_TYPEFORM_SIGNATURE_KEY,
 			},
 			'google-meet': {
-				credentials: variables.INTEGRATION_GOOGLE_MEET_CREDENTIALS,
+				credentials: Buffer.from(
+					variables.INTEGRATION_GOOGLE_MEET_CREDENTIALS,
+					'base64',
+				).toString(),
 			},
 		});
 	});
