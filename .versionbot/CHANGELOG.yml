@@ -1,4 +1,17 @@
 - commits:
+    - subject: Add HTTP ports for tick and worker instances
+      hash: 025dd5df0391c0e2c9768b27c1d3573d88608cd8
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: josh Bowling <josh@balena.io>
+        signed-off-by: josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 4.2.0
+  date: 2021-06-08T01:32:30.275Z
+- commits:
     - subject: 'patch: Update dependency ts-jest to ^27.0.3'
       hash: eec222459048ceb9e8b73ea7d50afaccafaf2e1f
       body: ''
