@@ -96,6 +96,7 @@ export {
 	Pod,
 	Queue,
 	Redis,
+	RegistryOptions,
 	Sentry,
 	Test,
 	UI,
