@@ -20,6 +20,7 @@ import { OAuth } from './variables/oauth';
 import { Pod } from './variables/pod';
 import { Queue } from './variables/queue';
 import { Redis } from './variables/redis';
+import { RegistryOptions } from './variables/registry';
 import { Sentry } from './variables/sentry';
 import { Test } from './variables/test';
 import { UI } from './variables/ui';
@@ -43,6 +44,7 @@ export interface EnvironmentVariables {
 	postgres: DatabaseOptions;
 	queue: Queue;
 	redis: Redis;
+	registry: RegistryOptions;
 	sentry: Sentry;
 	test: Test;
 	ui: UI;
@@ -170,6 +172,7 @@ export {
 	Pod,
 	Queue,
 	Redis,
+	RegistryOptions,
 	Sentry,
 	Test,
 	UI,
