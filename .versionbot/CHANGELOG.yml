@@ -1,4 +1,17 @@
 - commits:
+    - subject: add env vars for docker registry
+      hash: 112562dc3e0e969f13426c95cbaea87aefc69444
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Martin Rauscher <martin@balena.io>
+        signed-off-by: Martin Rauscher <martin@balena.io>
+      author: Martin Rauscher
+      nested: []
+  version: 4.3.0
+  date: 2021-06-24T13:43:50.606Z
+- commits:
     - subject: Bump jest to v27.0.5
       hash: 8dbd2dc973622095f2efd8b64bdd7e52f25376b6
       body: ''
