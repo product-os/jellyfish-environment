@@ -1,4 +1,17 @@
 - commits:
+    - subject: Add registry variable unit tests
+      hash: ac4ad87181868e65fdbc5ddf98174412ad5cbb1b
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 4.3.1
+  date: 2021-06-25T00:41:01.490Z
+- commits:
     - subject: add env vars for docker registry
       hash: 112562dc3e0e969f13426c95cbaea87aefc69444
       body: ''
