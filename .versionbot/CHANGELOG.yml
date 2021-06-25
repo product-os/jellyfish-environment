@@ -1,4 +1,17 @@
 - commits:
+    - subject: Bump depcheck to v1.4.2
+      hash: 42295362323c2919636a3962e51b310dcaaa2b40
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 4.3.2
+  date: 2021-06-25T22:37:30.463Z
+- commits:
     - subject: Add registry variable unit tests
       hash: ac4ad87181868e65fdbc5ddf98174412ad5cbb1b
       body: ''
