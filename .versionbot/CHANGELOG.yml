@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update external-non-major'
+      hash: b27ad161dc9ac80bf7e9d034fdbf3bd878fc8e83
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 4.3.3
+  date: 2021-06-29T07:00:30.383Z
+- commits:
     - subject: Bump depcheck to v1.4.2
       hash: 42295362323c2919636a3962e51b310dcaaa2b40
       body: ''
