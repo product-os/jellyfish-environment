@@ -5,6 +5,7 @@
  */
 
 import { getEnvironment } from '../../../lib';
+import * as defaults from './defaults';
 
 const variables = {
 	INTEGRATION_DEFAULT_USER: 'admin',
@@ -82,5 +83,12 @@ describe('Integration', () => {
 				credentials: variables.INTEGRATION_GOOGLE_MEET_CREDENTIALS,
 			},
 		});
+	});
+
+	test('defaults are set', () => {
+		const environment = getEnvironment();
+		expect(environment.integration['balena-api'].oauthBaseUrl).toEqual(
+			defaults.INTEGRATION_BALENA_API_OAUTH_BASE_URL,
+		);
 	});
 });

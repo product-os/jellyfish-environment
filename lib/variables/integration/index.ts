@@ -4,6 +4,7 @@
  * Proprietary and confidential.
  */
 import { EnvironmentBuilder } from '../../types';
+import * as defaults from './defaults';
 
 export interface Integration {
 	default: {
@@ -70,7 +71,10 @@ export function GetIntegration(env: EnvironmentBuilder): Integration {
 			},
 			appId: env.getString('INTEGRATION_BALENA_API_APP_ID'),
 			appSecret: env.getString('INTEGRATION_BALENA_API_APP_SECRET'),
-			oauthBaseUrl: env.getString('INTEGRATION_BALENA_API_OAUTH_BASE_URL'),
+			oauthBaseUrl: env.getString(
+				'INTEGRATION_BALENA_API_OAUTH_BASE_URL',
+				defaults.INTEGRATION_BALENA_API_OAUTH_BASE_URL,
+			),
 		},
 		github: {
 			api: env.getString('INTEGRATION_GITHUB_TOKEN'),
