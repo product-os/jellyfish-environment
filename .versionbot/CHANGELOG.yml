@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update dependency @balena/jellyfish-config to ^1.4.4'
+      hash: 24fdb245f1065ef1e3f6522a9d742d2d0cf5484e
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 4.3.12
+  date: 2021-07-09T01:30:10.337Z
+- commits:
     - subject: Set default for Balena API OAuth base URL
       hash: 8c97f2ddc1978b9d5c57a15b5b287909fe8ebd1e
       body: ''
