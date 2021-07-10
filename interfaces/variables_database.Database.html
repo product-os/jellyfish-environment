@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Metrics | @balena/jellyfish-environment</title>
+	<title>Database | @balena/jellyfish-environment</title>
 	<meta name="description" content="Documentation for @balena/jellyfish-environment">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,13 +55,13 @@
 					<a href="../modules.html">@balena/jellyfish-environment</a>
 				</li>
 				<li>
-					<a href="../modules/variables_metrics.html">variables/metrics</a>
+					<a href="../modules/variables_database.html">variables/database</a>
 				</li>
 				<li>
-					<a href="variables_metrics.metrics.html">Metrics</a>
+					<a href="variables_database.Database.html">Database</a>
 				</li>
 			</ul>
-			<h1>Interface Metrics</h1>
+			<h1>Interface Database</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Metrics</span>
+						<span class="target">Database</span>
 					</li>
 				</ul>
 			</section>
@@ -83,8 +83,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="variables_metrics.metrics.html#ports" class="tsd-kind-icon">ports</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="variables_metrics.metrics.html#token" class="tsd-kind-icon">token</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="variables_database.Database.html#options" class="tsd-kind-icon">options</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="variables_database.Database.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 					</div>
@@ -93,33 +93,22 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="ports" class="tsd-anchor"></a>
-					<h3>ports</h3>
-					<div class="tsd-signature tsd-kind-icon">ports<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>app<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>socket<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
+					<a name="options" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> options</h3>
+					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="variables_database.DatabaseOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">DatabaseOptions</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-environment/blob/84e751e/lib/variables/metrics/index.ts#L11">variables/metrics/index.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-environment/blob/12338eb/lib/variables/database/index.ts#L22">variables/database/index.ts:22</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter">
-								<h5>app<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
-							</li>
-							<li class="tsd-parameter">
-								<h5>socket<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
-							</li>
-						</ul>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="token" class="tsd-anchor"></a>
-					<h3>token</h3>
-					<div class="tsd-signature tsd-kind-icon">token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="type" class="tsd-anchor"></a>
+					<h3>type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-environment/blob/84e751e/lib/variables/metrics/index.ts#L10">variables/metrics/index.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-environment/blob/12338eb/lib/variables/database/index.ts#L21">variables/database/index.ts:21</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -132,7 +121,7 @@
 						<a href="../modules.html">Modules</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/variables_metrics.html">variables/metrics</a>
+						<a href="../modules/variables_database.html">variables/database</a>
 					</li>
 				</ul>
 			</nav>
@@ -141,20 +130,23 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="variables_metrics.metrics.html" class="tsd-kind-icon">Metrics</a>
+						<a href="variables_database.Database.html" class="tsd-kind-icon">Database</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="variables_metrics.metrics.html#ports" class="tsd-kind-icon">ports</a>
+								<a href="variables_database.Database.html#options" class="tsd-kind-icon">options</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="variables_metrics.metrics.html#token" class="tsd-kind-icon">token</a>
+								<a href="variables_database.Database.html#type" class="tsd-kind-icon">type</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="variables_database.DatabaseOptions.html" class="tsd-kind-icon">Database<wbr>Options</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/variables_metrics.html#getmetrics" class="tsd-kind-icon">Get<wbr>Metrics</a>
+						<a href="../modules/variables_database.html#GetDatabase" class="tsd-kind-icon">Get<wbr>Database</a>
 					</li>
 				</ul>
 			</nav>

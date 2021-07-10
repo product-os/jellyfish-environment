@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DatabaseOptions | @balena/jellyfish-environment</title>
+	<title>RegistryOptions | @balena/jellyfish-environment</title>
 	<meta name="description" content="Documentation for @balena/jellyfish-environment">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,13 +55,13 @@
 					<a href="../modules.html">@balena/jellyfish-environment</a>
 				</li>
 				<li>
-					<a href="../modules/variables_database.html">variables/database</a>
+					<a href="../modules/variables_registry.html">variables/registry</a>
 				</li>
 				<li>
-					<a href="variables_database.databaseoptions.html">DatabaseOptions</a>
+					<a href="variables_registry.RegistryOptions.html">RegistryOptions</a>
 				</li>
 			</ul>
-			<h1>Interface DatabaseOptions</h1>
+			<h1>Interface RegistryOptions</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">DatabaseOptions</span>
+						<span class="target">RegistryOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -83,11 +83,12 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="variables_database.databaseoptions.html#database" class="tsd-kind-icon">database</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="variables_database.databaseoptions.html#host" class="tsd-kind-icon">host</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="variables_database.databaseoptions.html#password" class="tsd-kind-icon">password</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="variables_database.databaseoptions.html#port" class="tsd-kind-icon">port</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="variables_database.databaseoptions.html#user" class="tsd-kind-icon">user</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="variables_registry.RegistryOptions.html#host" class="tsd-kind-icon">host</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="variables_registry.RegistryOptions.html#insecureHttp" class="tsd-kind-icon">insecure<wbr>Http</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="variables_registry.RegistryOptions.html#tokenAuthCertIssuer" class="tsd-kind-icon">token<wbr>Auth<wbr>Cert<wbr>Issuer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="variables_registry.RegistryOptions.html#tokenAuthCertKey" class="tsd-kind-icon">token<wbr>Auth<wbr>Cert<wbr>Key</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="variables_registry.RegistryOptions.html#tokenAuthCertKid" class="tsd-kind-icon">token<wbr>Auth<wbr>Cert<wbr>Kid</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="variables_registry.RegistryOptions.html#tokenAuthJwtAlgo" class="tsd-kind-icon">token<wbr>Auth<wbr>Jwt<wbr>Algo</a></li>
 							</ul>
 						</section>
 					</div>
@@ -96,52 +97,62 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="database" class="tsd-anchor"></a>
-					<h3>database</h3>
-					<div class="tsd-signature tsd-kind-icon">database<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-environment/blob/84e751e/lib/variables/database/index.ts#L15">variables/database/index.ts:15</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="host" class="tsd-anchor"></a>
 					<h3>host</h3>
 					<div class="tsd-signature tsd-kind-icon">host<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-environment/blob/84e751e/lib/variables/database/index.ts#L16">variables/database/index.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-environment/blob/12338eb/lib/variables/registry/index.ts#L10">variables/registry/index.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="password" class="tsd-anchor"></a>
-					<h3>password</h3>
-					<div class="tsd-signature tsd-kind-icon">password<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="insecureHttp" class="tsd-anchor"></a>
+					<h3>insecure<wbr>Http</h3>
+					<div class="tsd-signature tsd-kind-icon">insecure<wbr>Http<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-environment/blob/84e751e/lib/variables/database/index.ts#L14">variables/database/index.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-environment/blob/12338eb/lib/variables/registry/index.ts#L15">variables/registry/index.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="port" class="tsd-anchor"></a>
-					<h3>port</h3>
-					<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="tokenAuthCertIssuer" class="tsd-anchor"></a>
+					<h3>token<wbr>Auth<wbr>Cert<wbr>Issuer</h3>
+					<div class="tsd-signature tsd-kind-icon">token<wbr>Auth<wbr>Cert<wbr>Issuer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-environment/blob/84e751e/lib/variables/database/index.ts#L17">variables/database/index.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-environment/blob/12338eb/lib/variables/registry/index.ts#L11">variables/registry/index.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="user" class="tsd-anchor"></a>
-					<h3>user</h3>
-					<div class="tsd-signature tsd-kind-icon">user<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="tokenAuthCertKey" class="tsd-anchor"></a>
+					<h3>token<wbr>Auth<wbr>Cert<wbr>Key</h3>
+					<div class="tsd-signature tsd-kind-icon">token<wbr>Auth<wbr>Cert<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-environment/blob/84e751e/lib/variables/database/index.ts#L13">variables/database/index.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-environment/blob/12338eb/lib/variables/registry/index.ts#L13">variables/registry/index.ts:13</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="tokenAuthCertKid" class="tsd-anchor"></a>
+					<h3>token<wbr>Auth<wbr>Cert<wbr>Kid</h3>
+					<div class="tsd-signature tsd-kind-icon">token<wbr>Auth<wbr>Cert<wbr>Kid<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-environment/blob/12338eb/lib/variables/registry/index.ts#L14">variables/registry/index.ts:14</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="tokenAuthJwtAlgo" class="tsd-anchor"></a>
+					<h3>token<wbr>Auth<wbr>Jwt<wbr>Algo</h3>
+					<div class="tsd-signature tsd-kind-icon">token<wbr>Auth<wbr>Jwt<wbr>Algo<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-environment/blob/12338eb/lib/variables/registry/index.ts#L12">variables/registry/index.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -154,41 +165,41 @@
 						<a href="../modules.html">Modules</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/variables_database.html">variables/database</a>
+						<a href="../modules/variables_registry.html">variables/registry</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="variables_database.database.html" class="tsd-kind-icon">Database</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="variables_database.databaseoptions.html" class="tsd-kind-icon">Database<wbr>Options</a>
+						<a href="variables_registry.RegistryOptions.html" class="tsd-kind-icon">Registry<wbr>Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="variables_database.databaseoptions.html#database" class="tsd-kind-icon">database</a>
+								<a href="variables_registry.RegistryOptions.html#host" class="tsd-kind-icon">host</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="variables_database.databaseoptions.html#host" class="tsd-kind-icon">host</a>
+								<a href="variables_registry.RegistryOptions.html#insecureHttp" class="tsd-kind-icon">insecure<wbr>Http</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="variables_database.databaseoptions.html#password" class="tsd-kind-icon">password</a>
+								<a href="variables_registry.RegistryOptions.html#tokenAuthCertIssuer" class="tsd-kind-icon">token<wbr>Auth<wbr>Cert<wbr>Issuer</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="variables_database.databaseoptions.html#port" class="tsd-kind-icon">port</a>
+								<a href="variables_registry.RegistryOptions.html#tokenAuthCertKey" class="tsd-kind-icon">token<wbr>Auth<wbr>Cert<wbr>Key</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="variables_database.databaseoptions.html#user" class="tsd-kind-icon">user</a>
+								<a href="variables_registry.RegistryOptions.html#tokenAuthCertKid" class="tsd-kind-icon">token<wbr>Auth<wbr>Cert<wbr>Kid</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="variables_registry.RegistryOptions.html#tokenAuthJwtAlgo" class="tsd-kind-icon">token<wbr>Auth<wbr>Jwt<wbr>Algo</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/variables_database.html#getdatabase" class="tsd-kind-icon">Get<wbr>Database</a>
+						<a href="../modules/variables_registry.html#GetRegistry" class="tsd-kind-icon">Get<wbr>Registry</a>
 					</li>
 				</ul>
 			</nav>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Queue | @balena/jellyfish-environment</title>
+	<title>MailOptions | @balena/jellyfish-environment</title>
 	<meta name="description" content="Documentation for @balena/jellyfish-environment">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,13 +55,13 @@
 					<a href="../modules.html">@balena/jellyfish-environment</a>
 				</li>
 				<li>
-					<a href="../modules/variables_queue.html">variables/queue</a>
+					<a href="../modules/variables_mail.html">variables/mail</a>
 				</li>
 				<li>
-					<a href="variables_queue.queue.html">Queue</a>
+					<a href="variables_mail.MailOptions.html">MailOptions</a>
 				</li>
 			</ul>
-			<h1>Interface Queue</h1>
+			<h1>Interface MailOptions</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Queue</span>
+						<span class="target">MailOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -83,7 +83,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="variables_queue.queue.html#concurrency" class="tsd-kind-icon">concurrency</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="variables_mail.MailOptions.html#baseUrl" class="tsd-kind-icon">base<wbr>Url</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="variables_mail.MailOptions.html#domain" class="tsd-kind-icon">domain</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="variables_mail.MailOptions.html#token" class="tsd-kind-icon">token</a></li>
 							</ul>
 						</section>
 					</div>
@@ -92,12 +94,32 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="concurrency" class="tsd-anchor"></a>
-					<h3>concurrency</h3>
-					<div class="tsd-signature tsd-kind-icon">concurrency<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="baseUrl" class="tsd-anchor"></a>
+					<h3>base<wbr>Url</h3>
+					<div class="tsd-signature tsd-kind-icon">base<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-environment/blob/84e751e/lib/variables/queue/index.ts#L10">variables/queue/index.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-environment/blob/12338eb/lib/variables/mail/index.ts#L14">variables/mail/index.ts:14</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="domain" class="tsd-anchor"></a>
+					<h3>domain</h3>
+					<div class="tsd-signature tsd-kind-icon">domain<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-environment/blob/12338eb/lib/variables/mail/index.ts#L13">variables/mail/index.ts:13</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="token" class="tsd-anchor"></a>
+					<h3>token</h3>
+					<div class="tsd-signature tsd-kind-icon">token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-environment/blob/12338eb/lib/variables/mail/index.ts#L12">variables/mail/index.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -110,26 +132,35 @@
 						<a href="../modules.html">Modules</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/variables_queue.html">variables/queue</a>
+						<a href="../modules/variables_mail.html">variables/mail</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="variables_mail.Mail.html" class="tsd-kind-icon">Mail</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="variables_queue.queue.html" class="tsd-kind-icon">Queue</a>
+						<a href="variables_mail.MailOptions.html" class="tsd-kind-icon">Mail<wbr>Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="variables_queue.queue.html#concurrency" class="tsd-kind-icon">concurrency</a>
+								<a href="variables_mail.MailOptions.html#baseUrl" class="tsd-kind-icon">base<wbr>Url</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="variables_mail.MailOptions.html#domain" class="tsd-kind-icon">domain</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="variables_mail.MailOptions.html#token" class="tsd-kind-icon">token</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/variables_queue.html#getqueue" class="tsd-kind-icon">Get<wbr>Queue</a>
+						<a href="../modules/variables_mail.html#GetMail" class="tsd-kind-icon">Get<wbr>Mail</a>
 					</li>
 				</ul>
 			</nav>

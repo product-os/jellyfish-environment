@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Database | @balena/jellyfish-environment</title>
+	<title>AWS | @balena/jellyfish-environment</title>
 	<meta name="description" content="Documentation for @balena/jellyfish-environment">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,13 +55,13 @@
 					<a href="../modules.html">@balena/jellyfish-environment</a>
 				</li>
 				<li>
-					<a href="../modules/variables_database.html">variables/database</a>
+					<a href="../modules/variables_aws.html">variables/aws</a>
 				</li>
 				<li>
-					<a href="variables_database.database.html">Database</a>
+					<a href="variables_aws.AWS.html">AWS</a>
 				</li>
 			</ul>
-			<h1>Interface Database</h1>
+			<h1>Interface AWS</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Database</span>
+						<span class="target">AWS</span>
 					</li>
 				</ul>
 			</section>
@@ -83,8 +83,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="variables_database.database.html#options" class="tsd-kind-icon">options</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="variables_database.database.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="variables_aws.AWS.html#accessKeyId" class="tsd-kind-icon">access<wbr>Key<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="variables_aws.AWS.html#s3BucketName" class="tsd-kind-icon">s3<wbr>Bucket<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="variables_aws.AWS.html#secretAccessKey" class="tsd-kind-icon">secret<wbr>Access<wbr>Key</a></li>
 							</ul>
 						</section>
 					</div>
@@ -93,22 +94,32 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="options" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> options</h3>
-					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="variables_database.databaseoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">DatabaseOptions</a></div>
+					<a name="accessKeyId" class="tsd-anchor"></a>
+					<h3>access<wbr>Key<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">access<wbr>Key<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-environment/blob/84e751e/lib/variables/database/index.ts#L22">variables/database/index.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-environment/blob/12338eb/lib/variables/aws/index.ts#L10">variables/aws/index.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="type" class="tsd-anchor"></a>
-					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="s3BucketName" class="tsd-anchor"></a>
+					<h3>s3<wbr>Bucket<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">s3<wbr>Bucket<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-environment/blob/84e751e/lib/variables/database/index.ts#L21">variables/database/index.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-environment/blob/12338eb/lib/variables/aws/index.ts#L12">variables/aws/index.ts:12</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="secretAccessKey" class="tsd-anchor"></a>
+					<h3>secret<wbr>Access<wbr>Key</h3>
+					<div class="tsd-signature tsd-kind-icon">secret<wbr>Access<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-environment/blob/12338eb/lib/variables/aws/index.ts#L11">variables/aws/index.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -121,7 +132,7 @@
 						<a href="../modules.html">Modules</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/variables_database.html">variables/database</a>
+						<a href="../modules/variables_aws.html">variables/aws</a>
 					</li>
 				</ul>
 			</nav>
@@ -130,23 +141,23 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="variables_database.database.html" class="tsd-kind-icon">Database</a>
+						<a href="variables_aws.AWS.html" class="tsd-kind-icon">AWS</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="variables_database.database.html#options" class="tsd-kind-icon">options</a>
+								<a href="variables_aws.AWS.html#accessKeyId" class="tsd-kind-icon">access<wbr>Key<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="variables_database.database.html#type" class="tsd-kind-icon">type</a>
+								<a href="variables_aws.AWS.html#s3BucketName" class="tsd-kind-icon">s3<wbr>Bucket<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="variables_aws.AWS.html#secretAccessKey" class="tsd-kind-icon">secret<wbr>Access<wbr>Key</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="variables_database.databaseoptions.html" class="tsd-kind-icon">Database<wbr>Options</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/variables_database.html#getdatabase" class="tsd-kind-icon">Get<wbr>Database</a>
+						<a href="../modules/variables_aws.html#GetAWS" class="tsd-kind-icon">GetAWS</a>
 					</li>
 				</ul>
 			</nav>
