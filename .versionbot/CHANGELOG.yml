@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update dependency typedoc to ^0.21.3'
+      hash: f5e12e8ecf7cbdac37a6a4a11c7cc35cc94f18d4
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 4.3.14
+  date: 2021-07-10T21:11:10.909Z
+- commits:
     - subject: 'patch: Update dependency @types/jest to ^26.0.24'
       hash: 84b9f96d205e3a5082a57637e8926aadd4f1968d
       body: ''
