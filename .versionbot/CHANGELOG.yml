@@ -1,4 +1,17 @@
 - commits:
+    - subject: Fix jest config
+      hash: a370268b5145878d7503cda1d245a0244b8b5258
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Graham McCulloch <graham@balena.io>
+        signed-off-by: Graham McCulloch <graham@balena.io>
+      author: Graham McCulloch
+      nested: []
+  version: 4.3.15
+  date: 2021-07-14T07:11:50.134Z
+- commits:
     - subject: 'patch: Update dependency typedoc to ^0.21.3'
       hash: f5e12e8ecf7cbdac37a6a4a11c7cc35cc94f18d4
       body: ''
