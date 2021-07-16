@@ -1,4 +1,17 @@
 - commits:
+    - subject: Remove whitesource config
+      hash: 1998f73a5db37ca249715204705dc0b99e11cf22
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 4.3.17
+  date: 2021-07-16T23:16:30.663Z
+- commits:
     - subject: 'patch: Update dependency @balena/jellyfish-config to ^1.4.5'
       hash: adb9b4f537a50d3fb8601b5ed7362d400e46f095
       body: ''
