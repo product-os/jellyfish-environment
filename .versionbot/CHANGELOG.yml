@@ -1,4 +1,17 @@
 - commits:
+    - subject: add http timeouts
+      hash: 3367f1680606460762ab2094d99b20d64e334571
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Martin Rauscher <martin@balena.io>
+        signed-off-by: Martin Rauscher <martin@balena.io>
+      author: Martin Rauscher
+      nested: []
+  version: 4.4.0
+  date: 2021-08-10T18:36:20.132Z
+- commits:
     - subject: use balena convention for npm script names
       hash: 02b84ffe82e5e4f157cf7fcd97f4cd2447b5887c
       body: |
