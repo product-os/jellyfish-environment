@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update internal-patch'
+      hash: 586b92f40664d84da6063bf89faf1bb94de07fae
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 5.0.1
+  date: 2021-08-19T08:19:10.047Z
+- commits:
     - subject: Remove tick port variables
       hash: eaee6dc1e47907182fd6123d0ef4e9e6095cca65
       body: ''
