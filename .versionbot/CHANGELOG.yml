@@ -1,4 +1,17 @@
 - commits:
+    - subject: Remove tick port variables
+      hash: eaee6dc1e47907182fd6123d0ef4e9e6095cca65
+      body: ''
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 5.0.0
+  date: 2021-08-19T08:09:41.992Z
+- commits:
     - subject: add http timeouts
       hash: 3367f1680606460762ab2094d99b20d64e334571
       body: ''
