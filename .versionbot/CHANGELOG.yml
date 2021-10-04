@@ -1,4 +1,15 @@
 - commits:
+    - subject: "\U0001F504 Synced file(s) with product-os/jellyfish-config"
+      hash: 03fcf6d4aff72439aefa7a600df1c869e599a517
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: joshbwlng
+      nested: []
+  version: 5.0.4
+  date: 2021-10-04T05:11:01.214Z
+- commits:
     - subject: 'patch: Update dependency @types/jest to v27'
       hash: 7e3bffec2915bdf5c25a1d1a8b6d15aeaeb7db03
       body: ''
