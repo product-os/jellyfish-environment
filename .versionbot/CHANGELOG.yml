@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update dependency lint-staged to ^11.2.4'
+      hash: f9166beaba80cd98f66dcab43db0403d96c26780
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 5.0.8
+  date: 2021-10-23T18:41:17.873Z
+- commits:
     - subject: Add typedoc to depcheck ignore list
       hash: 6328a7c4ff64777a59ab5f499f1a1364cad2bbec
       body: ''
