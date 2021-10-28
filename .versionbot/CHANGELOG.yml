@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update dependency @balena/jellycheck to ^0.1.4'
+      hash: b1141f760e06289123d755837323eafd37ca9e2e
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 5.0.9
+  date: 2021-10-28T02:26:47.587Z
+- commits:
     - subject: 'patch: Update dependency lint-staged to ^11.2.4'
       hash: f9166beaba80cd98f66dcab43db0403d96c26780
       body: ''
