@@ -5,6 +5,7 @@
  */
 
 import { getEnvironment } from '../../../lib';
+import * as defaults from './defaults';
 
 const variables = {
 	TEST_INTEGRATION_GITHUB_REPO: 'repo-1',
@@ -58,6 +59,34 @@ describe('Test', () => {
 				role: variables.TEST_USER_ROLE,
 			},
 			ci: variables.CI,
+		});
+	});
+
+	test('defaults are set', () => {
+		const environment = getEnvironment();
+		expect(environment.test.integration).toEqual({
+			github: {
+				repo: defaults.TEST_INTEGRATION_GITHUB_REPO,
+			},
+			front: {
+				inboxes: [
+					defaults.TEST_INTEGRATION_FRONT_INBOX_1,
+					defaults.TEST_INTEGRATION_FRONT_INBOX_2,
+				],
+			},
+			discourse: {
+				category: defaults.TEST_INTEGRATION_DISCOURSE_CATEGORY,
+				username: defaults.TEST_INTEGRATION_DISCOURSE_USERNAME,
+				nonModeratorUsername:
+					defaults.TEST_INTEGRATION_DISCOURSE_NON_MODERATOR_USERNAME,
+			},
+			skip: defaults.TEST_INTEGRATION_SKIP,
+		});
+		expect(environment.test.user).toEqual({
+			username: defaults.TEST_USER_USERNAME,
+			password: defaults.TEST_USER_PASSWORD,
+			organization: defaults.TEST_USER_ORGANIZATION,
+			role: defaults.TEST_USER_ROLE,
 		});
 	});
 });

@@ -5,6 +5,7 @@
  */
 
 import { getEnvironment } from '../../../lib';
+import * as defaults from './defaults';
 
 const variables = {
 	SERVER_HOST: 'http://api',
@@ -25,6 +26,18 @@ describe('HTTP', () => {
 			timeout: parseInt(variables.HTTP_TIMEOUT, 10),
 			headersTimeout: parseInt(variables.HTTP_HEADERS_TIMEOUT, 10),
 			requestTimeout: parseInt(variables.HTTP_REQUEST_TIMEOUT, 10),
+		});
+	});
+
+	test('defaults are set', () => {
+		const environment = getEnvironment();
+		expect(environment.http).toEqual({
+			port: defaults.SERVER_PORT,
+			host: defaults.SERVER_HOST,
+			workerPort: defaults.HTTP_WORKER_PORT,
+			timeout: defaults.HTTP_TIMEOUT,
+			headersTimeout: defaults.HTTP_HEADERS_TIMEOUT,
+			requestTimeout: defaults.HTTP_REQUEST_TIMEOUT,
 		});
 	});
 });

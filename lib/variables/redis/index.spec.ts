@@ -5,6 +5,7 @@
  */
 
 import { getEnvironment } from '../../../lib';
+import * as defaults from './defaults';
 
 const variables = {
 	REDIS_HOST: 'foo',
@@ -35,6 +36,16 @@ describe('Redis', () => {
 			port: variables.REDIS_PORT,
 			namespace: variables.REDIS_NAMESPACE,
 			password,
+		});
+	});
+
+	test('defaults are set', () => {
+		const environment = getEnvironment();
+		expect(environment.redis).toEqual({
+			mock: false,
+			namespace: defaults.REDIS_NAMESPACE,
+			host: defaults.REDIS_HOST,
+			port: defaults.REDIS_PORT,
 		});
 	});
 });

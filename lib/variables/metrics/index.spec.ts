@@ -27,9 +27,12 @@ describe('Metrics', () => {
 
 	test('defaults are set', () => {
 		const environment = getEnvironment();
-		expect(environment.metrics.ports.app).toEqual(defaults.METRICS_PORT);
-		expect(environment.metrics.ports.socket).toEqual(
-			defaults.SOCKET_METRICS_PORT,
-		);
+		expect(environment.metrics).toEqual({
+			token: defaults.MONITOR_SECRET_TOKEN,
+			ports: {
+				app: defaults.METRICS_PORT,
+				socket: defaults.SOCKET_METRICS_PORT,
+			},
+		});
 	});
 });

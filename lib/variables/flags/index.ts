@@ -3,7 +3,9 @@
  * Unauthorized copying of this file, via any medium is strictly prohibited.
  * Proprietary and confidential.
  */
+
 import { EnvironmentBuilder } from '../../types';
+import * as defaults from './defaults';
 
 export interface Flags {
 	visual: boolean;
@@ -11,6 +13,6 @@ export interface Flags {
 
 export function GetFlags(env: EnvironmentBuilder): Flags {
 	return {
-		visual: env.getBoolean('VISUAL', false),
+		visual: env.getBoolean('VISUAL', defaults.VISUAL),
 	};
 }
