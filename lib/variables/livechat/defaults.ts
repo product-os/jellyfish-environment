@@ -4,6 +4,7 @@
  * Proprietary and confidential.
  */
 
-const MAIL_TYPE = 'mailgun';
+const LIVECHAT_HOST = 'http://livechat';
+const LIVECHAT_PORT = '80';
 
-export { MAIL_TYPE };
+export { LIVECHAT_HOST, LIVECHAT_PORT };

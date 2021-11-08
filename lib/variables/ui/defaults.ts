@@ -4,6 +4,7 @@
  * Proprietary and confidential.
  */
 
-const MAIL_TYPE = 'mailgun';
+const UI_HOST = 'http://ui';
+const UI_PORT = '80';
 
-export { MAIL_TYPE };
+export { UI_HOST, UI_PORT };

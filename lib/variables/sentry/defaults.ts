@@ -4,6 +4,6 @@
  * Proprietary and confidential.
  */
 
-const MAIL_TYPE = 'mailgun';
+const SENTRY_DSN_SERVER = '';
 
-export { MAIL_TYPE };
+export { SENTRY_DSN_SERVER };

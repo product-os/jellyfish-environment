@@ -4,6 +4,6 @@
  * Proprietary and confidential.
  */
 
-const MAIL_TYPE = 'mailgun';
+const RESET_PASSWORD_SECRET_TOKEN = '';
 
-export { MAIL_TYPE };
+export { RESET_PASSWORD_SECRET_TOKEN };

@@ -5,6 +5,7 @@
  */
 
 import { getEnvironment } from '../../../lib';
+import * as defaults from './defaults';
 
 const variables = {
 	AWS_ACCESS_KEY_ID: 'foo',
@@ -19,6 +20,15 @@ describe('AWS', () => {
 			accessKeyId: variables.AWS_ACCESS_KEY_ID,
 			secretAccessKey: variables.AWS_SECRET_ACCESS_KEY,
 			s3BucketName: variables.AWS_S3_BUCKET_NAME,
+		});
+	});
+
+	test('defaults are set', () => {
+		const environment = getEnvironment();
+		expect(environment.aws).toEqual({
+			accessKeyId: defaults.AWS_ACCESS_KEY_ID,
+			secretAccessKey: defaults.AWS_SECRET_ACCESS_KEY,
+			s3BucketName: defaults.AWS_S3_BUCKET_NAME,
 		});
 	});
 });

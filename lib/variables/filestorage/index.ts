@@ -5,6 +5,7 @@
  */
 
 import { EnvironmentBuilder } from '../../types';
+import * as defaults from './defaults';
 
 export interface FileStorage {
 	driver: string;
@@ -12,6 +13,6 @@ export interface FileStorage {
 
 export function GetFileStorage(env: EnvironmentBuilder): FileStorage {
 	return {
-		driver: env.getString('FS_DRIVER'),
+		driver: env.getString('FS_DRIVER', defaults.FS_DRIVER),
 	};
 }

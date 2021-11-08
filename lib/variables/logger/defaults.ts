@@ -4,6 +4,6 @@
  * Proprietary and confidential.
  */
 
-const MAIL_TYPE = 'mailgun';
+const LOGLEVEL = 'info';
 
-export { MAIL_TYPE };
+export { LOGLEVEL };

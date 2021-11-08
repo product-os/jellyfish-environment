@@ -4,6 +4,6 @@
  * Proprietary and confidential.
  */
 
-const MAIL_TYPE = 'mailgun';
+const OAUTH_REDIRECT_BASE_URL = 'https://jel.ly.fish';
 
-export { MAIL_TYPE };
+export { OAUTH_REDIRECT_BASE_URL };

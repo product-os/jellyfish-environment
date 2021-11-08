@@ -4,6 +4,7 @@
  * Proprietary and confidential.
  */
 
-const MAIL_TYPE = 'mailgun';
+const LOGENTRIES_REGION = '';
+const LOGENTRIES_TOKEN = '';
 
-export { MAIL_TYPE };
+export { LOGENTRIES_REGION, LOGENTRIES_TOKEN };

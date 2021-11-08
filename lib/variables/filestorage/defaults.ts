@@ -4,6 +4,6 @@
  * Proprietary and confidential.
  */
 
-const MAIL_TYPE = 'mailgun';
+const FS_DRIVER = 'localFS';
 
-export { MAIL_TYPE };
+export { FS_DRIVER };
