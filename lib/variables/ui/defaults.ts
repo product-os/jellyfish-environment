@@ -4,8 +4,7 @@
  * Proprietary and confidential.
  */
 
-const METRICS_PORT = 9000;
-const SOCKET_METRICS_PORT = 9001;
-const MONITOR_SECRET_TOKEN = 'TEST';
+const UI_HOST = 'http://ui';
+const UI_PORT = '80';
 
-export { METRICS_PORT, SOCKET_METRICS_PORT, MONITOR_SECRET_TOKEN };
+export { UI_HOST, UI_PORT };

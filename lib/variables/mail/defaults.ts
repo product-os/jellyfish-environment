@@ -4,6 +4,6 @@
  * Proprietary and confidential.
  */
 
-const MAIL_TYPE = '';
+const MAIL_TYPE = 'mailgun';
 
 export { MAIL_TYPE };

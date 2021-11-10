@@ -87,8 +87,17 @@ describe('Integration', () => {
 
 	test('defaults are set', () => {
 		const environment = getEnvironment();
+		expect(environment.integration.default.user).toEqual(
+			defaults.INTEGRATION_DEFAULT_USER,
+		);
 		expect(environment.integration['balena-api'].oauthBaseUrl).toEqual(
 			defaults.INTEGRATION_BALENA_API_OAUTH_BASE_URL,
+		);
+		expect(environment.integration['balena-api'].privateKey).toEqual(
+			defaults.INTEGRATION_BALENA_API_PRIVATE_KEY,
+		);
+		expect(environment.integration['balena-api'].production.publicKey).toEqual(
+			defaults.INTEGRATION_BALENA_API_PUBLIC_KEY_PRODUCTION,
 		);
 	});
 });

@@ -1,0 +1,33 @@
+/*
+ * Copyright (C) Balena.io - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited.
+ * Proprietary and confidential.
+ */
+
+const TEST_USER_ORGANIZATION = 'balena';
+const TEST_USER_PASSWORD = 'jellyfish';
+const TEST_USER_ROLE = 'user-test';
+const TEST_USER_USERNAME = 'jellyfish';
+const TEST_INTEGRATION_GITHUB_REPO = 'product-os/jellyfish-test-github';
+const TEST_INTEGRATION_FRONT_INBOX_1 = 'inb_qf8q';
+const TEST_INTEGRATION_FRONT_INBOX_2 = 'inb_8t8y';
+const TEST_INTEGRATION_DISCOURSE_CATEGORY = '44';
+const TEST_INTEGRATION_DISCOURSE_USERNAME = 'jellyfish';
+const TEST_INTEGRATION_DISCOURSE_NON_MODERATOR_USERNAME = 'jellyfish-test';
+const TEST_INTEGRATION_SKIP = 1;
+const CI = '';
+
+export {
+	TEST_USER_ORGANIZATION,
+	TEST_USER_PASSWORD,
+	TEST_USER_ROLE,
+	TEST_USER_USERNAME,
+	TEST_INTEGRATION_GITHUB_REPO,
+	TEST_INTEGRATION_FRONT_INBOX_1,
+	TEST_INTEGRATION_FRONT_INBOX_2,
+	TEST_INTEGRATION_DISCOURSE_CATEGORY,
+	TEST_INTEGRATION_DISCOURSE_USERNAME,
+	TEST_INTEGRATION_DISCOURSE_NON_MODERATOR_USERNAME,
+	TEST_INTEGRATION_SKIP,
+	CI,
+};

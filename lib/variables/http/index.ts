@@ -3,7 +3,9 @@
  * Unauthorized copying of this file, via any medium is strictly prohibited.
  * Proprietary and confidential.
  */
+
 import { EnvironmentBuilder } from '../../types';
+import * as defaults from './defaults';
 
 export interface HTTP {
 	host: string;
@@ -16,11 +18,17 @@ export interface HTTP {
 
 export function GetHTTP(env: EnvironmentBuilder): HTTP {
 	return {
-		port: env.getString('SERVER_PORT'),
-		host: env.getString('SERVER_HOST'),
-		workerPort: env.getNumber('HTTP_WORKER_PORT'),
-		timeout: env.getNumber('HTTP_TIMEOUT', 60),
-		headersTimeout: env.getNumber('HTTP_HEADERS_TIMEOUT', 60),
-		requestTimeout: env.getNumber('HTTP_REQUEST_TIMEOUT', 60),
+		port: env.getString('SERVER_PORT', defaults.SERVER_PORT),
+		host: env.getString('SERVER_HOST', defaults.SERVER_HOST),
+		workerPort: env.getNumber('HTTP_WORKER_PORT', defaults.HTTP_WORKER_PORT),
+		timeout: env.getNumber('HTTP_TIMEOUT', defaults.HTTP_TIMEOUT),
+		headersTimeout: env.getNumber(
+			'HTTP_HEADERS_TIMEOUT',
+			defaults.HTTP_HEADERS_TIMEOUT,
+		),
+		requestTimeout: env.getNumber(
+			'HTTP_REQUEST_TIMEOUT',
+			defaults.HTTP_REQUEST_TIMEOUT,
+		),
 	};
 }

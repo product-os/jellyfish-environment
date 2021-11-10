@@ -57,13 +57,20 @@ export interface Integration {
 export function GetIntegration(env: EnvironmentBuilder): Integration {
 	return {
 		default: {
-			user: env.getString('INTEGRATION_DEFAULT_USER'),
+			user: env.getString(
+				'INTEGRATION_DEFAULT_USER',
+				defaults.INTEGRATION_DEFAULT_USER,
+			),
 		},
 		'balena-api': {
-			privateKey: env.getString('INTEGRATION_BALENA_API_PRIVATE_KEY'),
+			privateKey: env.getString(
+				'INTEGRATION_BALENA_API_PRIVATE_KEY',
+				defaults.INTEGRATION_BALENA_API_PRIVATE_KEY,
+			),
 			production: {
 				publicKey: env.getString(
 					'INTEGRATION_BALENA_API_PUBLIC_KEY_PRODUCTION',
+					defaults.INTEGRATION_BALENA_API_PUBLIC_KEY_PRODUCTION,
 				),
 			},
 			staging: {

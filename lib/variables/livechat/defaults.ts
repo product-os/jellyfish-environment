@@ -4,8 +4,7 @@
  * Proprietary and confidential.
  */
 
-const METRICS_PORT = 9000;
-const SOCKET_METRICS_PORT = 9001;
-const MONITOR_SECRET_TOKEN = 'TEST';
+const LIVECHAT_HOST = 'http://livechat';
+const LIVECHAT_PORT = '80';
 
-export { METRICS_PORT, SOCKET_METRICS_PORT, MONITOR_SECRET_TOKEN };
+export { LIVECHAT_HOST, LIVECHAT_PORT };
