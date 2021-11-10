@@ -1,4 +1,27 @@
 - commits:
+    - subject: Add more defaults
+      hash: 20988a39e809b3c4ec90e54b3fbb6a3575f60e58
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+    - subject: Add more defaults
+      hash: 816127d8ff5f34cce9f2775f319b820138007572
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 5.1.0
+  date: 2021-11-09T09:33:04.620Z
+- commits:
     - subject: 'patch: Update dependency @balena/jellyfish-config to ^1.5.8'
       hash: f8f5cadb1d8151e005dbcbf46a0621c597ae505d
       body: ''
