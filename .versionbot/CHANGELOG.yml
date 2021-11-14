@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update dependency typedoc to ^0.22.9'
+      hash: adb4aa120eacf9078bc52862d9120e976938e846
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 5.1.3
+  date: 2021-11-14T23:38:29.369Z
+- commits:
     - subject: Remove dev registry token defaults
       hash: e275822613932302fb254fc1bfc8c92c8997c547
       body: ''
