@@ -4,7 +4,7 @@
  * Proprietary and confidential.
  */
 
-const LOGENTRIES_REGION = '';
+const LOGENTRIES_REGION = 'eu';
 const LOGENTRIES_TOKEN = '';
 
 export { LOGENTRIES_REGION, LOGENTRIES_TOKEN };

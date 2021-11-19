@@ -9,7 +9,7 @@ import * as defaults from './defaults';
 
 const variables = {
 	LOGENTRIES_TOKEN: 'foobar',
-	LOGENTRIES_REGION: 'eu',
+	LOGENTRIES_REGION: 'us',
 };
 
 describe('LogEntries', () => {
