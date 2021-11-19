@@ -1,4 +1,17 @@
 - commits:
+    - subject: Add default for logentries region
+      hash: 7c521f91305386038fc3bf82d7580298b543c544
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 5.1.10
+  date: 2021-11-19T03:44:38.319Z
+- commits:
     - subject: 'patch: Update dependency @balena/jellyfish-config to ^1.5.10'
       hash: 4931cc1f5c3c3f9044716cac66355eda1d4602a2
       body: ''
