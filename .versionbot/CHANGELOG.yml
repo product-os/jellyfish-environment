@@ -1,4 +1,26 @@
 - commits:
+    - subject: Bump lint-staged to v12.0.3
+      hash: a449d89f9e87eb5763cf3fae64b6d1bf89835a2c
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+    - subject: 'patch: Update dependency @balena/jellycheck to v1'
+      hash: 13a5bbd2325066ca7bdcf105b93d873c3ce56340
+      body: |
+        Update @balena/jellycheck from 0.1.8 to 1.0.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 5.1.11
+  date: 2021-11-20T06:35:07.551Z
+- commits:
     - subject: Add default for logentries region
       hash: 7c521f91305386038fc3bf82d7580298b543c544
       body: ''
