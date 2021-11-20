@@ -1,9 +1,3 @@
-/*
- * Copyright (C) Balena.io - All Rights Reserved
- * Unauthorized copying of this file, via any medium is strictly prohibited.
- * Proprietary and confidential.
- */
-
 import { Actions } from './variables/actions';
 import { AWS } from './variables/aws';
 import { Database, DatabaseOptions } from './variables/database';

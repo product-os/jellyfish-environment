@@ -1,9 +1,3 @@
-/*
- * Copyright (C) Balena.io - All Rights Reserved
- * Unauthorized copying of this file, via any medium is strictly prohibited.
- * Proprietary and confidential.
- */
-
 import { EnvironmentBuilder, EnvironmentVariables } from '../types';
 import { GetActions } from './actions';
 import { GetAWS } from './aws';

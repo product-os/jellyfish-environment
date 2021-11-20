@@ -1,9 +1,3 @@
-/*
- * Copyright (C) Balena.io - All Rights Reserved
- * Unauthorized copying of this file, via any medium is strictly prohibited.
- * Proprietary and confidential.
- */
-
 const SERVER_HOST = 'http://api.ly.fish.local';
 const SERVER_PORT = '80';
 const HTTP_WORKER_PORT = 8002;
