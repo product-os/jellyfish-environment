@@ -1,4 +1,17 @@
 - commits:
+    - subject: Bump external deps
+      hash: fa58528ed4c047f90519f5ef52d40d8573ad3dcf
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 5.1.13
+  date: 2021-11-22T01:08:54.675Z
+- commits:
     - subject: Remove license headers
       hash: 9c16e4f868b71678455a42f0aebb819051e7103f
       body: ''
