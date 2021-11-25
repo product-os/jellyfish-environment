@@ -1,4 +1,17 @@
 - commits:
+    - subject: Remove jellycheck
+      hash: f1dfd0ce64e9de8cf6c3ec82738b7bbf0a983c7b
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 5.1.20
+  date: 2021-11-25T01:12:39.282Z
+- commits:
     - subject: 'patch: Update dependency @balena/jellyfish-config to ^1.5.16'
       hash: 40f61fb3712d55bc480add59c86cae799f737966
       body: ''
