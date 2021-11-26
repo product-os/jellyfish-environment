@@ -1,4 +1,16 @@
 - commits:
+    - subject: 'patch: Update dependency @balena/lint to ^6.2.0'
+      hash: 50503bcf52267c100c51becafd276b5e3e740a33
+      body: |
+        Update @balena/lint from 6.1.1 to 6.2.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 5.1.25
+  date: 2021-11-26T16:50:00.262Z
+- commits:
     - subject: Use product-os/renovate-config
       hash: 09a1f8c4d4870fcb1f1c76acc63590ea7ade1bc3
       body: ''
