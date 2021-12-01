@@ -1,4 +1,17 @@
 - commits:
+    - subject: Add more integration defaults
+      hash: 006a47c6f6a9f168cb8ba71be46a2d4940df496d
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 5.2.0
+  date: 2021-12-01T03:28:03.204Z
+- commits:
     - subject: 'patch: Update dependency @balena/jellyfish-config to ^2.0.2'
       hash: 32f7c3211eaa45519490766018e95cf00e5fb274
       body: ''
