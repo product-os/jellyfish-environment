@@ -84,6 +84,12 @@ describe('Integration', () => {
 		expect(environment.integration.default.user).toEqual(
 			defaults.INTEGRATION_DEFAULT_USER,
 		);
+		expect(environment.integration['balena-api'].appId).toEqual(
+			defaults.INTEGRATION_BALENA_API_APP_ID,
+		);
+		expect(environment.integration['balena-api'].appSecret).toEqual(
+			defaults.INTEGRATION_BALENA_API_APP_SECRET,
+		);
 		expect(environment.integration['balena-api'].oauthBaseUrl).toEqual(
 			defaults.INTEGRATION_BALENA_API_OAUTH_BASE_URL,
 		);
@@ -92,6 +98,15 @@ describe('Integration', () => {
 		);
 		expect(environment.integration['balena-api'].production.publicKey).toEqual(
 			defaults.INTEGRATION_BALENA_API_PUBLIC_KEY_PRODUCTION,
+		);
+		expect(environment.integration['balena-api'].staging.publicKey).toEqual(
+			defaults.INTEGRATION_BALENA_API_PUBLIC_KEY_STAGING,
+		);
+		expect(environment.integration['outreach'].appId).toEqual(
+			defaults.INTEGRATION_OUTREACH_APP_ID,
+		);
+		expect(environment.integration['outreach'].appSecret).toEqual(
+			defaults.INTEGRATION_OUTREACH_APP_SECRET,
 		);
 	});
 });

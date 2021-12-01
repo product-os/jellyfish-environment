@@ -69,10 +69,19 @@ export function GetIntegration(env: EnvironmentBuilder): Integration {
 				),
 			},
 			staging: {
-				publicKey: env.getString('INTEGRATION_BALENA_API_PUBLIC_KEY_STAGING'),
+				publicKey: env.getString(
+					'INTEGRATION_BALENA_API_PUBLIC_KEY_STAGING',
+					defaults.INTEGRATION_BALENA_API_PUBLIC_KEY_STAGING,
+				),
 			},
-			appId: env.getString('INTEGRATION_BALENA_API_APP_ID'),
-			appSecret: env.getString('INTEGRATION_BALENA_API_APP_SECRET'),
+			appId: env.getString(
+				'INTEGRATION_BALENA_API_APP_ID',
+				defaults.INTEGRATION_BALENA_API_APP_ID,
+			),
+			appSecret: env.getString(
+				'INTEGRATION_BALENA_API_APP_SECRET',
+				defaults.INTEGRATION_BALENA_API_APP_SECRET,
+			),
 			oauthBaseUrl: env.getString(
 				'INTEGRATION_BALENA_API_OAUTH_BASE_URL',
 				defaults.INTEGRATION_BALENA_API_OAUTH_BASE_URL,
@@ -96,8 +105,14 @@ export function GetIntegration(env: EnvironmentBuilder): Integration {
 			signature: env.getString('INTEGRATION_DISCOURSE_SIGNATURE_KEY'),
 		},
 		outreach: {
-			appId: env.getString('INTEGRATION_OUTREACH_APP_ID'),
-			appSecret: env.getString('INTEGRATION_OUTREACH_APP_SECRET'),
+			appId: env.getString(
+				'INTEGRATION_OUTREACH_APP_ID',
+				defaults.INTEGRATION_OUTREACH_APP_ID,
+			),
+			appSecret: env.getString(
+				'INTEGRATION_OUTREACH_APP_SECRET',
+				defaults.INTEGRATION_OUTREACH_APP_SECRET,
+			),
 			signature: env.getString('INTEGRATION_OUTREACH_SIGNATURE_KEY'),
 		},
 		flowdock: {
