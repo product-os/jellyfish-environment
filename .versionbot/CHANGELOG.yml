@@ -1,4 +1,17 @@
 - commits:
+    - subject: Remove defunct test.jellyfish group
+      hash: b7b2b23b0e3ed33f27084eaa90e1d0816aa9be2b
+      body: ''
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 6.0.0
+  date: 2021-12-08T07:29:43.344Z
+- commits:
     - subject: 'patch: Update dependency ts-jest to ^27.1.0'
       hash: 0d92acbd85cd184cff7ad938e0241d5c21f6540f
       body: ''
