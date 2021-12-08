@@ -16,11 +16,6 @@ export interface Test {
 		};
 		skip: number;
 	};
-	jellyfish: {
-		user: string;
-		password: string;
-		url: string;
-	};
 	user: {
 		username: string;
 		password: string;
@@ -30,7 +25,6 @@ export interface Test {
 	ci: string;
 }
 
-// TODO: Drop test.jellyfish group as it's not used anywhere.
 export function GetTest(env: EnvironmentBuilder): Test {
 	return {
 		integration: {
@@ -70,11 +64,6 @@ export function GetTest(env: EnvironmentBuilder): Test {
 				'TEST_INTEGRATION_SKIP',
 				defaults.TEST_INTEGRATION_SKIP,
 			),
-		},
-		jellyfish: {
-			user: env.getString('JF_TEST_USER'),
-			password: env.getString('JF_TEST_PASSWORD'),
-			url: env.getString('JF_URL'),
 		},
 		user: {
 			username: env.getString(

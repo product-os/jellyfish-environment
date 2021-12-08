@@ -9,9 +9,6 @@ const variables = {
 	TEST_INTEGRATION_DISCOURSE_USERNAME: 'foo-2',
 	TEST_INTEGRATION_DISCOURSE_NON_MODERATOR_USERNAME: 'foo-3',
 	TEST_INTEGRATION_SKIP: '1',
-	JF_TEST_USER: 'user-1',
-	JF_TEST_PASSWORD: 'pass-1',
-	JF_URL: 'url-1',
 	TEST_USER_USERNAME: 'user-2',
 	TEST_USER_PASSWORD: 'pass-2',
 	TEST_USER_ORGANIZATION: 'org-1',
@@ -40,11 +37,6 @@ describe('Test', () => {
 						variables.TEST_INTEGRATION_DISCOURSE_NON_MODERATOR_USERNAME,
 				},
 				skip: parseInt(variables.TEST_INTEGRATION_SKIP, 10),
-			},
-			jellyfish: {
-				user: variables.JF_TEST_USER,
-				password: variables.JF_TEST_PASSWORD,
-				url: variables.JF_URL,
 			},
 			user: {
 				username: variables.TEST_USER_USERNAME,
