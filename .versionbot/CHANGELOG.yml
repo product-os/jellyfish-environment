@@ -1,4 +1,24 @@
 - commits:
+    - subject: 'patch: Update external-non-major'
+      hash: 5ed6d7d57631c5f960e72e51dcc61d7637e2b743
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+    - subject: 'patch: Update dependency typescript to ^4.5.3'
+      hash: b12be471e06b01f69d72f0a9338df5664b834ba6
+      body: |
+        Update typescript from 4.5.2 to 4.5.3
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 6.0.1
+  date: 2021-12-11T01:15:43.766Z
+- commits:
     - subject: Remove defunct test.jellyfish group
       hash: b7b2b23b0e3ed33f27084eaa90e1d0816aa9be2b
       body: ''
