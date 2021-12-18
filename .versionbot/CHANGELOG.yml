@@ -1,4 +1,15 @@
 - commits:
+    - subject: 'patch: Update external-non-major'
+      hash: 9c6f6d3d990493c6051bd67a03db41f2a33bfcaf
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 6.0.3
+  date: 2021-12-18T07:20:58.882Z
+- commits:
     - subject: 'Drop depcheck, bump typescript'
       hash: 8b261443c4c1a20e9a630ecd86665830b95f9ae6
       body: ''
