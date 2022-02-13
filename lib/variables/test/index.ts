@@ -23,6 +23,9 @@ export interface Test {
 		role: string;
 	};
 	ci: string;
+	browser: {
+		logs: boolean;
+	};
 }
 
 export function GetTest(env: EnvironmentBuilder): Test {
@@ -81,5 +84,8 @@ export function GetTest(env: EnvironmentBuilder): Test {
 			role: env.getString('TEST_USER_ROLE', defaults.TEST_USER_ROLE),
 		},
 		ci: env.getString('CI', defaults.CI),
+		browser: {
+			logs: env.getBoolean('TEST_BROWSER_LOGS', defaults.TEST_BROWSER_LOGS),
+		},
 	};
 }
