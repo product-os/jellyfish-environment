@@ -14,6 +14,7 @@ const variables = {
 	TEST_USER_ORGANIZATION: 'org-1',
 	TEST_USER_ROLE: 'role-1',
 	CI: '1',
+	TEST_BROWSER_LOGS: 'true',
 };
 
 describe('Test', () => {
@@ -45,6 +46,9 @@ describe('Test', () => {
 				role: variables.TEST_USER_ROLE,
 			},
 			ci: variables.CI,
+			browser: {
+				logs: true,
+			},
 		});
 	});
 
@@ -73,6 +77,9 @@ describe('Test', () => {
 			password: defaults.TEST_USER_PASSWORD,
 			organization: defaults.TEST_USER_ORGANIZATION,
 			role: defaults.TEST_USER_ROLE,
+		});
+		expect(environment.test.browser).toEqual({
+			logs: defaults.TEST_BROWSER_LOGS,
 		});
 	});
 });
