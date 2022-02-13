@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update external-non-major
+      hash: 4edd5639b5c184b4a81d1cfbc5e99ce1600f0aab
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 6.1.1
+  title: "'Update external-non-major'"
+  date: 2022-02-13T17:56:01.768Z
+- commits:
     - subject: Add TEST_BROWSER_LOGS support
       hash: 09221f439fae1e3db535f241a5cb4f7a9ea89cc5
       body: ""
