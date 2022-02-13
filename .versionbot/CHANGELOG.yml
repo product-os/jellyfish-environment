@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add TEST_BROWSER_LOGS support
+      hash: 09221f439fae1e3db535f241a5cb4f7a9ea89cc5
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 6.1.0
+  title: "'Add TEST_BROWSER_LOGS support'"
+  date: 2022-02-13T04:26:55.382Z
+- commits:
     - subject: Update external-non-major
       hash: 66be1826661be6d15dd826e188b51fb00eedc73d
       body: ""
