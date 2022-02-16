@@ -77,7 +77,6 @@ export {
 	Database,
 	DatabaseOptions,
 	FileStorage,
-	Flags,
 	HTTP,
 	Integration,
 	Livechat,
