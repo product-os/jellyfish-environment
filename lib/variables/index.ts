@@ -3,7 +3,6 @@ import { GetActions } from './actions';
 import { GetAWS } from './aws';
 import { GetDatabase } from './database';
 import { GetFileStorage } from './filestorage';
-import { GetFlags } from './flags';
 import { GetHTTP } from './http';
 import { GetIntegration } from './integration';
 import { GetLivechat } from './livechat';
@@ -30,7 +29,6 @@ export function getVariables(env: EnvironmentBuilder): EnvironmentVariables {
 		aws: GetAWS(env),
 		database: GetDatabase(env),
 		fileStorage: GetFileStorage(env),
-		flags: GetFlags(env),
 		http: GetHTTP(env),
 		integration,
 		livechat: GetLivechat(env),

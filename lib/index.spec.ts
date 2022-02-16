@@ -81,7 +81,6 @@ describe('returned object', () => {
 			'aws',
 			'database',
 			'fileStorage',
-			'flags',
 			'http',
 			'integration',
 			'livechat',

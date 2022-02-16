@@ -2,7 +2,6 @@ import { Actions } from './variables/actions';
 import { AWS } from './variables/aws';
 import { Database, DatabaseOptions } from './variables/database';
 import { FileStorage } from './variables/filestorage';
-import { Flags } from './variables/flags';
 import { HTTP } from './variables/http';
 import { Integration } from './variables/integration';
 import { Livechat } from './variables/livechat';
@@ -24,7 +23,6 @@ export interface EnvironmentVariables {
 	aws: AWS;
 	database: Database;
 	fileStorage: FileStorage;
-	flags: Flags;
 	http: HTTP;
 	integration: Integration;
 	livechat: Livechat;
@@ -153,7 +151,6 @@ export {
 	Database,
 	DatabaseOptions,
 	FileStorage,
-	Flags,
 	HTTP,
 	Integration,
 	Livechat,
