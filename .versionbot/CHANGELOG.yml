@@ -1,4 +1,21 @@
 - commits:
+    - subject: Remove support for VISUAL variable
+      hash: 6140e06833413e6584dbb9305afe64bf9ef049b7
+      body: |
+        No longer need this environment variable as we
+        are moving from puppeteer to playwright, which
+        provides similar functionality with --headed flag.
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 7.0.0
+  title: "'Remove support for VISUAL variable'"
+  date: 2022-02-16T03:04:52.465Z
+- commits:
     - subject: Update external-non-major
       hash: 4edd5639b5c184b4a81d1cfbc5e99ce1600f0aab
       body: ""
