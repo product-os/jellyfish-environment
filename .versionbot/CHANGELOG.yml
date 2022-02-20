@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update typedoc from 0.22.11 to 0.22.12
+      hash: 6e33052cf614061212fbf460a9fc0f5e58fa5f48
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 7.0.1
+  title: "'Update typedoc from 0.22.11 to 0.22.12'"
+  date: 2022-02-20T05:28:52.038Z
+- commits:
     - subject: Remove support for VISUAL variable
       hash: 6140e06833413e6584dbb9305afe64bf9ef049b7
       body: |
