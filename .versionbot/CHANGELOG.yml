@@ -1,4 +1,18 @@
 - commits:
+    - subject: Upgrade redis options to v4
+      hash: 9c9bd93894a026122723b7d20e967bd7c163451d
+      body: ""
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Carol Schulze <carol@ereski.org>
+        signed-off-by: Carol Schulze <carol@ereski.org>
+      author: Carol Schulze
+      nested: []
+  version: 8.0.0
+  title: "'Upgrade redis options to v4'"
+  date: 2022-02-23T18:22:40.202Z
+- commits:
     - subject: Update typedoc from 0.22.11 to 0.22.12
       hash: 6e33052cf614061212fbf460a9fc0f5e58fa5f48
       body: ""
