@@ -12,8 +12,10 @@ describe('Redis', () => {
 		const environment = getEnvironment(variables);
 		expect(environment.redis).toEqual({
 			mock: false,
-			host: variables.REDIS_HOST,
-			port: variables.REDIS_PORT,
+			socket: {
+				host: variables.REDIS_HOST,
+				port: variables.REDIS_PORT,
+			},
 			namespace: variables.REDIS_NAMESPACE,
 		});
 	});
@@ -26,8 +28,10 @@ describe('Redis', () => {
 		});
 		expect(environment.redis).toEqual({
 			mock: false,
-			host: variables.REDIS_HOST,
-			port: variables.REDIS_PORT,
+			socket: {
+				host: variables.REDIS_HOST,
+				port: variables.REDIS_PORT,
+			},
 			namespace: variables.REDIS_NAMESPACE,
 			password,
 		});
@@ -38,8 +42,10 @@ describe('Redis', () => {
 		expect(environment.redis).toEqual({
 			mock: false,
 			namespace: defaults.REDIS_NAMESPACE,
-			host: defaults.REDIS_HOST,
-			port: defaults.REDIS_PORT,
+			socket: {
+				host: defaults.REDIS_HOST,
+				port: defaults.REDIS_PORT,
+			},
 		});
 	});
 });
