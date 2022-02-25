@@ -8,7 +8,8 @@ export interface Redis {
 	password?: string;
 	socket: {
 		host: string;
-		port: string;
+		port: number;
+		tls: boolean;
 	};
 }
 
@@ -19,7 +20,8 @@ export function GetRedis(env: EnvironmentBuilder): Redis {
 		password: env.getString('REDIS_PASSWORD', defaults.REDIS_PASSWORD),
 		socket: {
 			host: env.getString('REDIS_HOST', defaults.REDIS_HOST),
-			port: env.getString('REDIS_PORT', defaults.REDIS_PORT),
+			port: env.getNumber('REDIS_PORT', defaults.REDIS_PORT),
+			tls: env.getBoolean('REDIS_TLS', defaults.REDIS_TLS),
 		},
 	};
 	if (isEmpty(options.password)) {

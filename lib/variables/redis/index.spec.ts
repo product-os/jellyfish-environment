@@ -5,6 +5,7 @@ const variables = {
 	REDIS_HOST: 'foo',
 	REDIS_PORT: '1234',
 	REDIS_NAMESPACE: 'bar',
+	REDIS_TLS: 'true',
 };
 
 describe('Redis', () => {
@@ -14,7 +15,8 @@ describe('Redis', () => {
 			mock: false,
 			socket: {
 				host: variables.REDIS_HOST,
-				port: variables.REDIS_PORT,
+				port: 1234,
+				tls: true,
 			},
 			namespace: variables.REDIS_NAMESPACE,
 		});
@@ -30,7 +32,8 @@ describe('Redis', () => {
 			mock: false,
 			socket: {
 				host: variables.REDIS_HOST,
-				port: variables.REDIS_PORT,
+				port: 1234,
+				tls: true,
 			},
 			namespace: variables.REDIS_NAMESPACE,
 			password,
@@ -45,6 +48,7 @@ describe('Redis', () => {
 			socket: {
 				host: defaults.REDIS_HOST,
 				port: defaults.REDIS_PORT,
+				tls: false,
 			},
 		});
 	});
