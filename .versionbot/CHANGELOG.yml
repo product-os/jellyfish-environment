@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add Redis URL
+      hash: d2963c91984af32b0d96680d7cf8a79a51009b61
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 9.1.0
+  title: "'Add Redis URL'"
+  date: 2022-02-25T04:46:39.076Z
+- commits:
     - subject: Add REDIS_TLS, change REDIS_PORT to number
       hash: bde8df06bc9875b78461e45d484e6d0cf60995f1
       body: ""
