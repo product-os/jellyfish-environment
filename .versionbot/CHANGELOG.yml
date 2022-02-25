@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add REDIS_TLS, change REDIS_PORT to number
+      hash: bde8df06bc9875b78461e45d484e6d0cf60995f1
+      body: ""
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 9.0.0
+  title: "'Add REDIS_TLS support'"
+  date: 2022-02-25T02:17:33.393Z
+- commits:
     - subject: Upgrade redis options to v4
       hash: 9c9bd93894a026122723b7d20e967bd7c163451d
       body: ""
