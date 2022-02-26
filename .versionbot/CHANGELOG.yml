@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update external-non-major
+      hash: 17740bf4ce85b062cd36a2466170f23ad4752b2c
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 9.1.1
+  title: "'Update external-non-major'"
+  date: 2022-02-26T02:25:08.413Z
+- commits:
     - subject: Add Redis URL
       hash: d2963c91984af32b0d96680d7cf8a79a51009b61
       body: ""
