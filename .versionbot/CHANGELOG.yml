@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update dependencies (internal patch bumps)
+      hash: a8cd9ff9b781e6167f23f99aa85b8baa6262b1e8
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 9.1.4
+  title: "'Update dependencies (internal patch bumps)'"
+  date: 2022-03-16T23:27:54.917Z
+- commits:
     - subject: Update typescript from 4.5.5 to 4.6.2
       hash: 305b5a4439f4c2567c4491b7c73c9ab88ed6c3c4
       body: ""
