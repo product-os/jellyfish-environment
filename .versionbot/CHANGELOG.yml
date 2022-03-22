@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update repo.yml
+      hash: ffaf7d61219cca7f5333576807a15326c4c4b4fe
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 9.1.6
+  title: "'Update repo.yml'"
+  date: 2022-03-22T04:04:44.786Z
+- commits:
     - subject: Update external-non-major
       hash: 1ff1f6bd7ab1a82403a3f58cdf23decff45325a8
       body: ""
