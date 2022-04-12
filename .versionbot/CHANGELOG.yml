@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update typedoc from 0.22.14 to 0.22.15
+      hash: 203980bd4a280513906d4277049013f4cc038d32
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 9.1.11
+  title: "'Update typedoc from 0.22.14 to 0.22.15'"
+  date: 2022-04-12T04:53:39.363Z
+- commits:
     - subject: Add default values for Flowdock
       hash: 3f707b655fe4bc7e0a169a02b308427bad2f3b6b
       body: |
