@@ -1,4 +1,19 @@
 - commits:
+    - subject: Add default values for Flowdock
+      hash: 3f707b655fe4bc7e0a169a02b308427bad2f3b6b
+      body: |
+        These are dummy values used in testing.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 9.1.10
+  title: "'Add default values for Flowdock'"
+  date: 2022-04-12T04:44:40.488Z
+- commits:
     - subject: Update typedoc from 0.22.13 to 0.22.14
       hash: a0c4f902770768ff3234265b2b755a11267060b3
       body: ""
