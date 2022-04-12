@@ -116,8 +116,14 @@ export function GetIntegration(env: EnvironmentBuilder): Integration {
 			signature: env.getString('INTEGRATION_OUTREACH_SIGNATURE_KEY'),
 		},
 		flowdock: {
-			api: env.getString('INTEGRATION_FLOWDOCK_TOKEN'),
-			signature: env.getString('INTEGRATION_FLOWDOCK_SIGNATURE_KEY'),
+			api: env.getString(
+				'INTEGRATION_FLOWDOCK_TOKEN',
+				defaults.INTEGRATION_FLOWDOCK_TOKEN,
+			),
+			signature: env.getString(
+				'INTEGRATION_FLOWDOCK_SIGNATURE_KEY',
+				defaults.INTEGRATION_FLOWDOCK_SIGNATURE_KEY,
+			),
 		},
 		typeform: {
 			signature: env.getString('INTEGRATION_TYPEFORM_SIGNATURE_KEY'),
