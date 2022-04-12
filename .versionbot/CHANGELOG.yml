@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add dummy default for mailgun token
+      hash: ece8e7e157931a69c05afe912c9566f4fd168ecd
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 9.1.12
+  title: "'Add dummy default for mailgun token'"
+  date: 2022-04-12T09:36:11.271Z
+- commits:
     - subject: Update typedoc from 0.22.14 to 0.22.15
       hash: 203980bd4a280513906d4277049013f4cc038d32
       body: ""
