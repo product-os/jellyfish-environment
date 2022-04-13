@@ -117,5 +117,8 @@ describe('Integration', () => {
 		expect(environment.integration['google-meet'].credentials).toEqual(
 			defaults.INTEGRATION_GOOGLE_MEET_CREDENTIALS,
 		);
+		expect(environment.integration['typeform'].signature).toEqual(
+			defaults.INTEGRATION_TYPEFORM_SIGNATURE_KEY,
+		);
 	});
 });

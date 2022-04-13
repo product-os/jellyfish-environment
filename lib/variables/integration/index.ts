@@ -126,7 +126,10 @@ export function GetIntegration(env: EnvironmentBuilder): Integration {
 			),
 		},
 		typeform: {
-			signature: env.getString('INTEGRATION_TYPEFORM_SIGNATURE_KEY'),
+			signature: env.getString(
+				'INTEGRATION_TYPEFORM_SIGNATURE_KEY',
+				defaults.INTEGRATION_TYPEFORM_SIGNATURE_KEY,
+			),
 		},
 		'google-meet': {
 			credentials: env.getString(
