@@ -113,7 +113,10 @@ export function GetIntegration(env: EnvironmentBuilder): Integration {
 				'INTEGRATION_OUTREACH_APP_SECRET',
 				defaults.INTEGRATION_OUTREACH_APP_SECRET,
 			),
-			signature: env.getString('INTEGRATION_OUTREACH_SIGNATURE_KEY'),
+			signature: env.getString(
+				'INTEGRATION_OUTREACH_SIGNATURE_KEY',
+				defaults.INTEGRATION_OUTREACH_SIGNATURE_KEY,
+			),
 		},
 		flowdock: {
 			api: env.getString(
