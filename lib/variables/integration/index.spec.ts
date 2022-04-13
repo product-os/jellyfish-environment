@@ -114,5 +114,8 @@ describe('Integration', () => {
 		expect(environment.integration['flowdock'].signature).toEqual(
 			defaults.INTEGRATION_FLOWDOCK_SIGNATURE_KEY,
 		);
+		expect(environment.integration['google-meet'].credentials).toEqual(
+			defaults.INTEGRATION_GOOGLE_MEET_CREDENTIALS,
+		);
 	});
 });
