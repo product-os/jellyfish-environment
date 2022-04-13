@@ -1,4 +1,20 @@
 - commits:
+    - subject: Add default Discourse signature key
+      hash: 62456e7579023b3979d45e8e63b5c45070281595
+      body: |
+        This is a dummy key used for testing
+        and local development.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 9.1.16
+  title: "'Add default Discourse signature key'"
+  date: 2022-04-13T04:27:14.802Z
+- commits:
     - subject: Add Outreach signature key default
       hash: c18e499bb0ab8bde531449612a4c7ed5159158fa
       body: ""
