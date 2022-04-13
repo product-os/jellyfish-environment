@@ -102,7 +102,10 @@ export function GetIntegration(env: EnvironmentBuilder): Integration {
 		discourse: {
 			api: env.getString('INTEGRATION_DISCOURSE_TOKEN'),
 			username: env.getString('INTEGRATION_DISCOURSE_USERNAME'),
-			signature: env.getString('INTEGRATION_DISCOURSE_SIGNATURE_KEY'),
+			signature: env.getString(
+				'INTEGRATION_DISCOURSE_SIGNATURE_KEY',
+				defaults.INTEGRATION_DISCOURSE_SIGNATURE_KEY,
+			),
 		},
 		outreach: {
 			appId: env.getString(

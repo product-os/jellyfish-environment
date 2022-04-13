@@ -123,5 +123,8 @@ describe('Integration', () => {
 		expect(environment.integration['typeform'].signature).toEqual(
 			defaults.INTEGRATION_TYPEFORM_SIGNATURE_KEY,
 		);
+		expect(environment.integration['discourse'].signature).toEqual(
+			defaults.INTEGRATION_DISCOURSE_SIGNATURE_KEY,
+		);
 	});
 });
