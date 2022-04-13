@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add Outreach signature key default
+      hash: c18e499bb0ab8bde531449612a4c7ed5159158fa
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 9.1.15
+  title: "'Add Outreach signature key default'"
+  date: 2022-04-13T03:34:03.794Z
+- commits:
     - subject: Add dummy default for typeform key
       hash: 95ce93773537fae8761e8aa24b7d7e4de48e5fd8
       body: ""
