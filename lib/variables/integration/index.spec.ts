@@ -108,6 +108,9 @@ describe('Integration', () => {
 		expect(environment.integration['outreach'].appSecret).toEqual(
 			defaults.INTEGRATION_OUTREACH_APP_SECRET,
 		);
+		expect(environment.integration['outreach'].signature).toEqual(
+			defaults.INTEGRATION_OUTREACH_SIGNATURE_KEY,
+		);
 		expect(environment.integration['flowdock'].api).toEqual(
 			defaults.INTEGRATION_FLOWDOCK_TOKEN,
 		);
