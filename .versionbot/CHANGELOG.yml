@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add dummy default for GitHub signature
+      hash: ad0fc5a3e8bce4e3a2ce6c1691946ddb9b4748c7
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 9.1.17
+  title: "'Add dummy default for GitHub signature'"
+  date: 2022-04-14T02:50:44.444Z
+- commits:
     - subject: Add default Discourse signature key
       hash: 62456e7579023b3979d45e8e63b5c45070281595
       body: |
