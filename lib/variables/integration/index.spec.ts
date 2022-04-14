@@ -126,5 +126,8 @@ describe('Integration', () => {
 		expect(environment.integration['discourse'].signature).toEqual(
 			defaults.INTEGRATION_DISCOURSE_SIGNATURE_KEY,
 		);
+		expect(environment.integration['github'].signature).toEqual(
+			defaults.INTEGRATION_GITHUB_SIGNATURE_KEY,
+		);
 	});
 });
