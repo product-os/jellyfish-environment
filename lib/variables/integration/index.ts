@@ -89,7 +89,10 @@ export function GetIntegration(env: EnvironmentBuilder): Integration {
 		},
 		github: {
 			api: env.getString('INTEGRATION_GITHUB_TOKEN'),
-			signature: env.getString('INTEGRATION_GITHUB_SIGNATURE_KEY'),
+			signature: env.getString(
+				'INTEGRATION_GITHUB_SIGNATURE_KEY',
+				defaults.INTEGRATION_GITHUB_SIGNATURE_KEY,
+			),
 			key: env
 				.getString('INTEGRATION_GITHUB_PRIVATE_KEY')
 				.replace(/\\n/gm, '\n'),
