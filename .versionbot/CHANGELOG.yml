@@ -1,4 +1,19 @@
 - commits:
+    - subject: Add more dummy defaults
+      hash: 4a329249bfd1e12826b9147cd59adb9acd6db548
+      body: |
+        Add more dummy default strings for dev/test
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 9.1.18
+  title: "'Add more dummy defaults'"
+  date: 2022-04-14T04:39:29.220Z
+- commits:
     - subject: Add dummy default for GitHub signature
       hash: ad0fc5a3e8bce4e3a2ce6c1691946ddb9b4748c7
       body: ""
