@@ -1,4 +1,23 @@
 - commits:
+    - subject: Update AWS S3 variables
+      hash: f4138c62491b4885133c7e11e3e0d24e1ad99235
+      body: |
+        Add support for the AWS_S3_ENDPOINT variable.
+        Production will not use this new variable as
+        we let aws-sdk do this for us. Development
+        will use this to store uploads in local
+        s3-compatible minio service.
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 10.0.0
+  title: "'Update AWS S3 variables'"
+  date: 2022-04-15T06:23:41.290Z
+- commits:
     - subject: 🔄 Synced file(s) with product-os/jellyfish-config
       hash: 3d1f917d48c54cf1775b89290aa80490c1c049c1
       body: ""
