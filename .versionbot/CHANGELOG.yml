@@ -1,4 +1,20 @@
 - commits:
+    - subject: Remove FS_DRIVER support
+      hash: f2077b9bdd001566c35d35d28e800ffb8cec510f
+      body: |
+        Jellyfish now always assumes S3-based storage
+        of some sort, no longer requiring this var.
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 11.0.0
+  title: "'Remove FS_DRIVER support'"
+  date: 2022-04-27T09:16:28.136Z
+- commits:
     - subject: Update external-non-major
       hash: 92dd58de97f24dfa2432531c82ba8e5846adf928
       body: ""
