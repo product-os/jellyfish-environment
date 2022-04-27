@@ -80,7 +80,6 @@ describe('returned object', () => {
 			'actions',
 			'aws',
 			'database',
-			'fileStorage',
 			'http',
 			'integration',
 			'livechat',
