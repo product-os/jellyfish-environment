@@ -2,7 +2,6 @@ import { EnvironmentBuilder, EnvironmentVariables } from '../types';
 import { GetActions } from './actions';
 import { GetAWS } from './aws';
 import { GetDatabase } from './database';
-import { GetFileStorage } from './filestorage';
 import { GetHTTP } from './http';
 import { GetIntegration } from './integration';
 import { GetLivechat } from './livechat';
@@ -28,7 +27,6 @@ export function getVariables(env: EnvironmentBuilder): EnvironmentVariables {
 		actions: GetActions(env),
 		aws: GetAWS(env),
 		database: GetDatabase(env),
-		fileStorage: GetFileStorage(env),
 		http: GetHTTP(env),
 		integration,
 		livechat: GetLivechat(env),

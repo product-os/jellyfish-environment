@@ -76,7 +76,6 @@ export {
 	AWS,
 	Database,
 	DatabaseOptions,
-	FileStorage,
 	HTTP,
 	Integration,
 	Livechat,
