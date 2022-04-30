@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update typescript from 4.6.3 to 4.6.4
+      hash: fd9e75759e6e73c4c035b297f8780a20d6d391f0
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 11.0.1
+  title: "'Update typescript from 4.6.3 to 4.6.4'"
+  date: 2022-04-29T05:35:56.491Z
+- commits:
     - subject: Remove FS_DRIVER support
       hash: f2077b9bdd001566c35d35d28e800ffb8cec510f
       body: |
