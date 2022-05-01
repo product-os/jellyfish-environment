@@ -8,7 +8,6 @@ const variables = {
 	INTEGRATION_BALENA_API_PUBLIC_KEY_STAGING: 'key-3',
 	INTEGRATION_BALENA_API_APP_ID: '1234',
 	INTEGRATION_BALENA_API_APP_SECRET: 'foo',
-	INTEGRATION_BALENA_API_OAUTH_BASE_URL: 'http://localhost',
 	INTEGRATION_GITHUB_TOKEN: 'token-1',
 	INTEGRATION_GITHUB_SIGNATURE_KEY: 'key-4',
 	INTEGRATION_GITHUB_PRIVATE_KEY: 'key-5',
@@ -46,7 +45,6 @@ describe('Integration', () => {
 				},
 				appId: variables.INTEGRATION_BALENA_API_APP_ID,
 				appSecret: variables.INTEGRATION_BALENA_API_APP_SECRET,
-				oauthBaseUrl: variables.INTEGRATION_BALENA_API_OAUTH_BASE_URL,
 			},
 			github: {
 				api: variables.INTEGRATION_GITHUB_TOKEN,
@@ -95,9 +93,6 @@ describe('Integration', () => {
 		);
 		expect(environment.integration['balena-api'].appSecret).toEqual(
 			defaults.INTEGRATION_BALENA_API_APP_SECRET,
-		);
-		expect(environment.integration['balena-api'].oauthBaseUrl).toEqual(
-			defaults.INTEGRATION_BALENA_API_OAUTH_BASE_URL,
 		);
 		expect(environment.integration['balena-api'].privateKey).toEqual(
 			defaults.INTEGRATION_BALENA_API_PRIVATE_KEY,
