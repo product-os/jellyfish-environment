@@ -2,6 +2,7 @@ import { Actions } from './variables/actions';
 import { AWS } from './variables/aws';
 import { Database, DatabaseOptions } from './variables/database';
 import { HTTP } from './variables/http';
+import { Hydra } from './variables/hydra';
 import { Integration } from './variables/integration';
 import { Livechat } from './variables/livechat';
 import { LogEntries } from './variables/logentries';
@@ -38,6 +39,7 @@ export interface EnvironmentVariables {
 	sentry: Sentry;
 	test: Test;
 	ui: UI;
+	hydra: Hydra;
 
 	/**
 	 * Check if the code is running in a production environment

@@ -1,4 +1,3 @@
-const LIVECHAT_HOST = 'http://livechat';
-const LIVECHAT_PORT = '80';
+const LIVECHAT_BASE_URL = 'http://livechat.ly.fish.local';
 
-export { LIVECHAT_HOST, LIVECHAT_PORT };
+export { LIVECHAT_BASE_URL };

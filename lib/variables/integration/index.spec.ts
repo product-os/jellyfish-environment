@@ -21,6 +21,8 @@ const variables = {
 	INTEGRATION_OUTREACH_APP_ID: 'id-1',
 	INTEGRATION_OUTREACH_APP_SECRET: 'secret-1',
 	INTEGRATION_OUTREACH_SIGNATURE_KEY: 'key-7',
+	INTEGRATION_JELLYFISH_APP_ID: 'id-2',
+	INTEGRATION_JELLYFISH_APP_SECRET: 'secret-2',
 	INTEGRATION_FLOWDOCK_TOKEN: 'token-5',
 	INTEGRATION_FLOWDOCK_SIGNATURE_KEY: 'key-8',
 	INTEGRATION_TYPEFORM_SIGNATURE_KEY: 'key-9',
@@ -65,6 +67,10 @@ describe('Integration', () => {
 				appId: variables.INTEGRATION_OUTREACH_APP_ID,
 				appSecret: variables.INTEGRATION_OUTREACH_APP_SECRET,
 				signature: variables.INTEGRATION_OUTREACH_SIGNATURE_KEY,
+			},
+			jellyfish: {
+				appId: variables.INTEGRATION_JELLYFISH_APP_ID,
+				appSecret: variables.INTEGRATION_JELLYFISH_APP_SECRET,
 			},
 			flowdock: {
 				api: variables.INTEGRATION_FLOWDOCK_TOKEN,
@@ -128,6 +134,12 @@ describe('Integration', () => {
 		);
 		expect(environment.integration['github'].signature).toEqual(
 			defaults.INTEGRATION_GITHUB_SIGNATURE_KEY,
+		);
+		expect(environment.integration['jellyfish'].appId).toEqual(
+			defaults.INTEGRATION_JELLYFISH_APP_ID,
+		);
+		expect(environment.integration['jellyfish'].appSecret).toEqual(
+			defaults.INTEGRATION_JELLYFISH_APP_SECRET,
 		);
 	});
 });
