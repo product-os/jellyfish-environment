@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update external-major
+      hash: 85161703cd97b93e394b5fe434e44d79189f39f6
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 11.0.2
+  title: "'Update external-major (major)'"
+  date: 2022-05-03T21:54:02.053Z
+- commits:
     - subject: Update typescript from 4.6.3 to 4.6.4
       hash: fd9e75759e6e73c4c035b297f8780a20d6d391f0
       body: ""
