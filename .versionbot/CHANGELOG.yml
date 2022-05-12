@@ -1,4 +1,16 @@
 - commits:
+    - subject: Add jellyfish oauth env vars
+      hash: 037c89e3eb62ff3b3d35c073d15fc58a157ca3a4
+      body: ""
+      footer:
+        Change-type: major
+        change-type: major
+      author: karaxuna
+      nested: []
+  version: 12.0.0
+  title: "'Add jellyfish oauth env vars'"
+  date: 2022-05-12T12:00:10.260Z
+- commits:
     - subject: Update external-non-major
       hash: 239e527cfc5a9cbbd330510e494c8ca14d715dad
       body: ""
