@@ -19,6 +19,7 @@ import { GetRegistry } from './registry';
 import { GetSentry } from './sentry';
 import { GetTest } from './test';
 import { GetUI } from './ui';
+import { GetHydra } from './hydra';
 
 export function getVariables(env: EnvironmentBuilder): EnvironmentVariables {
 	const integration = GetIntegration(env);
@@ -44,6 +45,7 @@ export function getVariables(env: EnvironmentBuilder): EnvironmentVariables {
 		sentry: GetSentry(env),
 		test: GetTest(env),
 		ui: GetUI(env),
+		hydra: GetHydra(env),
 		isProduction: () => {
 			return env.isProduction;
 		},

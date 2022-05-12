@@ -15,7 +15,6 @@ export interface Integration {
 		};
 		appId: string;
 		appSecret: string;
-		oauthBaseUrl: string;
 	};
 	github: {
 		api: string;
@@ -36,6 +35,10 @@ export interface Integration {
 		appId: string;
 		appSecret: string;
 		signature: string;
+	};
+	jellyfish: {
+		appId: string;
+		appSecret: string;
 	};
 	flowdock: {
 		api: string;
@@ -82,10 +85,6 @@ export function GetIntegration(env: EnvironmentBuilder): Integration {
 				'INTEGRATION_BALENA_API_APP_SECRET',
 				defaults.INTEGRATION_BALENA_API_APP_SECRET,
 			),
-			oauthBaseUrl: env.getString(
-				'INTEGRATION_BALENA_API_OAUTH_BASE_URL',
-				defaults.INTEGRATION_BALENA_API_OAUTH_BASE_URL,
-			),
 		},
 		github: {
 			api: env.getString('INTEGRATION_GITHUB_TOKEN'),
@@ -122,6 +121,16 @@ export function GetIntegration(env: EnvironmentBuilder): Integration {
 			signature: env.getString(
 				'INTEGRATION_OUTREACH_SIGNATURE_KEY',
 				defaults.INTEGRATION_OUTREACH_SIGNATURE_KEY,
+			),
+		},
+		jellyfish: {
+			appId: env.getString(
+				'INTEGRATION_JELLYFISH_APP_ID',
+				defaults.INTEGRATION_JELLYFISH_APP_ID,
+			),
+			appSecret: env.getString(
+				'INTEGRATION_JELLYFISH_APP_SECRET',
+				defaults.INTEGRATION_JELLYFISH_APP_SECRET,
 			),
 		},
 		flowdock: {

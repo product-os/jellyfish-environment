@@ -2,24 +2,21 @@ import { getEnvironment } from '../../../lib';
 import * as defaults from './defaults';
 
 const variables = {
-	LIVECHAT_HOST: 'http://livechat',
-	LIVECHAT_PORT: '8080',
+	LIVECHAT_BASE_URL: 'http://livechat.ly.fish.local',
 };
 
 describe('Livechat', () => {
 	test('variables are set', () => {
 		const environment = getEnvironment(variables);
 		expect(environment.livechat).toEqual({
-			host: variables.LIVECHAT_HOST,
-			port: variables.LIVECHAT_PORT,
+			baseUrl: variables.LIVECHAT_BASE_URL,
 		});
 	});
 
 	test('defaults are set', () => {
 		const environment = getEnvironment();
 		expect(environment.livechat).toEqual({
-			host: defaults.LIVECHAT_HOST,
-			port: defaults.LIVECHAT_PORT,
+			baseUrl: defaults.LIVECHAT_BASE_URL,
 		});
 	});
 });
