@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update external-non-major
+      hash: 6cc67786f04bac980018aee81d54209fd4bdb20b
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 12.0.1
+  title: "'Update external-non-major'"
+  date: 2022-05-14T02:29:12.348Z
+- commits:
     - subject: Add jellyfish oauth env vars
       hash: 037c89e3eb62ff3b3d35c073d15fc58a157ca3a4
       body: ""
