@@ -2,11 +2,11 @@ import { EnvironmentBuilder } from '../../types';
 import * as defaults from './defaults';
 
 export interface Livechat {
-	baseUrl: string;
+	host: string;
 }
 
 export function GetLivechat(env: EnvironmentBuilder): Livechat {
 	return {
-		baseUrl: env.getString('LIVECHAT_BASE_URL', defaults.LIVECHAT_BASE_URL),
+		host: env.getString('LIVECHAT_HOST', defaults.LIVECHAT_HOST),
 	};
 }
