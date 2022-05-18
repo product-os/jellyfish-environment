@@ -1,4 +1,16 @@
 - commits:
+    - subject: Fix hydra and livechat env vars
+      hash: 542b9bacccf78479632cbbe234a9ff5062009a7d
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: karaxuna
+      nested: []
+  version: 12.0.2
+  title: "'Fix hydra and livechat env vars'"
+  date: 2022-05-18T12:50:46.751Z
+- commits:
     - subject: Update external-non-major
       hash: 6cc67786f04bac980018aee81d54209fd4bdb20b
       body: ""
