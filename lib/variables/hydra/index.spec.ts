@@ -2,7 +2,7 @@ import { getEnvironment } from '../../../lib';
 import * as defaults from './defaults';
 
 const variables = {
-	HYDRA_ADMIN_HOST: 'hydra:4445',
+	HYDRA_ADMIN_HOST: 'http://hydra:4445',
 	HYDRA_PUBLIC_HOST: 'hydra.ly.fish.local',
 };
 
