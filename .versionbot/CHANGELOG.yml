@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update external-non-major (external non-major bumps)
+      hash: 427ad380db318e7cde9edafe9e50f6032fc94765
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 12.0.4
+  title: "'Update external-non-major (external non-major bumps)'"
+  date: 2022-05-28T02:17:28.451Z
+- commits:
     - subject: Add protocol for HYDRA_ADMIN_HOST
       hash: 659ada57b4ab801714ef602e1a57bf9c7847f408
       body: ""
