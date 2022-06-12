@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add worker cache refresh interval env var
+      hash: ef6fa98fc6289e8b7af1c8ed670d2bc202081dee
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 12.1.0
+  title: "'Add worker cache refresh interval env var'"
+  date: 2022-06-12T09:18:35.548Z
+- commits:
     - subject: Update external-major (external major bumps)
       hash: 212c1851a64dbd209b7f2834e484f18f2a8f0924
       body: ""
