@@ -17,6 +17,7 @@ import { RegistryOptions } from './variables/registry';
 import { Sentry } from './variables/sentry';
 import { Test } from './variables/test';
 import { UI } from './variables/ui';
+import { Worker } from './variables/worker';
 
 export interface EnvironmentVariables {
 	actions: Actions;
@@ -39,6 +40,7 @@ export interface EnvironmentVariables {
 	sentry: Sentry;
 	test: Test;
 	ui: UI;
+	worker: Worker;
 	hydra: Hydra;
 
 	/**
@@ -166,4 +168,5 @@ export {
 	Sentry,
 	Test,
 	UI,
+	Worker,
 };

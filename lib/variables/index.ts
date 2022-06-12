@@ -19,6 +19,7 @@ import { GetRegistry } from './registry';
 import { GetSentry } from './sentry';
 import { GetTest } from './test';
 import { GetUI } from './ui';
+import { GetWorker } from './worker';
 import { GetHydra } from './hydra';
 
 export function getVariables(env: EnvironmentBuilder): EnvironmentVariables {
@@ -45,6 +46,7 @@ export function getVariables(env: EnvironmentBuilder): EnvironmentVariables {
 		sentry: GetSentry(env),
 		test: GetTest(env),
 		ui: GetUI(env),
+		worker: GetWorker(env),
 		hydra: GetHydra(env),
 		isProduction: () => {
 			return env.isProduction;
