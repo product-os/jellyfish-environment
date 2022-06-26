@@ -1,4 +1,24 @@
 - commits:
+    - subject: Update dependencies (external v0 minor bumps)
+      hash: 4fc8a245d844f69a552f7ee57bb40fc456647b53
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+    - subject: Update typedoc from 0.22.17 to 0.22.18
+      hash: e0e9b362fc49583655011d517824e1b4dfbc4872
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 12.0.12
+  title: "'Update dependencies (external v0 minor bumps)'"
+  date: 2022-06-26T23:18:15.004Z
+- commits:
     - subject: Drop @balena/jellyfish-config
       hash: 7a1be9dc40bfa6d262add71a49f06220488f06b5
       body: ""
