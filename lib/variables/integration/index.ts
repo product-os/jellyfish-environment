@@ -50,6 +50,9 @@ export interface Integration {
 	'google-meet': {
 		credentials: string;
 	};
+	nodeping: {
+		signature: string;
+	};
 }
 
 export function GetIntegration(env: EnvironmentBuilder): Integration {
@@ -153,6 +156,12 @@ export function GetIntegration(env: EnvironmentBuilder): Integration {
 			credentials: env.getString(
 				'INTEGRATION_GOOGLE_MEET_CREDENTIALS',
 				defaults.INTEGRATION_GOOGLE_MEET_CREDENTIALS,
+			),
+		},
+		nodeping: {
+			signature: env.getString(
+				'INTEGRATION_NODEPING_SIGNATURE_KEY',
+				defaults.INTEGRATION_NODEPING_SIGNATURE_KEY,
 			),
 		},
 	};
