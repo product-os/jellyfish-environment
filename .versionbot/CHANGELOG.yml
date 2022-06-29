@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add nodeping signature key
+      hash: de014f9ad30c388aa2363545da493923467372f9
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 12.1.0
+  title: "'Add nodeping signature key'"
+  date: 2022-06-29T03:39:03.372Z
+- commits:
     - subject: Update typedoc from 0.23.1 to 0.23.2
       hash: d994ef023b2a59ac491e0fafc1c77e4a3ceb2d11
       body: ""
