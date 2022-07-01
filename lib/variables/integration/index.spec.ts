@@ -26,7 +26,7 @@ const variables = {
 	INTEGRATION_FLOWDOCK_SIGNATURE_KEY: 'key-8',
 	INTEGRATION_TYPEFORM_SIGNATURE_KEY: 'key-9',
 	INTEGRATION_GOOGLE_MEET_CREDENTIALS: 'cred-1',
-	INTEGRATION_NODEPING_SIGNATURE_KEY: 'nodeping-signature-key',
+	INTEGRATION_STATUSPAGE_TOKEN: 'statuspage-token',
 };
 
 describe('Integration', () => {
@@ -81,8 +81,8 @@ describe('Integration', () => {
 			'google-meet': {
 				credentials: variables.INTEGRATION_GOOGLE_MEET_CREDENTIALS,
 			},
-			nodeping: {
-				signature: variables.INTEGRATION_NODEPING_SIGNATURE_KEY,
+			statuspage: {
+				api: variables.INTEGRATION_STATUSPAGE_TOKEN,
 			},
 		});
 	});
@@ -140,8 +140,8 @@ describe('Integration', () => {
 		expect(environment.integration['jellyfish'].appSecret).toEqual(
 			defaults.INTEGRATION_JELLYFISH_APP_SECRET,
 		);
-		expect(environment.integration['nodeping'].signature).toEqual(
-			defaults.INTEGRATION_NODEPING_SIGNATURE_KEY,
+		expect(environment.integration['statuspage'].api).toEqual(
+			defaults.INTEGRATION_STATUSPAGE_TOKEN,
 		);
 	});
 });
