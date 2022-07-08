@@ -26,6 +26,7 @@ const variables = {
 	INTEGRATION_FLOWDOCK_SIGNATURE_KEY: 'key-8',
 	INTEGRATION_TYPEFORM_SIGNATURE_KEY: 'key-9',
 	INTEGRATION_GOOGLE_MEET_CREDENTIALS: 'cred-1',
+	INTEGRATION_STATUSPAGE_PAGE_ID: 'statuspage-page-id',
 	INTEGRATION_STATUSPAGE_TOKEN: 'statuspage-token',
 };
 
@@ -82,6 +83,7 @@ describe('Integration', () => {
 				credentials: variables.INTEGRATION_GOOGLE_MEET_CREDENTIALS,
 			},
 			statuspage: {
+				pageId: variables.INTEGRATION_STATUSPAGE_PAGE_ID,
 				api: variables.INTEGRATION_STATUSPAGE_TOKEN,
 			},
 		});
@@ -139,6 +141,9 @@ describe('Integration', () => {
 		);
 		expect(environment.integration['jellyfish'].appSecret).toEqual(
 			defaults.INTEGRATION_JELLYFISH_APP_SECRET,
+		);
+		expect(environment.integration['statuspage'].pageId).toEqual(
+			defaults.INTEGRATION_STATUSPAGE_PAGE_ID,
 		);
 		expect(environment.integration['statuspage'].api).toEqual(
 			defaults.INTEGRATION_STATUSPAGE_TOKEN,
