@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add Statuspage page ID
+      hash: 6b47139ed9a957aa4e7c681524db8fd9df36a287
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 12.2.0
+  title: "'Add Statuspage page ID'"
+  date: 2022-07-08T04:17:32.112Z
+- commits:
     - subject: Update typedoc from 0.23.5 to 0.23.6
       hash: 040c5e13d6ca115203751387bc0726ba91f2ea32
       body: ""
