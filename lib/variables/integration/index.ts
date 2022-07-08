@@ -52,6 +52,7 @@ export interface Integration {
 	};
 	statuspage: {
 		api: string;
+		pageId: string;
 	};
 }
 
@@ -162,6 +163,10 @@ export function GetIntegration(env: EnvironmentBuilder): Integration {
 			api: env.getString(
 				'INTEGRATION_STATUSPAGE_TOKEN',
 				defaults.INTEGRATION_STATUSPAGE_TOKEN,
+			),
+			pageId: env.getString(
+				'INTEGRATION_STATUSPAGE_PAGE_ID',
+				defaults.INTEGRATION_STATUSPAGE_PAGE_ID,
 			),
 		},
 	};
