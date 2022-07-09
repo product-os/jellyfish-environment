@@ -50,10 +50,6 @@ export interface Integration {
 	'google-meet': {
 		credentials: string;
 	};
-	statuspage: {
-		api: string;
-		pageId: string;
-	};
 }
 
 export function GetIntegration(env: EnvironmentBuilder): Integration {
@@ -157,16 +153,6 @@ export function GetIntegration(env: EnvironmentBuilder): Integration {
 			credentials: env.getString(
 				'INTEGRATION_GOOGLE_MEET_CREDENTIALS',
 				defaults.INTEGRATION_GOOGLE_MEET_CREDENTIALS,
-			),
-		},
-		statuspage: {
-			api: env.getString(
-				'INTEGRATION_STATUSPAGE_TOKEN',
-				defaults.INTEGRATION_STATUSPAGE_TOKEN,
-			),
-			pageId: env.getString(
-				'INTEGRATION_STATUSPAGE_PAGE_ID',
-				defaults.INTEGRATION_STATUSPAGE_PAGE_ID,
 			),
 		},
 	};
