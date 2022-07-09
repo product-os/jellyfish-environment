@@ -1,4 +1,20 @@
 - commits:
+    - subject: Drop Statuspage vars
+      hash: ee63b7ab988f966dda54d2cccc5a84c38cb6fc34
+      body: |
+        Statuspage environment variables are now handled directly
+        in jellyfish-plugin-incidents.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 12.2.1
+  title: "'Drop Statuspage vars'"
+  date: 2022-07-09T03:29:20.256Z
+- commits:
     - subject: Add Statuspage page ID
       hash: 6b47139ed9a957aa4e7c681524db8fd9df36a287
       body: ""
