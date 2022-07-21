@@ -26,6 +26,7 @@ const variables = {
 	INTEGRATION_FLOWDOCK_SIGNATURE_KEY: 'key-8',
 	INTEGRATION_TYPEFORM_SIGNATURE_KEY: 'key-9',
 	INTEGRATION_GOOGLE_MEET_CREDENTIALS: 'cred-1',
+	INTEGRATION_STATUSPAGE_PAGES: '1234:5678,foo:bar',
 };
 
 describe('Integration', () => {
@@ -79,6 +80,12 @@ describe('Integration', () => {
 			},
 			'google-meet': {
 				credentials: variables.INTEGRATION_GOOGLE_MEET_CREDENTIALS,
+			},
+			statuspage: {
+				pages: {
+					1234: '5678',
+					foo: 'bar',
+				},
 			},
 		});
 	});
@@ -136,5 +143,10 @@ describe('Integration', () => {
 		expect(environment.integration['jellyfish'].appSecret).toEqual(
 			defaults.INTEGRATION_JELLYFISH_APP_SECRET,
 		);
+		expect(environment.integration['statuspage']).toEqual({
+			pages: {
+				foobar: 'buzbaz',
+			},
+		});
 	});
 });
