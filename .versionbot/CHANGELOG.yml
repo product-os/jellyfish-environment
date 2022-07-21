@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add multiple statuspage support
+      hash: 9a222c2e8036fe57f100e5d35fdb35c93dd358b2
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Josh Bowling <josh@balena.io>
+        signed-off-by: Josh Bowling <josh@balena.io>
+      author: Josh Bowling
+      nested: []
+  version: 12.3.0
+  title: "'Add multiple statuspage support'"
+  date: 2022-07-21T02:02:32.089Z
+- commits:
     - subject: Update typedoc from 0.23.7 to 0.23.8
       hash: 0a246e9613ac2ed7de26da5eed5517205dfb7792
       body: ""
