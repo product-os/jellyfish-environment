@@ -50,6 +50,24 @@ export interface Integration {
 	'google-meet': {
 		credentials: string;
 	};
+	statuspage: {
+		pages: {
+			[key: string]: string;
+		};
+	};
+}
+
+function getStatuspagePages(raw: string): Integration['statuspage']['pages'] {
+	if (!raw || !raw.includes(':')) {
+		return {};
+	}
+
+	const pages = {};
+	for (const page of raw.split(',')) {
+		const [pageId, token] = page.split(':');
+		pages[pageId] = token;
+	}
+	return pages;
 }
 
 export function GetIntegration(env: EnvironmentBuilder): Integration {
@@ -153,6 +171,14 @@ export function GetIntegration(env: EnvironmentBuilder): Integration {
 			credentials: env.getString(
 				'INTEGRATION_GOOGLE_MEET_CREDENTIALS',
 				defaults.INTEGRATION_GOOGLE_MEET_CREDENTIALS,
+			),
+		},
+		statuspage: {
+			pages: getStatuspagePages(
+				env.getString(
+					'INTEGRATION_STATUSPAGE_PAGES',
+					defaults.INTEGRATION_STATUSPAGE_PAGES,
+				),
 			),
 		},
 	};
