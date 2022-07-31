@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update lint-staged from 13.0.2 to 13.0.3
+      hash: 080f82ccb881d37675db327e5cd4fbacbbd0f375
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 12.3.2
+  title: "'Update lint-staged from 13.0.2 to 13.0.3'"
+  date: 2022-07-31T11:04:01.748Z
+- commits:
     - subject: Update typedoc from 0.23.8 to 0.23.9
       hash: 6649e578748cda7a31b76236a3f18fa3a4677013
       body: ""
