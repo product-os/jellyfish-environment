@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update @humanwhocodes/env from 2.2.0 to 2.2.2
+      hash: 06ac9b4e10dca0a245f6fe4810075cfecda035e6
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 12.3.6
+  title: "'Update @humanwhocodes/env from 2.2.0 to 2.2.2'"
+  date: 2022-08-13T00:29:44.317Z
+- commits:
     - subject: Update typedoc from 0.23.9 to 0.23.10
       hash: 9167086d82e8a0236b07fa9a51ae7bf8cfe41832
       body: ""

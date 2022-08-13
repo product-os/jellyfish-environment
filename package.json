@@ -1,6 +1,6 @@
 {
   "name": "@balena/jellyfish-environment",
-  "version": "12.3.5",
+  "version": "12.3.6",
   "repository": {
     "type": "git",
     "url": "https://github.com/product-os/jellyfish-environment.git"
@@ -63,6 +63,6 @@
     "pre-commit": "npx lint-staged"
   },
   "versionist": {
-    "publishedAt": "2022-07-31T17:39:34.392Z"
+    "publishedAt": "2022-08-13T00:29:44.506Z"
   }
 }
