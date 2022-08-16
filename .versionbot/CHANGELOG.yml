@@ -1,4 +1,18 @@
 - commits:
+    - subject: Remove secrets from gitignore
+      hash: 1e37033921a8c0ff5a78944998526ea0d9e82a9f
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 13.0.1
+  title: "'Remove secrets from gitignore'"
+  date: 2022-08-16T05:38:59.485Z
+- commits:
     - subject: Remove flowdock support
       hash: 0acc314e56aea478d53c08922ce36603d4c0101f
       body: ""
