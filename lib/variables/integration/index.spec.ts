@@ -22,8 +22,6 @@ const variables = {
 	INTEGRATION_OUTREACH_SIGNATURE_KEY: 'key-7',
 	INTEGRATION_JELLYFISH_APP_ID: 'id-2',
 	INTEGRATION_JELLYFISH_APP_SECRET: 'secret-2',
-	INTEGRATION_FLOWDOCK_TOKEN: 'token-5',
-	INTEGRATION_FLOWDOCK_SIGNATURE_KEY: 'key-8',
 	INTEGRATION_TYPEFORM_SIGNATURE_KEY: 'key-9',
 	INTEGRATION_GOOGLE_MEET_CREDENTIALS: 'cred-1',
 	INTEGRATION_STATUSPAGE_PAGES: '1234:5678,foo:bar',
@@ -71,10 +69,6 @@ describe('Integration', () => {
 				appId: variables.INTEGRATION_JELLYFISH_APP_ID,
 				appSecret: variables.INTEGRATION_JELLYFISH_APP_SECRET,
 			},
-			flowdock: {
-				api: variables.INTEGRATION_FLOWDOCK_TOKEN,
-				signature: variables.INTEGRATION_FLOWDOCK_SIGNATURE_KEY,
-			},
 			typeform: {
 				signature: variables.INTEGRATION_TYPEFORM_SIGNATURE_KEY,
 			},
@@ -118,12 +112,6 @@ describe('Integration', () => {
 		);
 		expect(environment.integration['outreach'].signature).toEqual(
 			defaults.INTEGRATION_OUTREACH_SIGNATURE_KEY,
-		);
-		expect(environment.integration['flowdock'].api).toEqual(
-			defaults.INTEGRATION_FLOWDOCK_TOKEN,
-		);
-		expect(environment.integration['flowdock'].signature).toEqual(
-			defaults.INTEGRATION_FLOWDOCK_SIGNATURE_KEY,
 		);
 		expect(environment.integration['google-meet'].credentials).toEqual(
 			defaults.INTEGRATION_GOOGLE_MEET_CREDENTIALS,
