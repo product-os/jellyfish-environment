@@ -40,10 +40,6 @@ export interface Integration {
 		appId: string;
 		appSecret: string;
 	};
-	flowdock: {
-		api: string;
-		signature: string;
-	};
 	typeform: {
 		signature: string;
 	};
@@ -149,16 +145,6 @@ export function GetIntegration(env: EnvironmentBuilder): Integration {
 			appSecret: env.getString(
 				'INTEGRATION_JELLYFISH_APP_SECRET',
 				defaults.INTEGRATION_JELLYFISH_APP_SECRET,
-			),
-		},
-		flowdock: {
-			api: env.getString(
-				'INTEGRATION_FLOWDOCK_TOKEN',
-				defaults.INTEGRATION_FLOWDOCK_TOKEN,
-			),
-			signature: env.getString(
-				'INTEGRATION_FLOWDOCK_SIGNATURE_KEY',
-				defaults.INTEGRATION_FLOWDOCK_SIGNATURE_KEY,
 			),
 		},
 		typeform: {
