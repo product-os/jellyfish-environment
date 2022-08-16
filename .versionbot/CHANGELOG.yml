@@ -1,4 +1,18 @@
 - commits:
+    - subject: Remove flowdock support
+      hash: 0acc314e56aea478d53c08922ce36603d4c0101f
+      body: ""
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 13.0.0
+  title: "'Remove flowdock support'"
+  date: 2022-08-16T05:19:38.219Z
+- commits:
     - subject: Update @humanwhocodes/env from 2.2.0 to 2.2.2
       hash: 06ac9b4e10dca0a245f6fe4810075cfecda035e6
       body: ""
