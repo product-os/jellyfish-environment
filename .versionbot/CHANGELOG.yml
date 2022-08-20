@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update @types/jest from 28.1.6 to 28.1.7
+      hash: 73ddc1de733ef8b08b42700d3c97b422809a39af
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 13.0.2
+  title: "'Update @types/jest from 28.1.6 to 28.1.7'"
+  date: 2022-08-20T01:34:06.574Z
+- commits:
     - subject: Remove secrets from gitignore
       hash: 1e37033921a8c0ff5a78944998526ea0d9e82a9f
       body: ""
