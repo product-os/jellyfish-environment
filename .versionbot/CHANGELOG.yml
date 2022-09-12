@@ -1,4 +1,18 @@
 - commits:
+    - subject: Drop logentries support
+      hash: 75a54dad9ffe88b0416fb5c9ac1a6035e50342d5
+      body: ""
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 14.0.0
+  title: "'Drop logentries support'"
+  date: 2022-09-12T02:03:34.850Z
+- commits:
     - subject: Update @types/lodash from 4.14.184 to 4.14.185
       hash: dcb82a066945f422ab6f8a6856e7acfe9f098a16
       body: ""
