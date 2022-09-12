@@ -5,7 +5,6 @@ import { HTTP } from './variables/http';
 import { Hydra } from './variables/hydra';
 import { Integration } from './variables/integration';
 import { Livechat } from './variables/livechat';
-import { LogEntries } from './variables/logentries';
 import { Logger } from './variables/logger';
 import { Mail, MailOptions } from './variables/mail';
 import { Metrics } from './variables/metrics';
@@ -25,7 +24,6 @@ export interface EnvironmentVariables {
 	http: HTTP;
 	integration: Integration;
 	livechat: Livechat;
-	logentries: LogEntries;
 	logger: Logger;
 	mail: Mail;
 	mailgun: MailOptions;
@@ -153,7 +151,6 @@ export {
 	HTTP,
 	Integration,
 	Livechat,
-	LogEntries,
 	Logger,
 	Mail,
 	MailOptions,

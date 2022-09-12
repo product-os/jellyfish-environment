@@ -83,7 +83,6 @@ describe('returned object', () => {
 			'http',
 			'integration',
 			'livechat',
-			'logentries',
 			'logger',
 			'mail',
 			'mailgun',
