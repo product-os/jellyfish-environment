@@ -79,7 +79,6 @@ export {
 	HTTP,
 	Integration,
 	Livechat,
-	LogEntries,
 	Logger,
 	Mail,
 	MailOptions,

@@ -5,7 +5,6 @@ import { GetDatabase } from './database';
 import { GetHTTP } from './http';
 import { GetIntegration } from './integration';
 import { GetLivechat } from './livechat';
-import { GetLogEntries } from './logentries';
 import { GetLogger } from './logger';
 import { GetMail } from './mail';
 import { GetMailGun } from './mailgun';
@@ -31,7 +30,6 @@ export function getVariables(env: EnvironmentBuilder): EnvironmentVariables {
 		http: GetHTTP(env),
 		integration,
 		livechat: GetLivechat(env),
-		logentries: GetLogEntries(env),
 		logger: GetLogger(env),
 		mail: GetMail(env),
 		mailgun: GetMailGun(env),
