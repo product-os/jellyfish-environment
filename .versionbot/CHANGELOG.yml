@@ -1,4 +1,18 @@
 - commits:
+    - subject: "CI: Remove protect_branch input"
+      hash: 127694c699a677f5f1303c7e3dfdd580e72b01aa
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 14.0.2
+  title: ""
+  date: 2022-09-13T02:22:59.284Z
+- commits:
     - subject: "CI: Move to Flowzone"
       hash: 7b45ea4b72e6e05a37b0532800bf388af06e5a1d
       body: ""
