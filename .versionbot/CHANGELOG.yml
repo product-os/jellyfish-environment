@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update typedoc from 0.23.14 to 0.23.15
+      hash: 87f7c4590743bb7c4cf7fdcdf985078f76fffcb4
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 14.0.6
+  title: ""
+  date: 2022-09-18T19:51:16.782Z
+- commits:
     - subject: Update ts-jest from 29.0.0 to 29.0.1
       hash: 922ef537f20271ea3a6feb9d5de633c8bd34b040
       body: ""
