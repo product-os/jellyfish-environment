@@ -1,4 +1,18 @@
 - commits:
+    - subject: "Dev: Add .nvmrc"
+      hash: 0fc2306ee2a9886e11b8135871bf5c1e50ae1acc
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 14.0.7
+  title: ""
+  date: 2022-09-19T04:11:44.682Z
+- commits:
     - subject: Update typedoc from 0.23.14 to 0.23.15
       hash: 87f7c4590743bb7c4cf7fdcdf985078f76fffcb4
       body: ""
