@@ -1,4 +1,19 @@
 - commits:
+    - subject: "Dev: Remove unenforceable .editorconfig"
+      hash: 05d930ee0051902351cae27c2360e06303ba297b
+      body: |
+        Should instead check with lint in CI
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 14.0.9
+  title: ""
+  date: 2022-09-19T08:05:06.745Z
+- commits:
     - subject: Add CodeQL workflow
       hash: ed15902b2210df0f4bbd9a3be5ca0c483629b1f5
       body: ""
