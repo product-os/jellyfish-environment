@@ -77,6 +77,7 @@ export {
 	Database,
 	DatabaseOptions,
 	HTTP,
+	Hubot,
 	Integration,
 	Livechat,
 	Logger,
