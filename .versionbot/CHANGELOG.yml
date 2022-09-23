@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add hubot env var support
+      hash: fe663902ea5d383a6626e86b247e6e235c3f8a60
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 14.0.12
+  title: ""
+  date: 2022-09-23T06:36:41.541Z
+- commits:
     - subject: "Dev: Drop unused Makefile"
       hash: d4f2e255d841b0ff284c3f255ae9992ede568b3f
       body: ""
