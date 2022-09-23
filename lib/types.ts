@@ -2,6 +2,7 @@ import { Actions } from './variables/actions';
 import { AWS } from './variables/aws';
 import { Database, DatabaseOptions } from './variables/database';
 import { HTTP } from './variables/http';
+import { Hubot } from './variables/hubot';
 import { Hydra } from './variables/hydra';
 import { Integration } from './variables/integration';
 import { Livechat } from './variables/livechat';
@@ -22,6 +23,7 @@ export interface EnvironmentVariables {
 	aws: AWS;
 	database: Database;
 	http: HTTP;
+	hubot: Hubot;
 	integration: Integration;
 	livechat: Livechat;
 	logger: Logger;
@@ -149,6 +151,7 @@ export {
 	Database,
 	DatabaseOptions,
 	HTTP,
+	Hubot,
 	Integration,
 	Livechat,
 	Logger,
