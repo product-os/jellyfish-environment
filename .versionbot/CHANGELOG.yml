@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update ts-jest from 29.0.1 to 29.0.2
+      hash: 8b48a89821d9dc3d7073625ef4782502c14bf01c
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 14.0.13
+  title: ""
+  date: 2022-09-24T12:12:53.525Z
+- commits:
     - subject: Add hubot env var support
       hash: fe663902ea5d383a6626e86b247e6e235c3f8a60
       body: ""
