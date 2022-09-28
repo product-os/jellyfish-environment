@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add order hashtag to hubot defaults
+      hash: ae506c446a618cd607e2dc0e7b8cce71edcf1e6d
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 14.0.17
+  title: ""
+  date: 2022-09-28T06:40:00.423Z
+- commits:
     - subject: Update hubot default values
       hash: 733b27d988e5d84cbe661889b7b2297ab16b039a
       body: ""
