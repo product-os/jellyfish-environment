@@ -1,11 +1,11 @@
-const HUBOT__EMAIL_HASHTAGS__HASHTAGS = '{}';
-const HUBOT__EMAIL_HASHTAGS__DOMAIN = 'balena.io';
+const HUBOT__EMAIL_HASHTAGS__HASHTAGS = '{"access":"access"}';
+const HUBOT__EMAIL_HASHTAGS__DOMAIN = 'foo.bar';
 const HUBOT__ORDER_HASHTAG_FOOTER = '';
 const HUBOT__EMAIL_HASHTAGS__UPPER_LIMIT = '64';
 const HUBOT__EMAIL_HASHTAGS__LOWER_LIMIT = '4';
-const HUBOT_SMTP_USER = 'hubot@balena.io';
+const HUBOT_SMTP_USER = 'hubot@foo.bar';
 const HUBOT_SMTP_PASSWORD = 'buz';
-const HUBOT_SMTP_SERVER = 'smtp.gmail.com';
+const HUBOT_SMTP_SERVER = 'smtp.foo.bar';
 
 export {
 	HUBOT__EMAIL_HASHTAGS__HASHTAGS,
