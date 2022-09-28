@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update hubot default values
+      hash: 733b27d988e5d84cbe661889b7b2297ab16b039a
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 14.0.16
+  title: ""
+  date: 2022-09-28T05:44:33.008Z
+- commits:
     - subject: Rely on flowzone for docs publishing
       hash: 07ebef52e6cecaaff62a08f5ed02c9f838c8b066
       body: ""
