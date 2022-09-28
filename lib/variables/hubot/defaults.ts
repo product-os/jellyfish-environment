@@ -1,4 +1,4 @@
-const HUBOT__EMAIL_HASHTAGS__HASHTAGS = '{"access":"access"}';
+const HUBOT__EMAIL_HASHTAGS__HASHTAGS = '{"access":"access", "order":"order"}';
 const HUBOT__EMAIL_HASHTAGS__DOMAIN = 'foo.bar';
 const HUBOT__ORDER_HASHTAG_FOOTER = '';
 const HUBOT__EMAIL_HASHTAGS__UPPER_LIMIT = '64';
