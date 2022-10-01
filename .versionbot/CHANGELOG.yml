@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update @types/lodash from 4.14.185 to 4.14.186
+      hash: 35b6f8cc9daf3850d6894e894869f801f0c78de8
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 14.0.18
+  title: ""
+  date: 2022-10-01T03:06:43.030Z
+- commits:
     - subject: Add order hashtag to hubot defaults
       hash: ae506c446a618cd607e2dc0e7b8cce71edcf1e6d
       body: ""
