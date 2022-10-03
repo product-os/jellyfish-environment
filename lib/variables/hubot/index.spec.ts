@@ -1,15 +1,18 @@
+import { v4 as uuid } from 'uuid';
 import { getEnvironment } from '../../../lib';
 import * as defaults from './defaults';
 
 const variables = {
-	HUBOT__EMAIL_HASHTAGS__HASHTAGS: '{foo: "bar"}',
-	HUBOT__EMAIL_HASHTAGS__DOMAIN: 'foo.bar',
-	HUBOT__ORDER_HASHTAG_FOOTER: 'test',
+	HUBOT__EMAIL_HASHTAGS__HASHTAGS: `{foo: "${uuid()}"}`,
+	HUBOT__EMAIL_HASHTAGS__DOMAIN: uuid(),
+	HUBOT__ORDER_HASHTAG_FOOTER: uuid(),
 	HUBOT__EMAIL_HASHTAGS__UPPER_LIMIT: '10',
 	HUBOT__EMAIL_HASHTAGS__LOWER_LIMIT: '1',
-	HUBOT_SMTP_USER: 'hubot@foo.bar',
-	HUBOT_SMTP_PASSWORD: 'baz',
-	HUBOT_SMTP_SERVER: 'smtp.foo.bar',
+	HUBOT_SMTP_USER: uuid(),
+	HUBOT_SMTP_PASSWORD: uuid(),
+	HUBOT_SMTP_SERVER: uuid(),
+	HUBOT__LEAVE__CALAMARI_INSTANCE: uuid(),
+	HUBOT__LEAVE__CALAMARI_TOKEN: uuid(),
 };
 
 describe('Hubot', () => {
@@ -28,6 +31,12 @@ describe('Hubot', () => {
 					server: variables.HUBOT_SMTP_SERVER,
 				},
 			},
+			leave: {
+				calamari: {
+					instance: variables.HUBOT__LEAVE__CALAMARI_INSTANCE,
+					token: variables.HUBOT__LEAVE__CALAMARI_TOKEN,
+				},
+			},
 		});
 	});
 
@@ -44,6 +53,12 @@ describe('Hubot', () => {
 					user: defaults.HUBOT_SMTP_USER,
 					password: defaults.HUBOT_SMTP_PASSWORD,
 					server: defaults.HUBOT_SMTP_SERVER,
+				},
+			},
+			leave: {
+				calamari: {
+					instance: defaults.HUBOT__LEAVE__CALAMARI_INSTANCE,
+					token: defaults.HUBOT__LEAVE__CALAMARI_TOKEN,
 				},
 			},
 		});

@@ -14,6 +14,12 @@ export interface Hubot {
 			server: string;
 		};
 	};
+	leave: {
+		calamari: {
+			instance: string;
+			token: string;
+		};
+	};
 }
 
 export function GetHubot(env: EnvironmentBuilder): Hubot {
@@ -46,6 +52,18 @@ export function GetHubot(env: EnvironmentBuilder): Hubot {
 					defaults.HUBOT_SMTP_PASSWORD,
 				),
 				server: env.getString('HUBOT_SMTP_SERVER', defaults.HUBOT_SMTP_SERVER),
+			},
+		},
+		leave: {
+			calamari: {
+				instance: env.getString(
+					'HUBOT__LEAVE__CALAMARI_INSTANCE',
+					defaults.HUBOT__LEAVE__CALAMARI_INSTANCE,
+				),
+				token: env.getString(
+					'HUBOT__LEAVE__CALAMARI_TOKEN',
+					defaults.HUBOT__LEAVE__CALAMARI_TOKEN,
+				),
 			},
 		},
 	};
