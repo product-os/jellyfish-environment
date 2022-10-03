@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add hubot leave variables
+      hash: cd524afe4953fe564d71a94bf2b14b14cc0dd834
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 14.1.0
+  title: ""
+  date: 2022-10-03T08:26:34.957Z
+- commits:
     - subject: Update jest monorepo
       hash: 6d6cab24b2513b9de0414c22cb5f15c7c4b82f59
       body: ""
