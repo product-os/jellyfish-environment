@@ -1,0 +1,21 @@
+import { getEnvironment } from '../../../lib';
+import * as defaults from '../../../lib/variables/livechat/defaults';
+import { v4 as uuid } from 'uuid';
+
+const variables = {
+	LIVECHAT_HOST: uuid(),
+};
+
+test('variables are parsed', () => {
+	const environment = getEnvironment(variables);
+	expect(environment.livechat).toEqual({
+		host: variables.LIVECHAT_HOST,
+	});
+});
+
+test('defaults are used', () => {
+	const environment = getEnvironment();
+	expect(environment.livechat).toEqual({
+		host: defaults.LIVECHAT_HOST,
+	});
+});
