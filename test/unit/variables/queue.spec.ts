@@ -1,5 +1,5 @@
 import { getEnvironment } from '../../../lib';
-import * as defaults from '../../../lib/variables/queue/defaults';
+import { defaults } from '../../../lib/variables/queue';
 
 const variables = {
 	QUEUE_CONCURRENCY: '5',

@@ -1,6 +1,6 @@
 import { v4 as uuid } from 'uuid';
 import { getEnvironment } from '../../../lib';
-import * as defaults from '../../../lib/variables/hubot/defaults';
+import { defaults } from '../../../lib/variables/hubot';
 
 const variables = {
 	HUBOT__EMAIL_HASHTAGS__HASHTAGS: `{foo: "${uuid()}"}`,

@@ -1,3 +1,0 @@
-const QUEUE_CONCURRENCY = 4;
-
-export { QUEUE_CONCURRENCY };

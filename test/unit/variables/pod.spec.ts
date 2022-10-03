@@ -1,5 +1,5 @@
 import { getEnvironment } from '../../../lib';
-import * as defaults from '../../../lib/variables/pod/defaults';
+import { defaults } from '../../../lib/variables/pod';
 import { v4 as uuid } from 'uuid';
 
 const variables = {

@@ -1,5 +1,5 @@
 import { getEnvironment } from '../../../lib';
-import * as defaults from '../../../lib/variables/hydra/defaults';
+import { defaults } from '../../../lib/variables/hydra';
 import { v4 as uuid } from 'uuid';
 
 const variables = {
