@@ -1,4 +1,18 @@
 - commits:
+    - subject: Consolidate variable code
+      hash: ba868496d32703b11111e94730b290cfbb7c5823
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 14.1.2
+  title: ""
+  date: 2022-10-04T00:21:04.323Z
+- commits:
     - subject: "CI: Use UUIDs for tests, move to test/unit"
       hash: ffae8eae06c27d6bdfdffe714f0cadfaf9a1ac20
       body: ""
