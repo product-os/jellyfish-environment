@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add hubot calendar vars
+      hash: 4bf731569ebd6950f74c1ba147f4a4aaa1b84e2f
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 14.2.0
+  title: ""
+  date: 2022-10-06T01:32:39.958Z
+- commits:
     - subject: Consolidate variable code
       hash: ba868496d32703b11111e94730b290cfbb7c5823
       body: ""
