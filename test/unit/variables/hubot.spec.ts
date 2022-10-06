@@ -13,6 +13,13 @@ const variables = {
 	HUBOT_SMTP_SERVER: uuid(),
 	HUBOT__LEAVE__CALAMARI_INSTANCE: uuid(),
 	HUBOT__LEAVE__CALAMARI_TOKEN: uuid(),
+	HUBOT__CALENDAR__JWT: `{secret: "${uuid()}"}`,
+	HUBOT__CALENDAR__THREAD: uuid(),
+	HUBOT__CALENDAR__ORG: uuid(),
+	HUBOT__CALENDAR__ID: uuid(),
+	HUBOT__CALENDAR__PING: uuid(),
+	HUBOT__CALENDAR__IGNORE: `["${uuid()}"]`,
+	HUBOT__CALENDAR__LOOKAHEAD: '2',
 };
 
 test('variables are parsed', () => {
@@ -35,6 +42,15 @@ test('variables are parsed', () => {
 				instance: variables.HUBOT__LEAVE__CALAMARI_INSTANCE,
 				token: variables.HUBOT__LEAVE__CALAMARI_TOKEN,
 			},
+		},
+		calendar: {
+			jwt: variables.HUBOT__CALENDAR__JWT,
+			thread: variables.HUBOT__CALENDAR__THREAD,
+			org: variables.HUBOT__CALENDAR__ORG,
+			id: variables.HUBOT__CALENDAR__ID,
+			ping: variables.HUBOT__CALENDAR__PING,
+			ignore: variables.HUBOT__CALENDAR__IGNORE,
+			lookahead: variables.HUBOT__CALENDAR__LOOKAHEAD,
 		},
 	});
 });
@@ -59,6 +75,15 @@ test('defaults are used', () => {
 				instance: defaults.HUBOT__LEAVE__CALAMARI_INSTANCE,
 				token: defaults.HUBOT__LEAVE__CALAMARI_TOKEN,
 			},
+		},
+		calendar: {
+			jwt: defaults.HUBOT__CALENDAR__JWT,
+			thread: defaults.HUBOT__CALENDAR__THREAD,
+			org: defaults.HUBOT__CALENDAR__ORG,
+			id: defaults.HUBOT__CALENDAR__ID,
+			ping: defaults.HUBOT__CALENDAR__PING,
+			ignore: defaults.HUBOT__CALENDAR__IGNORE,
+			lookahead: defaults.HUBOT__CALENDAR__LOOKAHEAD,
 		},
 	});
 });
