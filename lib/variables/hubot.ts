@@ -19,6 +19,15 @@ export interface Hubot {
 			token: string;
 		};
 	};
+	calendar: {
+		jwt: string;
+		thread: string;
+		org: string;
+		id: string;
+		ignore: string;
+		lookahead: string;
+		ping: string;
+	};
 }
 
 export const defaults = {
@@ -32,6 +41,13 @@ export const defaults = {
 	HUBOT_SMTP_SERVER: 'smtp.foo.bar',
 	HUBOT__LEAVE__CALAMARI_INSTANCE: 'balena',
 	HUBOT__LEAVE__CALAMARI_TOKEN: 'foobar',
+	HUBOT__CALENDAR__JWT: '{}',
+	HUBOT__CALENDAR__THREAD: '',
+	HUBOT__CALENDAR__ORG: '',
+	HUBOT__CALENDAR__ID: '',
+	HUBOT__CALENDAR__PING: '@@balena',
+	HUBOT__CALENDAR__IGNORE: '[]',
+	HUBOT__CALENDAR__LOOKAHEAD: '1',
 };
 
 export function GetHubot(env: EnvironmentBuilder): Hubot {
@@ -77,6 +93,27 @@ export function GetHubot(env: EnvironmentBuilder): Hubot {
 					defaults.HUBOT__LEAVE__CALAMARI_TOKEN,
 				),
 			},
+		},
+		calendar: {
+			jwt: env.getString('HUBOT__CALENDAR__JWT', defaults.HUBOT__CALENDAR__JWT),
+			thread: env.getString(
+				'HUBOT__CALENDAR__THREAD',
+				defaults.HUBOT__CALENDAR__THREAD,
+			),
+			org: env.getString('HUBOT__CALENDAR__ORG', defaults.HUBOT__CALENDAR__ORG),
+			id: env.getString('HUBOT__CALENDAR__ID', defaults.HUBOT__CALENDAR__ID),
+			ignore: env.getString(
+				'HUBOT__CALENDAR__IGNORE',
+				defaults.HUBOT__CALENDAR__IGNORE,
+			),
+			lookahead: env.getString(
+				'HUBOT__CALENDAR__LOOKAHEAD',
+				defaults.HUBOT__CALENDAR__LOOKAHEAD,
+			),
+			ping: env.getString(
+				'HUBOT__CALENDAR__PING',
+				defaults.HUBOT__CALENDAR__PING,
+			),
 		},
 	};
 }
