@@ -22,7 +22,6 @@ const variables = {
 	HUBOT__CALENDAR__LOOKAHEAD: '2',
 	HUBOT__SUPPORT__ORG: uuid(),
 	HUBOT__SUPPORT__THREAD: uuid(),
-	HUBOT__SUPPORT__RESET: uuid(),
 	HUBOT__SUPPORT__JWT: `{foo: "${uuid()}"}`,
 	HUBOT__SUPPORT__CALENDAR: uuid(),
 	HUBOT__SUPPORT__LOOKAHEAD: '10',
@@ -56,7 +55,6 @@ test('variables are parsed', () => {
 		support: {
 			org: variables.HUBOT__SUPPORT__ORG,
 			thread: variables.HUBOT__SUPPORT__THREAD,
-			reset: variables.HUBOT__SUPPORT__RESET,
 			jwt: variables.HUBOT__SUPPORT__JWT,
 			calendar: variables.HUBOT__SUPPORT__CALENDAR,
 			lookahead: parseInt(variables.HUBOT__SUPPORT__LOOKAHEAD, 10),
@@ -105,7 +103,6 @@ test('defaults are used', () => {
 		support: {
 			org: defaults.HUBOT__SUPPORT__ORG,
 			thread: defaults.HUBOT__SUPPORT__THREAD,
-			reset: defaults.HUBOT__SUPPORT__RESET,
 			jwt: defaults.HUBOT__SUPPORT__JWT,
 			calendar: defaults.HUBOT__SUPPORT__CALENDAR,
 			lookahead: defaults.HUBOT__SUPPORT__LOOKAHEAD,
