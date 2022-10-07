@@ -1,4 +1,18 @@
 - commits:
+    - subject: Remove hubot support.reset var
+      hash: e709a9c4653a921be0b6097674686296729c30fe
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 14.3.4
+  title: ""
+  date: 2022-10-07T06:29:45.934Z
+- commits:
     - subject: Move hubot support.channel to support.thread
       hash: e46e6bde86330513a037fa7d8cd81187345a9f99
       body: ""
