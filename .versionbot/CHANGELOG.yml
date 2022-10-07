@@ -1,4 +1,18 @@
 - commits:
+    - subject: Parse hubot support.lookahead as a number
+      hash: e618e49ec87c486a15dd6dd3aa1fdd616f4ebda6
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 14.3.2
+  title: ""
+  date: 2022-10-07T03:26:16.492Z
+- commits:
     - subject: Update hubot support vars
       hash: c9208f648240561b9f3b50f46f252ddd9e2d84b9
       body: ""
