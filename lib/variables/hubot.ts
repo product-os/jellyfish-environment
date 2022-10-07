@@ -19,6 +19,22 @@ export interface Hubot {
 			token: string;
 		};
 	};
+	support: {
+		org: string;
+		channel: string;
+		reset: string;
+		jwt: string;
+		calendar: string;
+		lookahead: string;
+		start?: {
+			message?: string;
+			instructions?: string;
+		};
+		end?: {
+			message?: string;
+			instructions?: string;
+		};
+	};
 	calendar: {
 		jwt: string;
 		thread: string;
@@ -48,6 +64,16 @@ export const defaults = {
 	HUBOT__CALENDAR__PING: '@@balena',
 	HUBOT__CALENDAR__IGNORE: '[]',
 	HUBOT__CALENDAR__LOOKAHEAD: '1',
+	HUBOT__SUPPORT__ORG: '',
+	HUBOT__SUPPORT__CHANNEL: '',
+	HUBOT__SUPPORT__RESET: '0 0 1 * * 1',
+	HUBOT__SUPPORT__JWT: '{}',
+	HUBOT__SUPPORT__CALENDAR: '',
+	HUBOT__SUPPORT__LOOKAHEAD: '5',
+	HUBOT__SUPPORT__START_MESSAGE: '',
+	HUBOT__SUPPORT__START_INSTRUCTIONS: '',
+	HUBOT__SUPPORT__END_MESSAGE: '',
+	HUBOT__SUPPORT__END_INSTRUCTIONS: '',
 };
 
 export function GetHubot(env: EnvironmentBuilder): Hubot {
@@ -94,6 +120,32 @@ export function GetHubot(env: EnvironmentBuilder): Hubot {
 				),
 			},
 		},
+		support: {
+			org: env.getString('HUBOT__SUPPORT__ORG'),
+			channel: env.getString('HUBOT__SUPPORT__CHANNEL'),
+			reset: env.getString(
+				'HUBOT__SUPPORT__RESET',
+				defaults.HUBOT__SUPPORT__RESET,
+			),
+			jwt: env.getString('HUBOT__SUPPORT__JWT', defaults.HUBOT__SUPPORT__JWT),
+			calendar: env.getString(
+				'HUBOT__SUPPORT__CALENDAR',
+				defaults.HUBOT__SUPPORT__CALENDAR,
+			),
+			lookahead: env.getString(
+				'HUBOT__SUPPORT__LOOKAHEAD',
+				defaults.HUBOT__SUPPORT__LOOKAHEAD,
+			),
+			start: {
+				message: env.getString('HUBOT__SUPPORT__START_MESSAGE'),
+				instructions: env.getString('HUBOT__SUPPORT__START_INSTRUCTIONS'),
+			},
+			end: {
+				message: env.getString('HUBOT__SUPPORT__END_MESSAGE'),
+				instructions: env.getString('HUBOT__SUPPORT__END_INSTRUCTIONS'),
+			},
+		},
+
 		calendar: {
 			jwt: env.getString('HUBOT__CALENDAR__JWT', defaults.HUBOT__CALENDAR__JWT),
 			thread: env.getString(

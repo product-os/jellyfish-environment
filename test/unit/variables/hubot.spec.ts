@@ -20,6 +20,16 @@ const variables = {
 	HUBOT__CALENDAR__PING: uuid(),
 	HUBOT__CALENDAR__IGNORE: `["${uuid()}"]`,
 	HUBOT__CALENDAR__LOOKAHEAD: '2',
+	HUBOT__SUPPORT__ORG: uuid(),
+	HUBOT__SUPPORT__CHANNEL: uuid(),
+	HUBOT__SUPPORT__RESET: uuid(),
+	HUBOT__SUPPORT__JWT: `{foo: "${uuid()}"}`,
+	HUBOT__SUPPORT__CALENDAR: uuid(),
+	HUBOT__SUPPORT__LOOKAHEAD: '10',
+	HUBOT__SUPPORT__START_MESSAGE: uuid(),
+	HUBOT__SUPPORT__START_INSTRUCTIONS: uuid(),
+	HUBOT__SUPPORT__END_MESSAGE: uuid(),
+	HUBOT__SUPPORT__END_INSTRUCTIONS: uuid(),
 };
 
 test('variables are parsed', () => {
@@ -41,6 +51,22 @@ test('variables are parsed', () => {
 			calamari: {
 				instance: variables.HUBOT__LEAVE__CALAMARI_INSTANCE,
 				token: variables.HUBOT__LEAVE__CALAMARI_TOKEN,
+			},
+		},
+		support: {
+			org: variables.HUBOT__SUPPORT__ORG,
+			channel: variables.HUBOT__SUPPORT__CHANNEL,
+			reset: variables.HUBOT__SUPPORT__RESET,
+			jwt: variables.HUBOT__SUPPORT__JWT,
+			calendar: variables.HUBOT__SUPPORT__CALENDAR,
+			lookahead: variables.HUBOT__SUPPORT__LOOKAHEAD,
+			start: {
+				message: variables.HUBOT__SUPPORT__START_MESSAGE,
+				instructions: variables.HUBOT__SUPPORT__START_INSTRUCTIONS,
+			},
+			end: {
+				message: variables.HUBOT__SUPPORT__END_MESSAGE,
+				instructions: variables.HUBOT__SUPPORT__END_INSTRUCTIONS,
 			},
 		},
 		calendar: {
@@ -74,6 +100,22 @@ test('defaults are used', () => {
 			calamari: {
 				instance: defaults.HUBOT__LEAVE__CALAMARI_INSTANCE,
 				token: defaults.HUBOT__LEAVE__CALAMARI_TOKEN,
+			},
+		},
+		support: {
+			org: defaults.HUBOT__SUPPORT__ORG,
+			channel: defaults.HUBOT__SUPPORT__CHANNEL,
+			reset: defaults.HUBOT__SUPPORT__RESET,
+			jwt: defaults.HUBOT__SUPPORT__JWT,
+			calendar: defaults.HUBOT__SUPPORT__CALENDAR,
+			lookahead: defaults.HUBOT__SUPPORT__LOOKAHEAD,
+			start: {
+				message: defaults.HUBOT__SUPPORT__START_MESSAGE,
+				instructions: defaults.HUBOT__SUPPORT__START_INSTRUCTIONS,
+			},
+			end: {
+				message: defaults.HUBOT__SUPPORT__END_MESSAGE,
+				instructions: defaults.HUBOT__SUPPORT__END_INSTRUCTIONS,
 			},
 		},
 		calendar: {
