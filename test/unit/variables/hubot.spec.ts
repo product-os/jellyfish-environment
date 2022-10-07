@@ -21,7 +21,7 @@ const variables = {
 	HUBOT__CALENDAR__IGNORE: `["${uuid()}"]`,
 	HUBOT__CALENDAR__LOOKAHEAD: '2',
 	HUBOT__SUPPORT__ORG: uuid(),
-	HUBOT__SUPPORT__CHANNEL: uuid(),
+	HUBOT__SUPPORT__THREAD: uuid(),
 	HUBOT__SUPPORT__RESET: uuid(),
 	HUBOT__SUPPORT__JWT: `{foo: "${uuid()}"}`,
 	HUBOT__SUPPORT__CALENDAR: uuid(),
@@ -55,7 +55,7 @@ test('variables are parsed', () => {
 		},
 		support: {
 			org: variables.HUBOT__SUPPORT__ORG,
-			channel: variables.HUBOT__SUPPORT__CHANNEL,
+			thread: variables.HUBOT__SUPPORT__THREAD,
 			reset: variables.HUBOT__SUPPORT__RESET,
 			jwt: variables.HUBOT__SUPPORT__JWT,
 			calendar: variables.HUBOT__SUPPORT__CALENDAR,
@@ -104,7 +104,7 @@ test('defaults are used', () => {
 		},
 		support: {
 			org: defaults.HUBOT__SUPPORT__ORG,
-			channel: defaults.HUBOT__SUPPORT__CHANNEL,
+			thread: defaults.HUBOT__SUPPORT__THREAD,
 			reset: defaults.HUBOT__SUPPORT__RESET,
 			jwt: defaults.HUBOT__SUPPORT__JWT,
 			calendar: defaults.HUBOT__SUPPORT__CALENDAR,
