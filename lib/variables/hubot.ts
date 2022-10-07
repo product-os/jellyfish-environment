@@ -25,7 +25,7 @@ export interface Hubot {
 		reset: string;
 		jwt: string;
 		calendar: string;
-		lookahead: string;
+		lookahead: number;
 		start: {
 			message: string;
 			instructions: string;
@@ -69,7 +69,7 @@ export const defaults = {
 	HUBOT__SUPPORT__RESET: '0 0 1 * * 1',
 	HUBOT__SUPPORT__JWT: '{}',
 	HUBOT__SUPPORT__CALENDAR: '',
-	HUBOT__SUPPORT__LOOKAHEAD: '5',
+	HUBOT__SUPPORT__LOOKAHEAD: 5,
 	HUBOT__SUPPORT__START_MESSAGE: '',
 	HUBOT__SUPPORT__START_INSTRUCTIONS: '',
 	HUBOT__SUPPORT__END_MESSAGE: '',
@@ -132,7 +132,7 @@ export function GetHubot(env: EnvironmentBuilder): Hubot {
 				'HUBOT__SUPPORT__CALENDAR',
 				defaults.HUBOT__SUPPORT__CALENDAR,
 			),
-			lookahead: env.getString(
+			lookahead: env.getNumber(
 				'HUBOT__SUPPORT__LOOKAHEAD',
 				defaults.HUBOT__SUPPORT__LOOKAHEAD,
 			),

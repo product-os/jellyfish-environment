@@ -59,7 +59,7 @@ test('variables are parsed', () => {
 			reset: variables.HUBOT__SUPPORT__RESET,
 			jwt: variables.HUBOT__SUPPORT__JWT,
 			calendar: variables.HUBOT__SUPPORT__CALENDAR,
-			lookahead: variables.HUBOT__SUPPORT__LOOKAHEAD,
+			lookahead: parseInt(variables.HUBOT__SUPPORT__LOOKAHEAD, 10),
 			start: {
 				message: variables.HUBOT__SUPPORT__START_MESSAGE,
 				instructions: variables.HUBOT__SUPPORT__START_INSTRUCTIONS,
