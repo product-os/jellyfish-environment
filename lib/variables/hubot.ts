@@ -22,7 +22,6 @@ export interface Hubot {
 	support: {
 		org: string;
 		thread: string;
-		reset: string;
 		jwt: string;
 		calendar: string;
 		lookahead: number;
@@ -66,7 +65,6 @@ export const defaults = {
 	HUBOT__CALENDAR__LOOKAHEAD: '1',
 	HUBOT__SUPPORT__ORG: '',
 	HUBOT__SUPPORT__THREAD: '',
-	HUBOT__SUPPORT__RESET: '0 0 1 * * 1',
 	HUBOT__SUPPORT__JWT: '{}',
 	HUBOT__SUPPORT__CALENDAR: '',
 	HUBOT__SUPPORT__LOOKAHEAD: 5,
@@ -125,10 +123,6 @@ export function GetHubot(env: EnvironmentBuilder): Hubot {
 			thread: env.getString(
 				'HUBOT__SUPPORT__THREAD',
 				defaults.HUBOT__SUPPORT__THREAD,
-			),
-			reset: env.getString(
-				'HUBOT__SUPPORT__RESET',
-				defaults.HUBOT__SUPPORT__RESET,
 			),
 			jwt: env.getString('HUBOT__SUPPORT__JWT', defaults.HUBOT__SUPPORT__JWT),
 			calendar: env.getString(
