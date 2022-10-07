@@ -26,13 +26,13 @@ export interface Hubot {
 		jwt: string;
 		calendar: string;
 		lookahead: string;
-		start?: {
-			message?: string;
-			instructions?: string;
+		start: {
+			message: string;
+			instructions: string;
 		};
-		end?: {
-			message?: string;
-			instructions?: string;
+		end: {
+			message: string;
+			instructions: string;
 		};
 	};
 	calendar: {
