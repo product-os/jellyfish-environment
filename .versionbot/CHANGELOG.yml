@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update hubot support vars
+      hash: c9208f648240561b9f3b50f46f252ddd9e2d84b9
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 14.3.1
+  title: ""
+  date: 2022-10-07T02:24:35.749Z
+- commits:
     - subject: Add hubot support vars
       hash: 0ada5019837dd48bde908a8001eff2a13f6ac9e6
       body: ""
