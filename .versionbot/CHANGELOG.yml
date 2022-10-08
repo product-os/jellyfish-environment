@@ -1,4 +1,18 @@
 - commits:
+    - subject: Set default JWT values for hubot
+      hash: 7ffa77af9742f22310f4e12d5114f10ad0be89c1
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 14.3.7
+  title: ""
+  date: 2022-10-08T02:16:32.115Z
+- commits:
     - subject: Update @types/jest from 29.1.1 to 29.1.2
       hash: 599d9b2d356da30d1d80b2881d33111cd35dced9
       body: ""
