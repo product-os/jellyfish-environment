@@ -1,4 +1,18 @@
 - commits:
+    - subject: Set more hubot defaults
+      hash: fef417934b1e9a7f849e09c0500c174fd0619b79
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 14.3.8
+  title: ""
+  date: 2022-10-08T06:13:21.435Z
+- commits:
     - subject: Set default JWT values for hubot
       hash: 7ffa77af9742f22310f4e12d5114f10ad0be89c1
       body: ""
