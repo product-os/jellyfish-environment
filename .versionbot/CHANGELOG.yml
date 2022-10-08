@@ -1,4 +1,18 @@
 - commits:
+    - subject: "Dev: Use prettier for json/yml"
+      hash: c5dbd9564a7ccb5452314c7d5726efb51a9464e3
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 14.3.9
+  title: ""
+  date: 2022-10-08T13:11:33.501Z
+- commits:
     - subject: Set more hubot defaults
       hash: fef417934b1e9a7f849e09c0500c174fd0619b79
       body: ""
