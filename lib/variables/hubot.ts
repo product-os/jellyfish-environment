@@ -75,11 +75,12 @@ export const defaults = {
 	HUBOT__SUPPORT__THREAD: '',
 	HUBOT__SUPPORT__JWT: jwt,
 	HUBOT__SUPPORT__CALENDAR: 'foobar',
-	HUBOT__SUPPORT__LOOKAHEAD: 5,
-	HUBOT__SUPPORT__START_MESSAGE: '',
-	HUBOT__SUPPORT__START_INSTRUCTIONS: '',
-	HUBOT__SUPPORT__END_MESSAGE: '',
-	HUBOT__SUPPORT__END_INSTRUCTIONS: '',
+	HUBOT__SUPPORT__LOOKAHEAD: 10,
+	HUBOT__SUPPORT__START_MESSAGE:
+		'<%= summary %>: your shift starts in <%= start %> for <%= duration %> - Please ack',
+	HUBOT__SUPPORT__START_INSTRUCTIONS: 'Support PSAs:',
+	HUBOT__SUPPORT__END_MESSAGE: 'Nearing the end for <%= summary %>',
+	HUBOT__SUPPORT__END_INSTRUCTIONS: 'Outgoing agents:',
 };
 
 export function GetHubot(env: EnvironmentBuilder): Hubot {
@@ -141,15 +142,26 @@ export function GetHubot(env: EnvironmentBuilder): Hubot {
 				defaults.HUBOT__SUPPORT__LOOKAHEAD,
 			),
 			start: {
-				message: env.getString('HUBOT__SUPPORT__START_MESSAGE'),
-				instructions: env.getString('HUBOT__SUPPORT__START_INSTRUCTIONS'),
+				message: env.getString(
+					'HUBOT__SUPPORT__START_MESSAGE',
+					defaults.HUBOT__SUPPORT__START_MESSAGE,
+				),
+				instructions: env.getString(
+					'HUBOT__SUPPORT__START_INSTRUCTIONS',
+					defaults.HUBOT__SUPPORT__START_INSTRUCTIONS,
+				),
 			},
 			end: {
-				message: env.getString('HUBOT__SUPPORT__END_MESSAGE'),
-				instructions: env.getString('HUBOT__SUPPORT__END_INSTRUCTIONS'),
+				message: env.getString(
+					'HUBOT__SUPPORT__END_MESSAGE',
+					defaults.HUBOT__SUPPORT__END_MESSAGE,
+				),
+				instructions: env.getString(
+					'HUBOT__SUPPORT__END_INSTRUCTIONS',
+					defaults.HUBOT__SUPPORT__END_INSTRUCTIONS,
+				),
 			},
 		},
-
 		calendar: {
 			jwt: env.getString('HUBOT__CALENDAR__JWT', defaults.HUBOT__CALENDAR__JWT),
 			thread: env.getString(
