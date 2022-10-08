@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update @types/jest from 29.1.1 to 29.1.2
+      hash: 599d9b2d356da30d1d80b2881d33111cd35dced9
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 14.3.6
+  title: ""
+  date: 2022-10-08T01:25:46.789Z
+- commits:
     - subject: Remove hubot support.org var
       hash: 9575abc03e2e1fcd3b0ce30974326eb589547f04
       body: ""
