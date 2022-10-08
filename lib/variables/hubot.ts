@@ -1,4 +1,14 @@
+import keypair from 'keypair';
 import { EnvironmentBuilder } from '../types';
+
+const keys = keypair();
+const jwt = JSON.stringify({
+	private_key_id: 'key123',
+	private_key: keys.private,
+	client_email: 'foo@bar.buz',
+	client_id: 'client123',
+	type: 'service_account',
+});
 
 export interface Hubot {
 	emailHashtags: {
@@ -55,7 +65,7 @@ export const defaults = {
 	HUBOT_SMTP_SERVER: 'smtp.foo.bar',
 	HUBOT__LEAVE__CALAMARI_INSTANCE: 'balena',
 	HUBOT__LEAVE__CALAMARI_TOKEN: 'foobar',
-	HUBOT__CALENDAR__JWT: '{}',
+	HUBOT__CALENDAR__JWT: jwt,
 	HUBOT__CALENDAR__THREAD: '',
 	HUBOT__CALENDAR__ORG: '',
 	HUBOT__CALENDAR__ID: '',
@@ -63,8 +73,8 @@ export const defaults = {
 	HUBOT__CALENDAR__IGNORE: '[]',
 	HUBOT__CALENDAR__LOOKAHEAD: '1',
 	HUBOT__SUPPORT__THREAD: '',
-	HUBOT__SUPPORT__JWT: '{}',
-	HUBOT__SUPPORT__CALENDAR: '',
+	HUBOT__SUPPORT__JWT: jwt,
+	HUBOT__SUPPORT__CALENDAR: 'foobar',
 	HUBOT__SUPPORT__LOOKAHEAD: 5,
 	HUBOT__SUPPORT__START_MESSAGE: '',
 	HUBOT__SUPPORT__START_INSTRUCTIONS: '',
