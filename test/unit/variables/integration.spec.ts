@@ -122,6 +122,15 @@ test('defaults are used', () => {
 	expect(environment.integration['discourse'].signature).toEqual(
 		defaults.INTEGRATION_DISCOURSE_SIGNATURE_KEY,
 	);
+	expect(environment.integration['github'].appId).toEqual(
+		defaults.INTEGRATION_GITHUB_APP_ID,
+	);
+	expect(environment.integration['github'].api).toEqual(
+		defaults.INTEGRATION_GITHUB_TOKEN,
+	);
+	expect(environment.integration['github'].key).toEqual(
+		defaults.INTEGRATION_GITHUB_PRIVATE_KEY,
+	);
 	expect(environment.integration['github'].signature).toEqual(
 		defaults.INTEGRATION_GITHUB_SIGNATURE_KEY,
 	);
