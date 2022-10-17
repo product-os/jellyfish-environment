@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add GitHub integration defaults
+      hash: b3d505a0bd8faa98d319cd5a4fdfd34f0f226b7f
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 14.4.0
+  title: ""
+  date: 2022-10-17T01:47:55.705Z
+- commits:
     - subject: Update jest from 29.1.2 to 29.2.0
       hash: d6ced80cca259efd5fcdbf36ea72f81ba7e007d9
       body: ""
