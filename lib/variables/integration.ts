@@ -1,4 +1,7 @@
+import keypair from 'keypair';
 import { EnvironmentBuilder } from '../types';
+
+const keys = keypair();
 
 export interface Integration {
 	default: {
@@ -67,6 +70,11 @@ export const defaults = {
 	INTEGRATION_GOOGLE_MEET_CREDENTIALS: '{}',
 	INTEGRATION_TYPEFORM_SIGNATURE_KEY: 'foobar',
 	INTEGRATION_DISCOURSE_SIGNATURE_KEY: 'EDtPj7LhGe9MvacP',
+	INTEGRATION_GITHUB_APP_ID: '1234',
+	INTEGRATION_GITHUB_TOKEN: 'foobar',
+	INTEGRATION_GITHUB_PRIVATE_KEY: Buffer.from(keys.private.trim()).toString(
+		'base64',
+	),
 	INTEGRATION_GITHUB_SIGNATURE_KEY: 'MnDdSk4JT3e6tkiAUdHfD7Mrs6SUrv',
 	INTEGRATION_JELLYFISH_APP_ID: 'jellyfish',
 	INTEGRATION_JELLYFISH_APP_SECRET: 'changeme',
@@ -121,15 +129,24 @@ export function GetIntegration(env: EnvironmentBuilder): Integration {
 			),
 		},
 		github: {
-			api: env.getString('INTEGRATION_GITHUB_TOKEN'),
+			api: env.getString(
+				'INTEGRATION_GITHUB_TOKEN',
+				defaults.INTEGRATION_GITHUB_TOKEN,
+			),
 			signature: env.getString(
 				'INTEGRATION_GITHUB_SIGNATURE_KEY',
 				defaults.INTEGRATION_GITHUB_SIGNATURE_KEY,
 			),
 			key: env
-				.getString('INTEGRATION_GITHUB_PRIVATE_KEY')
+				.getString(
+					'INTEGRATION_GITHUB_PRIVATE_KEY',
+					defaults.INTEGRATION_GITHUB_PRIVATE_KEY,
+				)
 				.replace(/\\n/gm, '\n'),
-			appId: env.getString('INTEGRATION_GITHUB_APP_ID'),
+			appId: env.getString(
+				'INTEGRATION_GITHUB_APP_ID',
+				defaults.INTEGRATION_GITHUB_APP_ID,
+			),
 		},
 		front: {
 			api: env.getString('INTEGRATION_FRONT_TOKEN'),
