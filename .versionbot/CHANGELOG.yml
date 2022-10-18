@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update typedoc from 0.23.16 to 0.23.17
+      hash: 67c6b9580a68079758268c323375cdc1e7fee9d3
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 14.4.1
+  title: ""
+  date: 2022-10-18T03:44:02.873Z
+- commits:
     - subject: Add GitHub integration defaults
       hash: b3d505a0bd8faa98d319cd5a4fdfd34f0f226b7f
       body: ""
