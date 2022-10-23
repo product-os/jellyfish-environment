@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update typedoc from 0.23.17 to 0.23.18
+      hash: 00a5f33a46f24169a484a65c73ff7ffeaad16bf0
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 14.4.5
+  title: ""
+  date: 2022-10-23T22:57:20.970Z
+- commits:
     - subject: Update default for email hashtags upper limit
       hash: 4aed57836e09287858b1b54b63c1008237d52350
       body: ""
