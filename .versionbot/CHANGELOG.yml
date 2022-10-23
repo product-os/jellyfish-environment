@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update default for email hashtags upper limit
+      hash: 4aed57836e09287858b1b54b63c1008237d52350
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 14.4.4
+  title: ""
+  date: 2022-10-23T09:40:46.922Z
+- commits:
     - subject: Update jest monorepo
       hash: ae2f38c20377fa91ead51f0a1b43dde36c155a75
       body: ""
