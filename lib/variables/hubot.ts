@@ -49,7 +49,7 @@ export interface Hubot {
 		org: string;
 		id: string;
 		ignore: string;
-		lookahead: string;
+		lookahead: number;
 		ping: string;
 	};
 }
@@ -71,11 +71,11 @@ export const defaults = {
 	HUBOT__CALENDAR__ID: '',
 	HUBOT__CALENDAR__PING: '@@balena',
 	HUBOT__CALENDAR__IGNORE: '[]',
-	HUBOT__CALENDAR__LOOKAHEAD: '1',
+	HUBOT__CALENDAR__LOOKAHEAD: 60,
 	HUBOT__SUPPORT__THREAD: '',
 	HUBOT__SUPPORT__JWT: jwt,
 	HUBOT__SUPPORT__CALENDAR: 'foobar',
-	HUBOT__SUPPORT__LOOKAHEAD: 10,
+	HUBOT__SUPPORT__LOOKAHEAD: 15,
 	HUBOT__SUPPORT__START_MESSAGE:
 		'<%= summary %>: your shift starts in <%= start %> for <%= duration %> - Please ack',
 	HUBOT__SUPPORT__START_INSTRUCTIONS: 'Support PSAs:',
@@ -174,7 +174,7 @@ export function GetHubot(env: EnvironmentBuilder): Hubot {
 				'HUBOT__CALENDAR__IGNORE',
 				defaults.HUBOT__CALENDAR__IGNORE,
 			),
-			lookahead: env.getString(
+			lookahead: env.getNumber(
 				'HUBOT__CALENDAR__LOOKAHEAD',
 				defaults.HUBOT__CALENDAR__LOOKAHEAD,
 			),
