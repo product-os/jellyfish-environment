@@ -44,7 +44,6 @@ export interface Hubot {
 	};
 	calendar: {
 		jwt: string;
-		org: string;
 		id: string;
 		ignore: string;
 		lookahead: number;
@@ -64,7 +63,6 @@ export const defaults = {
 	HUBOT__LEAVE__CALAMARI_INSTANCE: 'balena',
 	HUBOT__LEAVE__CALAMARI_TOKEN: 'foobar',
 	HUBOT__CALENDAR__JWT: jwt,
-	HUBOT__CALENDAR__ORG: '',
 	HUBOT__CALENDAR__ID: '',
 	HUBOT__CALENDAR__PING: '@@balena',
 	HUBOT__CALENDAR__IGNORE: '[]',
@@ -156,7 +154,6 @@ export function GetHubot(env: EnvironmentBuilder): Hubot {
 		},
 		calendar: {
 			jwt: env.getString('HUBOT__CALENDAR__JWT', defaults.HUBOT__CALENDAR__JWT),
-			org: env.getString('HUBOT__CALENDAR__ORG', defaults.HUBOT__CALENDAR__ORG),
 			id: env.getString('HUBOT__CALENDAR__ID', defaults.HUBOT__CALENDAR__ID),
 			ignore: env.getString(
 				'HUBOT__CALENDAR__IGNORE',
