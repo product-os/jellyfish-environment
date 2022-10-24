@@ -1,4 +1,18 @@
 - commits:
+    - subject: "Hubot: Remove thread id vars"
+      hash: c3f50a55a924e96f894ca321ba11a764206f72ad
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 14.4.8
+  title: ""
+  date: 2022-10-24T05:42:43.703Z
+- commits:
     - subject: "Hubot: Update lookahead defaults"
       hash: 043b4d4a6472f04b4ee0e51ba84094bb35d27826
       body: ""
