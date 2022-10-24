@@ -30,7 +30,6 @@ export interface Hubot {
 		};
 	};
 	support: {
-		thread: string;
 		jwt: string;
 		calendar: string;
 		lookahead: number;
@@ -45,7 +44,6 @@ export interface Hubot {
 	};
 	calendar: {
 		jwt: string;
-		thread: string;
 		org: string;
 		id: string;
 		ignore: string;
@@ -66,13 +64,11 @@ export const defaults = {
 	HUBOT__LEAVE__CALAMARI_INSTANCE: 'balena',
 	HUBOT__LEAVE__CALAMARI_TOKEN: 'foobar',
 	HUBOT__CALENDAR__JWT: jwt,
-	HUBOT__CALENDAR__THREAD: '',
 	HUBOT__CALENDAR__ORG: '',
 	HUBOT__CALENDAR__ID: '',
 	HUBOT__CALENDAR__PING: '@@balena',
 	HUBOT__CALENDAR__IGNORE: '[]',
 	HUBOT__CALENDAR__LOOKAHEAD: 60,
-	HUBOT__SUPPORT__THREAD: '',
 	HUBOT__SUPPORT__JWT: jwt,
 	HUBOT__SUPPORT__CALENDAR: 'foobar',
 	HUBOT__SUPPORT__LOOKAHEAD: 15,
@@ -128,10 +124,6 @@ export function GetHubot(env: EnvironmentBuilder): Hubot {
 			},
 		},
 		support: {
-			thread: env.getString(
-				'HUBOT__SUPPORT__THREAD',
-				defaults.HUBOT__SUPPORT__THREAD,
-			),
 			jwt: env.getString('HUBOT__SUPPORT__JWT', defaults.HUBOT__SUPPORT__JWT),
 			calendar: env.getString(
 				'HUBOT__SUPPORT__CALENDAR',
@@ -164,10 +156,6 @@ export function GetHubot(env: EnvironmentBuilder): Hubot {
 		},
 		calendar: {
 			jwt: env.getString('HUBOT__CALENDAR__JWT', defaults.HUBOT__CALENDAR__JWT),
-			thread: env.getString(
-				'HUBOT__CALENDAR__THREAD',
-				defaults.HUBOT__CALENDAR__THREAD,
-			),
 			org: env.getString('HUBOT__CALENDAR__ORG', defaults.HUBOT__CALENDAR__ORG),
 			id: env.getString('HUBOT__CALENDAR__ID', defaults.HUBOT__CALENDAR__ID),
 			ignore: env.getString(
