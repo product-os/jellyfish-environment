@@ -1,4 +1,18 @@
 - commits:
+    - subject: "Hubot: Update lookahead defaults"
+      hash: 043b4d4a6472f04b4ee0e51ba84094bb35d27826
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 14.4.7
+  title: ""
+  date: 2022-10-24T03:11:48.661Z
+- commits:
     - subject: "Docs: Remove badge from readme"
       hash: 19f6362f18a230c58f334da9f62d47be281eb6ae
       body: ""
