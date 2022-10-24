@@ -14,7 +14,6 @@ const variables = {
 	HUBOT__LEAVE__CALAMARI_INSTANCE: uuid(),
 	HUBOT__LEAVE__CALAMARI_TOKEN: uuid(),
 	HUBOT__CALENDAR__JWT: `{secret: "${uuid()}"}`,
-	HUBOT__CALENDAR__ORG: uuid(),
 	HUBOT__CALENDAR__ID: uuid(),
 	HUBOT__CALENDAR__PING: uuid(),
 	HUBOT__CALENDAR__IGNORE: `["${uuid()}"]`,
@@ -64,7 +63,6 @@ test('variables are parsed', () => {
 		},
 		calendar: {
 			jwt: variables.HUBOT__CALENDAR__JWT,
-			org: variables.HUBOT__CALENDAR__ORG,
 			id: variables.HUBOT__CALENDAR__ID,
 			ping: variables.HUBOT__CALENDAR__PING,
 			ignore: variables.HUBOT__CALENDAR__IGNORE,
@@ -109,7 +107,6 @@ test('defaults are used', () => {
 		},
 		calendar: {
 			jwt: defaults.HUBOT__CALENDAR__JWT,
-			org: defaults.HUBOT__CALENDAR__ORG,
 			id: defaults.HUBOT__CALENDAR__ID,
 			ping: defaults.HUBOT__CALENDAR__PING,
 			ignore: defaults.HUBOT__CALENDAR__IGNORE,
