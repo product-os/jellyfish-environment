@@ -72,7 +72,7 @@ test('variables are parsed', () => {
 			id: variables.HUBOT__CALENDAR__ID,
 			ping: variables.HUBOT__CALENDAR__PING,
 			ignore: variables.HUBOT__CALENDAR__IGNORE,
-			lookahead: variables.HUBOT__CALENDAR__LOOKAHEAD,
+			lookahead: parseInt(variables.HUBOT__CALENDAR__LOOKAHEAD, 10),
 		},
 	});
 });
