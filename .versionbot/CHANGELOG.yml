@@ -1,4 +1,18 @@
 - commits:
+    - subject: Remove keypair generation
+      hash: 59ec1da3578e3b77f239128f2ea7a4f718ebc589
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 14.4.10
+  title: ""
+  date: 2022-10-25T03:47:57.610Z
+- commits:
     - subject: "Hubot: Remove calendar org var"
       hash: b6df51336d25c418e4d33020b9cd59420965944b
       body: ""
