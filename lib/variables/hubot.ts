@@ -1,10 +1,8 @@
-import keypair from 'keypair';
 import { EnvironmentBuilder } from '../types';
 
-const keys = keypair();
 const jwt = JSON.stringify({
 	private_key_id: 'key123',
-	private_key: keys.private,
+	private_key: 'Zm9vYmFy',
 	client_email: 'foo@bar.buz',
 	client_id: 'client123',
 	type: 'service_account',
