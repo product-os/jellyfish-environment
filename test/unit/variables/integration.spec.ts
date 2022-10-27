@@ -26,7 +26,8 @@ const variables = {
 	INTEGRATION_TYPEFORM_SIGNATURE_KEY: uuid(),
 	INTEGRATION_GOOGLE_MEET_CREDENTIALS: uuid(),
 	INTEGRATION_STATUSPAGE_PAGES: '1234:5678,foo:bar',
-	INTEGRATION_ZULIP_HUBOT_TOKEN: uuid(),
+	INTEGRATION_ZULIP_HUBOT_API: uuid(),
+	INTEGRATION_ZULIP_HUBOT_WEBHOOK: uuid(),
 };
 
 test('variables are parsed', () => {
@@ -84,7 +85,8 @@ test('variables are parsed', () => {
 		},
 		zulip: {
 			hubot: {
-				token: variables.INTEGRATION_ZULIP_HUBOT_TOKEN,
+				api: variables.INTEGRATION_ZULIP_HUBOT_API,
+				webhook: variables.INTEGRATION_ZULIP_HUBOT_WEBHOOK,
 			},
 		},
 	});
@@ -153,7 +155,8 @@ test('defaults are used', () => {
 	});
 	expect(environment.integration['zulip']).toEqual({
 		hubot: {
-			token: defaults.INTEGRATION_ZULIP_HUBOT_TOKEN,
+			api: defaults.INTEGRATION_ZULIP_HUBOT_API,
+			webhook: defaults.INTEGRATION_ZULIP_HUBOT_WEBHOOK,
 		},
 	});
 });
