@@ -1,4 +1,18 @@
 - commits:
+    - subject: "Zulip: Split Hubot API and webhook tokens"
+      hash: 972355349a5038c6cc7792b0416adbc4763f066d
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 14.6.0
+  title: ""
+  date: 2022-10-27T03:07:56.668Z
+- commits:
     - subject: Add Zulip Hubot token support
       hash: faba01957bd633a53974a7f8fcf4e183c2de148e
       body: ""
