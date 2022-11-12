@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update jest from 29.2.2 to 29.3.1
+      hash: 84eeba975da2c365bb8c372884207109f014410a
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 14.6.7
+  title: ""
+  date: 2022-11-12T02:25:34.665Z
+- commits:
     - subject: Update @balena/lint from 6.2.0 to 6.2.1
       hash: 44b22735e1f7035abbda6d063778f8f6b94ac858
       body: ""
