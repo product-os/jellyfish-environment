@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update lint-staged from 13.0.3 to 13.0.4
+      hash: 1eff3e979cb3c65878f1691a651ca10a42d8a2b9
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: renovate[bot]
+      nested: []
+  version: 14.6.13
+  title: ""
+  date: 2022-11-26T02:36:56.037Z
+- commits:
     - subject: Update @types/lodash from 4.14.189 to 4.14.190
       hash: 8f0b7eda98ad300022021e75c08a779d0f1030cd
       body: ""
