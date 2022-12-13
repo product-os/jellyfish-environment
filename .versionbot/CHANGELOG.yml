@@ -1,4 +1,18 @@
 - commits:
+    - subject: "CI: Stop extending renovate config"
+      hash: eaeedf28f5d36a65a6b4302bfad6f325dc69f811
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 14.6.15
+  title: ""
+  date: 2022-12-13T00:27:09.823Z
+- commits:
     - subject: Update prettier from 2.7.1 to 2.8.0
       hash: 34d4557368ede0cdcfd7911c14042f3c56ca1d84
       body: ""
