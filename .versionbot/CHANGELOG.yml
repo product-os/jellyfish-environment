@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update Node.js to 18.12.1
+      hash: 90f1467a17337920cb6f02d8435e417070db05c1
+      body: |
+        Update node to 18.12.1
+
+        Update node from 16.17.1 to 18.12.1
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Renovate Bot
+      nested: []
+  version: 14.7.0
+  title: ""
+  date: 2022-12-13T03:10:24.774Z
+- commits:
     - subject: "CI: Stop extending renovate config"
       hash: eaeedf28f5d36a65a6b4302bfad6f325dc69f811
       body: ""
