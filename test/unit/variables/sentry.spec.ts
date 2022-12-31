@@ -1,8 +1,8 @@
+import { randomUUID } from 'node:crypto';
 import { getEnvironment } from '../../../lib';
-import { v4 as uuid } from 'uuid';
 
 const variables = {
-	SENTRY_DSN_SERVER: uuid(),
+	SENTRY_DSN_SERVER: randomUUID(),
 };
 
 test('variables are parsed', () => {

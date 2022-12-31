@@ -1,12 +1,12 @@
+import { randomUUID } from 'node:crypto';
 import { getEnvironment } from '../../../lib';
 import { defaults } from '../../../lib/variables/redis';
-import { v4 as uuid } from 'uuid';
 
 const variables = {
-	REDIS_HOST: uuid(),
+	REDIS_HOST: randomUUID(),
 	REDIS_PORT: '1234',
-	REDIS_NAMESPACE: uuid(),
-	REDIS_USERNAME: uuid(),
+	REDIS_NAMESPACE: randomUUID(),
+	REDIS_USERNAME: randomUUID(),
 	REDIS_TLS: 'true',
 };
 

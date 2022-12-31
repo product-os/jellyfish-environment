@@ -1,9 +1,9 @@
+import { randomUUID } from 'node:crypto';
 import { getEnvironment } from '../../../lib';
 import { defaults } from '../../../lib/variables/logger';
-import { v4 as uuid } from 'uuid';
 
 const variables = {
-	LOGLEVEL: uuid(),
+	LOGLEVEL: randomUUID(),
 };
 
 test('variables are parsed', () => {

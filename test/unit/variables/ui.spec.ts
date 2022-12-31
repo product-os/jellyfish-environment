@@ -1,9 +1,9 @@
+import { randomUUID } from 'node:crypto';
 import { getEnvironment } from '../../../lib';
 import { defaults } from '../../../lib/variables/ui';
-import { v4 as uuid } from 'uuid';
 
 const variables = {
-	UI_HOST: `http://${uuid()}`,
+	UI_HOST: `http://${randomUUID()}`,
 	UI_PORT: '8080',
 };
 

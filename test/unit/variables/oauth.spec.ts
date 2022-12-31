@@ -1,9 +1,9 @@
+import { randomUUID } from 'node:crypto';
 import { getEnvironment } from '../../../lib';
 import { defaults } from '../../../lib/variables/oauth';
-import { v4 as uuid } from 'uuid';
 
 const variables = {
-	OAUTH_REDIRECT_BASE_URL: uuid(),
+	OAUTH_REDIRECT_BASE_URL: randomUUID(),
 };
 
 test('variables are parsed', () => {

@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import { EnvironmentBuilder } from '../types';
+import type { EnvironmentBuilder } from '../types';
 
 export interface Redis {
 	mock: boolean;

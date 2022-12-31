@@ -1,9 +1,9 @@
+import { randomUUID } from 'node:crypto';
 import { getEnvironment } from '../../../lib';
 import { defaults } from '../../../lib/variables/http';
-import { v4 as uuid } from 'uuid';
 
 const variables = {
-	SERVER_HOST: uuid(),
+	SERVER_HOST: randomUUID(),
 	SERVER_PORT: '8000',
 	HTTP_WORKER_PORT: '8002',
 	HTTP_TIMEOUT: '61',

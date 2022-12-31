@@ -1,14 +1,14 @@
+import { randomUUID } from 'node:crypto';
 import { getEnvironment } from '../../../lib';
 import { defaults } from '../../../lib/variables/database';
-import { v4 as uuid } from 'uuid';
 
 const variables = {
 	DATABASE: 'postgres',
-	POSTGRES_USER: uuid(),
-	POSTGRES_PASSWORD: uuid(),
-	POSTGRES_DATABASE: uuid(),
+	POSTGRES_USER: randomUUID(),
+	POSTGRES_PASSWORD: randomUUID(),
+	POSTGRES_DATABASE: randomUUID(),
 	POSTGRES_PORT: '1234',
-	POSTGRES_HOST: uuid(),
+	POSTGRES_HOST: randomUUID(),
 };
 
 test('variables are parsed', () => {

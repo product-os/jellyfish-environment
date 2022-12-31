@@ -1,10 +1,10 @@
+import { randomUUID } from 'node:crypto';
 import { getEnvironment } from '../../../lib';
 import { defaults } from '../../../lib/variables/hydra';
-import { v4 as uuid } from 'uuid';
 
 const variables = {
-	HYDRA_ADMIN_HOST: uuid(),
-	HYDRA_PUBLIC_HOST: uuid(),
+	HYDRA_ADMIN_HOST: randomUUID(),
+	HYDRA_PUBLIC_HOST: randomUUID(),
 };
 
 test('variables are parsed', () => {

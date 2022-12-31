@@ -1,12 +1,12 @@
+import { randomUUID } from 'node:crypto';
 import { getEnvironment } from '../../../lib';
 import { defaults } from '../../../lib/variables/mail';
-import { v4 as uuid } from 'uuid';
 
 const variables = {
 	MAIL_TYPE: 'mailgun',
-	MAILGUN_TOKEN: uuid(),
-	MAILGUN_DOMAIN: uuid(),
-	MAILGUN_BASE_URL: uuid(),
+	MAILGUN_TOKEN: randomUUID(),
+	MAILGUN_DOMAIN: randomUUID(),
+	MAILGUN_BASE_URL: randomUUID(),
 };
 
 test('variables are parsed', () => {
