@@ -1,12 +1,12 @@
+import { randomUUID } from 'node:crypto';
 import { getEnvironment } from '../../../lib';
 import { defaults } from '../../../lib/variables/aws';
-import { v4 as uuid } from 'uuid';
 
 const variables = {
-	AWS_ACCESS_KEY_ID: uuid(),
-	AWS_SECRET_ACCESS_KEY: uuid(),
-	AWS_S3_BUCKET_NAME: uuid(),
-	AWS_S3_ENDPOINT: uuid(),
+	AWS_ACCESS_KEY_ID: randomUUID(),
+	AWS_SECRET_ACCESS_KEY: randomUUID(),
+	AWS_S3_BUCKET_NAME: randomUUID(),
+	AWS_S3_ENDPOINT: randomUUID(),
 };
 
 test('defaults are used for development', () => {

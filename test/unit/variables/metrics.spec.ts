@@ -1,9 +1,9 @@
+import { randomUUID } from 'node:crypto';
 import { getEnvironment } from '../../../lib';
 import { defaults } from '../../../lib/variables/metrics';
-import { v4 as uuid } from 'uuid';
 
 const variables = {
-	MONITOR_SECRET_TOKEN: uuid(),
+	MONITOR_SECRET_TOKEN: randomUUID(),
 	METRICS_PORT: '9100',
 	SOCKET_METRICS_PORT: '9101',
 };

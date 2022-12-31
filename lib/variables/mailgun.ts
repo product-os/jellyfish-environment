@@ -1,5 +1,5 @@
-import { EnvironmentBuilder } from '../types';
-import { MailOptions } from './mail';
+import type { EnvironmentBuilder } from '../types';
+import type { MailOptions } from './mail';
 
 export const defaults = {
 	MAILGUN_TOKEN: 'key-9uz8dzwwwgwiw896uo6vjvxpwfqr5djt',

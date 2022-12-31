@@ -1,5 +1,5 @@
-import { EnvironmentBuilder } from '../types';
-import { DatabaseOptions } from './database';
+import type { EnvironmentBuilder } from '../types';
+import type { DatabaseOptions } from './database';
 
 export const defaults = {
 	POSTGRES_HOST: 'postgres',

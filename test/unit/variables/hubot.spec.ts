@@ -1,30 +1,30 @@
-import { v4 as uuid } from 'uuid';
+import { randomUUID } from 'node:crypto';
 import { getEnvironment } from '../../../lib';
 import { defaults } from '../../../lib/variables/hubot';
 
 const variables = {
-	HUBOT__EMAIL_HASHTAGS__HASHTAGS: `{foo: "${uuid()}"}`,
-	HUBOT__EMAIL_HASHTAGS__DOMAIN: uuid(),
-	HUBOT__ORDER_HASHTAG_FOOTER: uuid(),
+	HUBOT__EMAIL_HASHTAGS__HASHTAGS: `{foo: "${randomUUID()}"}`,
+	HUBOT__EMAIL_HASHTAGS__DOMAIN: randomUUID(),
+	HUBOT__ORDER_HASHTAG_FOOTER: randomUUID(),
 	HUBOT__EMAIL_HASHTAGS__UPPER_LIMIT: '10',
 	HUBOT__EMAIL_HASHTAGS__LOWER_LIMIT: '1',
-	HUBOT_SMTP_USER: uuid(),
-	HUBOT_SMTP_PASSWORD: uuid(),
-	HUBOT_SMTP_SERVER: uuid(),
-	HUBOT__LEAVE__CALAMARI_INSTANCE: uuid(),
-	HUBOT__LEAVE__CALAMARI_TOKEN: uuid(),
-	HUBOT__CALENDAR__JWT: `{secret: "${uuid()}"}`,
-	HUBOT__CALENDAR__ID: uuid(),
-	HUBOT__CALENDAR__PING: uuid(),
-	HUBOT__CALENDAR__IGNORE: `["${uuid()}"]`,
+	HUBOT_SMTP_USER: randomUUID(),
+	HUBOT_SMTP_PASSWORD: randomUUID(),
+	HUBOT_SMTP_SERVER: randomUUID(),
+	HUBOT__LEAVE__CALAMARI_INSTANCE: randomUUID(),
+	HUBOT__LEAVE__CALAMARI_TOKEN: randomUUID(),
+	HUBOT__CALENDAR__JWT: `{secret: "${randomUUID()}"}`,
+	HUBOT__CALENDAR__ID: randomUUID(),
+	HUBOT__CALENDAR__PING: randomUUID(),
+	HUBOT__CALENDAR__IGNORE: `["${randomUUID()}"]`,
 	HUBOT__CALENDAR__LOOKAHEAD: '2',
-	HUBOT__SUPPORT__JWT: `{foo: "${uuid()}"}`,
-	HUBOT__SUPPORT__CALENDAR: uuid(),
+	HUBOT__SUPPORT__JWT: `{foo: "${randomUUID()}"}`,
+	HUBOT__SUPPORT__CALENDAR: randomUUID(),
 	HUBOT__SUPPORT__LOOKAHEAD: '10',
-	HUBOT__SUPPORT__START_MESSAGE: uuid(),
-	HUBOT__SUPPORT__START_INSTRUCTIONS: uuid(),
-	HUBOT__SUPPORT__END_MESSAGE: uuid(),
-	HUBOT__SUPPORT__END_INSTRUCTIONS: uuid(),
+	HUBOT__SUPPORT__START_MESSAGE: randomUUID(),
+	HUBOT__SUPPORT__START_INSTRUCTIONS: randomUUID(),
+	HUBOT__SUPPORT__END_MESSAGE: randomUUID(),
+	HUBOT__SUPPORT__END_INSTRUCTIONS: randomUUID(),
 };
 
 test('variables are parsed', () => {

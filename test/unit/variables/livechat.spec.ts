@@ -1,9 +1,9 @@
+import { randomUUID } from 'node:crypto';
 import { getEnvironment } from '../../../lib';
 import { defaults } from '../../../lib/variables/livechat';
-import { v4 as uuid } from 'uuid';
 
 const variables = {
-	LIVECHAT_HOST: uuid(),
+	LIVECHAT_HOST: randomUUID(),
 };
 
 test('variables are parsed', () => {

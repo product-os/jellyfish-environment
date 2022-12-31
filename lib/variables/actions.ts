@@ -1,4 +1,4 @@
-import { EnvironmentBuilder } from '../types';
+import type { EnvironmentBuilder } from '../types';
 
 export const defaults = {
 	RESET_PASSWORD_SECRET_TOKEN: '',

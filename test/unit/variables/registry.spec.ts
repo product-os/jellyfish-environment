@@ -1,13 +1,13 @@
+import { randomUUID } from 'node:crypto';
 import { getEnvironment } from '../../../lib';
 import { defaults } from '../../../lib/variables/registry';
-import { v4 as uuid } from 'uuid';
 
 const variables = {
-	REGISTRY_HOST: uuid(),
-	REGISTRY_TOKEN_AUTH_CERT_ISSUER: uuid(),
-	REGISTRY_TOKEN_AUTH_JWT_ALGO: uuid(),
-	REGISTRY_TOKEN_AUTH_CERT_KEY: uuid(),
-	REGISTRY_TOKEN_AUTH_CERT_KID: uuid(),
+	REGISTRY_HOST: randomUUID(),
+	REGISTRY_TOKEN_AUTH_CERT_ISSUER: randomUUID(),
+	REGISTRY_TOKEN_AUTH_JWT_ALGO: randomUUID(),
+	REGISTRY_TOKEN_AUTH_CERT_KEY: randomUUID(),
+	REGISTRY_TOKEN_AUTH_CERT_KID: randomUUID(),
 	REGISTRY_INSECURE_HTTP: 'true',
 };
 

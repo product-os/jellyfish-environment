@@ -1,9 +1,9 @@
+import { randomUUID } from 'node:crypto';
 import { getEnvironment } from '../../../lib';
 import { defaults } from '../../../lib/variables/actions';
-import { v4 as uuid } from 'uuid';
 
 const variables = {
-	RESET_PASSWORD_SECRET_TOKEN: uuid(),
+	RESET_PASSWORD_SECRET_TOKEN: randomUUID(),
 };
 
 test('variables are parsed', () => {

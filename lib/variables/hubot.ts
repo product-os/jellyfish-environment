@@ -1,4 +1,4 @@
-import { EnvironmentBuilder } from '../types';
+import type { EnvironmentBuilder } from '../types';
 
 const jwt = JSON.stringify({
 	private_key_id: 'key123',

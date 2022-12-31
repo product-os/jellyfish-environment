@@ -1,4 +1,4 @@
-import { EnvironmentBuilder, EnvironmentVariables } from '../types';
+import type { EnvironmentBuilder, EnvironmentVariables } from '../types';
 import { GetActions } from './actions';
 import { GetAWS } from './aws';
 import { GetDatabase } from './database';

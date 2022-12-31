@@ -1,9 +1,9 @@
+import { randomUUID } from 'node:crypto';
 import { getEnvironment } from '../../../lib';
 import { defaults } from '../../../lib/variables/pod';
-import { v4 as uuid } from 'uuid';
 
 const variables = {
-	POD_NAME: uuid(),
+	POD_NAME: randomUUID(),
 };
 
 test('variables are parsed', () => {
