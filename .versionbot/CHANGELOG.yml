@@ -1,4 +1,16 @@
 - commits:
+    - subject: Drop zulip env vars
+      hash: 411a2000bfd1fc2a88a7647eae0a35561c50ff9c
+      body: ""
+      footer:
+        Change-type: major
+        change-type: major
+      author: Josh Bowling
+      nested: []
+  version: 15.0.0
+  title: ""
+  date: 2023-01-01T08:59:02.493Z
+- commits:
     - subject: Drop uuid
       hash: 04667cf70ce50faae0764b9a646277bebbe1f5bf
       body: ""
