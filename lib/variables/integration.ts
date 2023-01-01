@@ -50,12 +50,6 @@ export interface Integration {
 			[key: string]: string;
 		};
 	};
-	zulip: {
-		hubot: {
-			api: string;
-			webhook: string;
-		};
-	};
 }
 
 export const defaults = {
@@ -80,8 +74,6 @@ export const defaults = {
 	INTEGRATION_JELLYFISH_APP_ID: 'jellyfish',
 	INTEGRATION_JELLYFISH_APP_SECRET: 'changeme',
 	INTEGRATION_STATUSPAGE_PAGES: 'foobar:buzbaz',
-	INTEGRATION_ZULIP_HUBOT_API: 'foobar',
-	INTEGRATION_ZULIP_HUBOT_WEBHOOK: 'foobar',
 };
 
 function getStatuspagePages(raw: string): Integration['statuspage']['pages'] {
@@ -206,18 +198,6 @@ export function GetIntegration(env: EnvironmentBuilder): Integration {
 					defaults.INTEGRATION_STATUSPAGE_PAGES,
 				),
 			),
-		},
-		zulip: {
-			hubot: {
-				api: env.getString(
-					'INTEGRATION_ZULIP_HUBOT_API',
-					defaults.INTEGRATION_ZULIP_HUBOT_API,
-				),
-				webhook: env.getString(
-					'INTEGRATION_ZULIP_HUBOT_WEBHOOK',
-					defaults.INTEGRATION_ZULIP_HUBOT_WEBHOOK,
-				),
-			},
 		},
 	};
 }
