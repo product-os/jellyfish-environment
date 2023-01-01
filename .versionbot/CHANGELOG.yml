@@ -1,4 +1,16 @@
 - commits:
+    - subject: "Dev: Add .editorconfig"
+      hash: ae43496268f8a7855e0e177a27372949dd537fcd
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Josh Bowling
+      nested: []
+  version: 15.0.1
+  title: ""
+  date: 2023-01-01T09:16:52.917Z
+- commits:
     - subject: Drop zulip env vars
       hash: 411a2000bfd1fc2a88a7647eae0a35561c50ff9c
       body: ""
