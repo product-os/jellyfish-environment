@@ -25,7 +25,6 @@ const variables = {
 	INTEGRATION_JELLYFISH_APP_SECRET: randomUUID(),
 	INTEGRATION_TYPEFORM_SIGNATURE_KEY: randomUUID(),
 	INTEGRATION_GOOGLE_MEET_CREDENTIALS: randomUUID(),
-	INTEGRATION_STATUSPAGE_PAGES: '1234:5678,foo:bar',
 };
 
 test('variables are parsed', () => {
@@ -71,12 +70,6 @@ test('variables are parsed', () => {
 		},
 		typeform: {
 			signature: variables.INTEGRATION_TYPEFORM_SIGNATURE_KEY,
-		},
-		statuspage: {
-			pages: {
-				1234: '5678',
-				foo: 'bar',
-			},
 		},
 	});
 });
@@ -134,9 +127,4 @@ test('defaults are used', () => {
 	expect(environment.integration['jellyfish'].appSecret).toEqual(
 		defaults.INTEGRATION_JELLYFISH_APP_SECRET,
 	);
-	expect(environment.integration['statuspage']).toEqual({
-		pages: {
-			foobar: 'buzbaz',
-		},
-	});
 });
