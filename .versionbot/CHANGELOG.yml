@@ -1,4 +1,16 @@
 - commits:
+    - subject: Remove hydra env vars
+      hash: 72656e21e83c78c85efdf004d690bac7085e7c68
+      body: ""
+      footer:
+        Change-type: major
+        change-type: major
+      author: Josh Bowling
+      nested: []
+  version: 18.0.0
+  title: ""
+  date: 2023-03-31T23:18:55.144Z
+- commits:
     - subject: Remove statuspage env vars
       hash: 807e96bc06c189461cf968b06d398606adc02892
       body: ""
