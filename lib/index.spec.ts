@@ -97,7 +97,6 @@ describe('returned object', () => {
 			'sentry',
 			'test',
 			'ui',
-			'hydra',
 			'isProduction',
 			'isDevelopment',
 			'isCI',

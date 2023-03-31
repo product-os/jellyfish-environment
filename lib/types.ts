@@ -3,7 +3,6 @@ import type { AWS } from './variables/aws';
 import type { Database, DatabaseOptions } from './variables/database';
 import type { HTTP } from './variables/http';
 import type { Hubot } from './variables/hubot';
-import type { Hydra } from './variables/hydra';
 import type { Integration } from './variables/integration';
 import type { Livechat } from './variables/livechat';
 import type { Logger } from './variables/logger';
@@ -39,7 +38,6 @@ export interface EnvironmentVariables {
 	sentry: Sentry;
 	test: Test;
 	ui: UI;
-	hydra: Hydra;
 
 	/**
 	 * Check if the code is running in a production environment
