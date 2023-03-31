@@ -72,9 +72,6 @@ test('variables are parsed', () => {
 		typeform: {
 			signature: variables.INTEGRATION_TYPEFORM_SIGNATURE_KEY,
 		},
-		'google-meet': {
-			credentials: variables.INTEGRATION_GOOGLE_MEET_CREDENTIALS,
-		},
 		statuspage: {
 			pages: {
 				1234: '5678',
@@ -112,9 +109,6 @@ test('defaults are used', () => {
 	);
 	expect(environment.integration['outreach'].signature).toEqual(
 		defaults.INTEGRATION_OUTREACH_SIGNATURE_KEY,
-	);
-	expect(environment.integration['google-meet'].credentials).toEqual(
-		defaults.INTEGRATION_GOOGLE_MEET_CREDENTIALS,
 	);
 	expect(environment.integration['typeform'].signature).toEqual(
 		defaults.INTEGRATION_TYPEFORM_SIGNATURE_KEY,
