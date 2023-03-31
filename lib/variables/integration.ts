@@ -42,11 +42,6 @@ export interface Integration {
 	typeform: {
 		signature: string;
 	};
-	statuspage: {
-		pages: {
-			[key: string]: string;
-		};
-	};
 }
 
 export const defaults = {
@@ -70,21 +65,7 @@ export const defaults = {
 	INTEGRATION_GITHUB_SIGNATURE_KEY: 'MnDdSk4JT3e6tkiAUdHfD7Mrs6SUrv',
 	INTEGRATION_JELLYFISH_APP_ID: 'jellyfish',
 	INTEGRATION_JELLYFISH_APP_SECRET: 'changeme',
-	INTEGRATION_STATUSPAGE_PAGES: 'foobar:buzbaz',
 };
-
-function getStatuspagePages(raw: string): Integration['statuspage']['pages'] {
-	if (!raw || !raw.includes(':')) {
-		return {};
-	}
-
-	const pages = {};
-	for (const page of raw.split(',')) {
-		const [pageId, token] = page.split(':');
-		pages[pageId] = token;
-	}
-	return pages;
-}
 
 export function GetIntegration(env: EnvironmentBuilder): Integration {
 	return {
@@ -180,14 +161,6 @@ export function GetIntegration(env: EnvironmentBuilder): Integration {
 			signature: env.getString(
 				'INTEGRATION_TYPEFORM_SIGNATURE_KEY',
 				defaults.INTEGRATION_TYPEFORM_SIGNATURE_KEY,
-			),
-		},
-		statuspage: {
-			pages: getStatuspagePages(
-				env.getString(
-					'INTEGRATION_STATUSPAGE_PAGES',
-					defaults.INTEGRATION_STATUSPAGE_PAGES,
-				),
 			),
 		},
 	};
