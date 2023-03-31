@@ -1,4 +1,16 @@
 - commits:
+    - subject: Remove Google Meet env var
+      hash: 74631474a9ed0d579b22c967ea88e3dc708b7e4a
+      body: ""
+      footer:
+        Change-type: major
+        change-type: major
+      author: Josh Bowling
+      nested: []
+  version: 16.0.0
+  title: ""
+  date: 2023-03-31T23:04:35.346Z
+- commits:
     - subject: Update Node.js to 18.14.0
       hash: 5606fd8f3e46de248caee3450b631c1bb73c5c7b
       body: |
