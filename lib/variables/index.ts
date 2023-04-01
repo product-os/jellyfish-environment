@@ -3,7 +3,6 @@ import { GetActions } from './actions';
 import { GetAWS } from './aws';
 import { GetDatabase } from './database';
 import { GetHTTP } from './http';
-import { GetHubot } from './hubot';
 import { GetIntegration } from './integration';
 import { GetLivechat } from './livechat';
 import { GetLogger } from './logger';
@@ -28,7 +27,6 @@ export function getVariables(env: EnvironmentBuilder): EnvironmentVariables {
 		aws: GetAWS(env),
 		database: GetDatabase(env),
 		http: GetHTTP(env),
-		hubot: GetHubot(env),
 		integration,
 		livechat: GetLivechat(env),
 		logger: GetLogger(env),

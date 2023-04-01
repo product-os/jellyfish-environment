@@ -2,7 +2,6 @@ import type { Actions } from './variables/actions';
 import type { AWS } from './variables/aws';
 import type { Database, DatabaseOptions } from './variables/database';
 import type { HTTP } from './variables/http';
-import type { Hubot } from './variables/hubot';
 import type { Integration } from './variables/integration';
 import type { Livechat } from './variables/livechat';
 import type { Logger } from './variables/logger';
@@ -22,7 +21,6 @@ export interface EnvironmentVariables {
 	aws: AWS;
 	database: Database;
 	http: HTTP;
-	hubot: Hubot;
 	integration: Integration;
 	livechat: Livechat;
 	logger: Logger;
@@ -149,7 +147,6 @@ export {
 	Database,
 	DatabaseOptions,
 	HTTP,
-	Hubot,
 	Integration,
 	Livechat,
 	Logger,

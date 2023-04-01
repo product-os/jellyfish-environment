@@ -81,7 +81,6 @@ describe('returned object', () => {
 			'aws',
 			'database',
 			'http',
-			'hubot',
 			'integration',
 			'livechat',
 			'logger',
