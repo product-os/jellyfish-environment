@@ -87,7 +87,6 @@ export {
 	Queue,
 	Redis,
 	RegistryOptions,
-	Sentry,
 	Test,
 	UI,
 } from './types';

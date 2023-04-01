@@ -15,7 +15,6 @@ import { GetPostgres } from './postgres';
 import { GetQueue } from './queue';
 import { GetRedis } from './redis';
 import { GetRegistry } from './registry';
-import { GetSentry } from './sentry';
 import { GetTest } from './test';
 import { GetUI } from './ui';
 
@@ -39,7 +38,6 @@ export function getVariables(env: EnvironmentBuilder): EnvironmentVariables {
 		queue: GetQueue(env),
 		redis: GetRedis(env),
 		registry: GetRegistry(env),
-		sentry: GetSentry(env),
 		test: GetTest(env),
 		ui: GetUI(env),
 		isProduction: () => {

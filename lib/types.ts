@@ -12,7 +12,6 @@ import type { Pod } from './variables/pod';
 import type { Queue } from './variables/queue';
 import type { Redis } from './variables/redis';
 import type { RegistryOptions } from './variables/registry';
-import type { Sentry } from './variables/sentry';
 import type { Test } from './variables/test';
 import type { UI } from './variables/ui';
 
@@ -33,7 +32,6 @@ export interface EnvironmentVariables {
 	queue: Queue;
 	redis: Redis;
 	registry: RegistryOptions;
-	sentry: Sentry;
 	test: Test;
 	ui: UI;
 
@@ -158,7 +156,6 @@ export {
 	Queue,
 	Redis,
 	RegistryOptions,
-	Sentry,
 	Test,
 	UI,
 };
