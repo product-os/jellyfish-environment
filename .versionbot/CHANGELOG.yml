@@ -1,4 +1,16 @@
 - commits:
+    - subject: Remove registry env vars
+      hash: c3b26170f6cf211c66dfa056fe4d382769750f2c
+      body: ""
+      footer:
+        Change-type: major
+        change-type: major
+      author: Josh Bowling
+      nested: []
+  version: 21.0.0
+  title: ""
+  date: 2023-04-01T02:48:52.339Z
+- commits:
     - subject: Remove sentry env vars
       hash: f3ca02bd34580f52294b87916a3cfdf6e596e01e
       body: ""
