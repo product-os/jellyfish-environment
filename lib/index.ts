@@ -86,7 +86,6 @@ export {
 	Pod,
 	Queue,
 	Redis,
-	RegistryOptions,
 	Test,
 	UI,
 } from './types';

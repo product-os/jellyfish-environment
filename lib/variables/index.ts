@@ -14,7 +14,6 @@ import { GetPod } from './pod';
 import { GetPostgres } from './postgres';
 import { GetQueue } from './queue';
 import { GetRedis } from './redis';
-import { GetRegistry } from './registry';
 import { GetTest } from './test';
 import { GetUI } from './ui';
 
@@ -37,7 +36,6 @@ export function getVariables(env: EnvironmentBuilder): EnvironmentVariables {
 		postgres: GetPostgres(env),
 		queue: GetQueue(env),
 		redis: GetRedis(env),
-		registry: GetRegistry(env),
 		test: GetTest(env),
 		ui: GetUI(env),
 		isProduction: () => {
