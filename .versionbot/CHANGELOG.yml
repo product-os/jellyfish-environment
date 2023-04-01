@@ -1,4 +1,16 @@
 - commits:
+    - subject: Remove hubot env vars
+      hash: abbc42d4ae6c06a1a4d41e65fd6607b3a4754011
+      body: ""
+      footer:
+        Change-type: major
+        change-type: major
+      author: Josh Bowling
+      nested: []
+  version: 19.0.0
+  title: ""
+  date: 2023-04-01T00:11:51.181Z
+- commits:
     - subject: Remove hydra env vars
       hash: 72656e21e83c78c85efdf004d690bac7085e7c68
       body: ""
