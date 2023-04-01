@@ -92,7 +92,6 @@ describe('returned object', () => {
 			'postgres',
 			'queue',
 			'redis',
-			'registry',
 			'test',
 			'ui',
 			'isProduction',

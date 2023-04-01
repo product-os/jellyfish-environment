@@ -11,7 +11,6 @@ import type { OAuth } from './variables/oauth';
 import type { Pod } from './variables/pod';
 import type { Queue } from './variables/queue';
 import type { Redis } from './variables/redis';
-import type { RegistryOptions } from './variables/registry';
 import type { Test } from './variables/test';
 import type { UI } from './variables/ui';
 
@@ -31,7 +30,6 @@ export interface EnvironmentVariables {
 	postgres: DatabaseOptions;
 	queue: Queue;
 	redis: Redis;
-	registry: RegistryOptions;
 	test: Test;
 	ui: UI;
 
@@ -155,7 +153,6 @@ export {
 	Pod,
 	Queue,
 	Redis,
-	RegistryOptions,
 	Test,
 	UI,
 };
