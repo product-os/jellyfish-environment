@@ -1,4 +1,16 @@
 - commits:
+    - subject: Remove sentry env vars
+      hash: f3ca02bd34580f52294b87916a3cfdf6e596e01e
+      body: ""
+      footer:
+        Change-type: major
+        change-type: major
+      author: Josh Bowling
+      nested: []
+  version: 20.0.0
+  title: ""
+  date: 2023-04-01T02:34:33.172Z
+- commits:
     - subject: Remove hubot env vars
       hash: abbc42d4ae6c06a1a4d41e65fd6607b3a4754011
       body: ""
