@@ -27,7 +27,3 @@ const environment = getEnvironment({
 });
 console.log('Metrics Port:', environment.metrics.ports.app);
 ```
-
-# Documentation
-
-Visit the website for complete documentation: https://product-os.github.io/jellyfish-environment
