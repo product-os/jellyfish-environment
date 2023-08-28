@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update @types/lodash to 4.14.197
+      hash: 8dcb25ecf7fbe662dfba96d39dace7f1091fe8fb
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Josh Bowling
+      nested: []
+  version: 21.0.4
+  title: ""
+  date: 2023-08-28T08:05:30.860Z
+- commits:
     - subject: Update typescript to 5.2.2
       hash: 87c9eab1120e3f1f93e76d3666fdb244c5e14804
       body: ""
