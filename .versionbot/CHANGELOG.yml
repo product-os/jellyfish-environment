@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update typescript to 5.2.2
+      hash: 87c9eab1120e3f1f93e76d3666fdb244c5e14804
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Josh Bowling
+      nested: []
+  version: 21.0.3
+  title: ""
+  date: 2023-08-28T08:00:15.996Z
+- commits:
     - subject: Update dev deps
       hash: d42339a4b19eb8aa1cb88a2f7568837863399571
       body: ""
