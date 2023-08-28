@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update dev deps
+      hash: d42339a4b19eb8aa1cb88a2f7568837863399571
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Josh Bowling
+      nested: []
+  version: 21.0.2
+  title: ""
+  date: 2023-08-28T06:46:43.022Z
+- commits:
     - subject: Remove typedoc
       hash: a1ff7384d4ae1af38b2c36cc44aadf4e049d8940
       body: ""
