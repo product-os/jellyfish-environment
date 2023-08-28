@@ -1,4 +1,16 @@
 - commits:
+    - subject: Remove typedoc
+      hash: a1ff7384d4ae1af38b2c36cc44aadf4e049d8940
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Josh Bowling
+      nested: []
+  version: 21.0.1
+  title: ""
+  date: 2023-08-28T05:50:00.370Z
+- commits:
     - subject: Remove registry env vars
       hash: c3b26170f6cf211c66dfa056fe4d382769750f2c
       body: ""
@@ -3607,8 +3619,8 @@
     - subject: "build(deps): bump hosted-git-info from 2.8.8 to 2.8.9"
       hash: 3039f3c4165cc43846bdd4f607f5ac42516c9238
       body: >
-        Bumps [hosted-git-info](https://github.com/npm/hosted-git-info) from 2.8.8
-        to 2.8.9.
+        Bumps [hosted-git-info](https://github.com/npm/hosted-git-info) from
+        2.8.8 to 2.8.9.
 
         - [Release notes](https://github.com/npm/hosted-git-info/releases)
 
